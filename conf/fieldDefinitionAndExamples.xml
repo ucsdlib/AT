@@ -1,0 +1,3662 @@
+<?xml version="1.0"?>
+<RECORDS>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>accessionDate</PropertyName>
+	<Element_Label>Accession Date</Element_Label>
+	<Definition>REQUIRED FIELD: The date the accession took place. It is not necessarily the same date as when the record is created.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>accessionDispositionNote</PropertyName>
+	<Element_Label>Disposition Note</Element_Label>
+	<Definition>A note to describe how a particular accession may have been assigned to different resources.</Definition>
+	<Examples>Photographs were separated and assigned to Photographs 025.
+
+The letters to William Colton were added to the William Colton correspondence collection, while the maps of local country streams were added to the records of the County River collection. </Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>accessionId</PropertyName>
+	<Element_Label>Accession Id</Element_Label>
+	<Definition>The internal database number for a specific accession record. The accessionID is a unique number, but it is not used outside the AT. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>accessionNumber</PropertyName>
+	<Element_Label>Accession Number</Element_Label>
+	<Definition>REQUIRED FIELD:  The unique identifier for an accession within a repository. 
+
+In the AT, four fields are provided for parsing out an accession identifier into its component parts. Each part may be an alpha, numeric, or alphanumeric string, with each segment limited to 10 characters, or 40 characters total for the identifier. At least the first part must be used for a valid accession record. 
+
+Default values may be used to populate the component parts that are the same across all accession numbers. 
+
+See DACS 5.2.5</Definition>
+	<Examples>NYU-Fales.2010.33
+
+UCSD.M.1999.045</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>accessionNumber1</PropertyName>
+	<Element_Label>Accession Number 1</Element_Label>
+	<Definition>REQUIRED FIELD:  The unique identifier for an accession within a repository. 
+
+In the AT, four fields are provided for parsing out an accession identifier into its component parts. Each part may be an alpha, numeric, or alphanumeric string, with each segment limited to 10 characters, or 40 characters total for the identifier. At least the first part must be used for a valid accession record. 
+
+Default values may be used to populate the component parts that are the same across all accession numbers. 
+
+See DACS 5.2.5</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>accessionNumber2</PropertyName>
+	<Element_Label>Accession Number 2</Element_Label>
+	<Definition>REQUIRED FIELD:  The unique identifier for an accession within a repository. 
+
+In the AT, four fields are provided for parsing out an accession identifier into its component parts. Each part may be an alpha, numeric, or alphanumeric string, with each segment limited to 10 characters, or 40 characters total for the identifier. At least the first part must be used for a valid accession record. 
+
+Default values may be used to populate the component parts that are the same across all accession numbers. 
+
+See DACS 5.2.5</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>accessionNumber3</PropertyName>
+	<Element_Label>Accession Number 3</Element_Label>
+	<Definition>REQUIRED FIELD:  The unique identifier for an accession within a repository. 
+
+In the AT, four fields are provided for parsing out an accession identifier into its component parts. Each part may be an alpha, numeric, or alphanumeric string, with each segment limited to 10 characters, or 40 characters total for the identifier. At least the first part must be used for a valid accession record. 
+
+Default values may be used to populate the component parts that are the same across all accession numbers. 
+
+See DACS 5.2.5</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>accessionNumber4</PropertyName>
+	<Element_Label>Accession Number 4</Element_Label>
+	<Definition>REQUIRED FIELD:  The unique identifier for an accession within a repository. 
+
+In the AT, four fields are provided for parsing out an accession identifier into its component parts. Each part may be an alpha, numeric, or alphanumeric string, with each segment limited to 10 characters, or 40 characters total for the identifier. At least the first part must be used for a valid accession record. 
+
+Default values may be used to populate the component parts that are the same across all accession numbers. 
+
+See DACS 5.2.5</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>accessionProcessed</PropertyName>
+	<Element_Label>Processed</Element_Label>
+	<Definition>A checkbox for indicating the processing of the accession has been completed. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>accessionProcessedDate</PropertyName>
+	<Element_Label>Processed Date</Element_Label>
+	<Definition>A date indicating when processing of the accession was completed. </Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>accessRestrictions</PropertyName>
+	<Element_Label>Access Restrictions</Element_Label>
+	<Definition>A checkbox for indicating access to the materials is restricted. 
+
+See DACS 4.1.5 - 4.1.6; 4.2.5 - 4.2.7, 4.3.5 - 4.3.6</Definition>
+	<Examples>
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>accessRestrictionsNote</PropertyName>
+	<Element_Label>Access Restrictions Note</Element_Label>
+	<Definition>A statement indicating what materials in the accession have access to them restricted, what the authority of the restriction is, and for how long the restriction will be in effect.</Definition>
+	<Examples>Diaries in box ten have are restricted by the donor until 2030.</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>acknowledgementDate</PropertyName>
+	<Element_Label>Acknowledgement Date</Element_Label>
+	<Definition>Date indicating when an acknowledgement of the accession was sent to the source.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>acknowledgementSent</PropertyName>
+	<Element_Label>Acknowledgement Sent</Element_Label>
+	<Definition>A check box to indicate an acknowledgment for the accession has been sent to the source. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>acquisitionType</PropertyName>
+	<Element_Label>Acquisition Type</Element_Label>
+	<Definition>A categorical descriptor for the type of acquisition. Repositories may customize the list of data values. </Definition>
+	<Examples>Gift
+
+Purchase
+
+Transfer</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>agreementReceived</PropertyName>
+	<Element_Label>Agreement Received</Element_Label>
+	<Definition>A checkbox for indicating the acquisition agreement has been received from the source of the accession. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>agreementReceivedDate</PropertyName>
+	<Element_Label>Agreement Received Date</Element_Label>
+	<Definition>Date indicating when the acquisition agreement (purchase agreement, deed of gift, etc.) was received back from the source.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>agreementSent</PropertyName>
+	<Element_Label>Agreement Sent</Element_Label>
+	<Definition>A check box for indicating an acquisition agreement (purchase, transfer, deposit, etc.) has been sent to the source of the accession.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>agreementSentDate</PropertyName>
+	<Element_Label>Agreement Sent Date</Element_Label>
+	<Definition>Date indicating when the acquisition agreement (e.g., deed of gift, transfer agreement, etc.)  was sent to the source.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>bulkDateBegin</PropertyName>
+	<Element_Label>Begin</Element_Label>
+	<Definition>The first date in a set of bulk dates. The bulk dates must fit within the inclusive dates for the record to be valid. 
+
+See DACS 2.4.10-2.4.11</Definition>
+	<Examples>A.D. years are expressed with four digits, e.g. 1946.
+
+B.C. years are expressed as a negative number, e.g., -214 for 214 B.C.</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>bulkDateEnd</PropertyName>
+	<Element_Label>End</Element_Label>
+	<Definition>The second date in a set of bulk dates. The bulk dates must fit within the inclusive dates for the record to be valid.
+
+See DACS 2.4.10-2.4.11</Definition>
+	<Examples>A.D. years are expressed with four digits, e.g. 1946.
+
+B.C. years are expressed as a negative number, e.g., -214 for 214 B.C.</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>cataloged</PropertyName>
+	<Element_Label>Cataloged</Element_Label>
+	<Definition>An indication that a catalog record (e.g. MARC record) has been created for the accession and entered into the local catalog.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>catalogedDate</PropertyName>
+	<Element_Label>Cataloged Date</Element_Label>
+	<Definition>The date in which the accession was cataloged, or the catalog record for the resource was updated to reflect inclusion of the accession.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>catalogedNote</PropertyName>
+	<Element_Label>Cataloged Note</Element_Label>
+	<Definition>A note about the cataloging of the accession, including catalog record identifiers.</Definition>
+	<Examples>Catalog record number: 21345672</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>conditionNote</PropertyName>
+	<Element_Label>Condition</Element_Label>
+	<Definition>A description of the physical condition of the contents of the accession, including any special handling requirements.</Definition>
+	<Examples>The maps in box 4 are brittle and several are covered with mold. Inhalation guards should be worn during processing. </Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>containerSummary</PropertyName>
+	<Element_Label>Container Summary</Element_Label>
+	<Definition>A natural language statement for listing the number and type of containers housing the contents of the accession.</Definition>
+	<Examples>10 record cartons, 3 archive boxes, and 4 map folders.</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>dateBegin</PropertyName>
+	<Element_Label>Begin</Element_Label>
+	<Definition>An integer representing the year a single item was created or the first date of an inclusive date range for an aggregation of items. 
+
+See DACS 2.4.7-2.4.16</Definition>
+	<Examples>A.D. years are expressed with four digits, e.g. 1946.
+
+B.C. years are expressed as a negative number, e.g., -214 for 214 B.C.</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>dateEnd</PropertyName>
+	<Element_Label>End</Element_Label>
+	<Definition>The second date in a set of inclusive dates for a range of materials, or the single date in Date Begin field repeated as a Date End expression.  
+
+See DACS 2.4.7-2.4.16</Definition>
+	<Examples>A.D. years are expressed with four digits, e.g. 1946.
+
+B.C. years are expressed as a negative number, e.g., -214 for 214 B.C.</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>dateExpression</PropertyName>
+	<Element_Label>Date Expression</Element_Label>
+	<Definition>A natural language expression specifying the date or date range of the materials in the accession.
+
+See DACS 2.4</Definition>
+	<Examples>Between 1925 and 1953
+
+Circa 1911
+
+20th century
+
+Inclusive dates 1913-1998, Bulk dates 1950-1977</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>description</PropertyName>
+	<Element_Label>Description</Element_Label>
+	<Definition>A description of the document types and topical contents of the accession.
+
+See DACS 3.1.4-3.1.7</Definition>
+	<Examples>Ten cartons of materials containing field notes, diaries, and drafts of maps documenting Mr. Smith's 10 years in residence at the Otay Mesa Ranch. </Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>displayCreator</PropertyName>
+	<Element_Label>Display Creator</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>displayRepository</PropertyName>
+	<Element_Label>Display Repository</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>displaySource</PropertyName>
+	<Element_Label>Display Source</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>extentNumber</PropertyName>
+	<Element_Label>Extent Number</Element_Label>
+	<Definition>An expression consisting of two discrete elements:
+
+1)  A numeric value for indicating the number of units in the extent statement, e.g, 5, 11, 245, and,
+
+2)  A text expression for indicating the type of measurement being counted, e.g, linear foot, cubic foot, etc.  
+
+Together the two elements comprise the complete extent statement.  
+
+The list of values for type of measurement can be modified.  
+
+See DACS 2.5</Definition>
+	<Examples>10 [linear feet]
+
+3.25 [cubic feet]  </Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>extentType</PropertyName>
+	<Element_Label>Extent Measurement</Element_Label>
+	<Definition>[Does not display in UI, except as part of the Extent Number definition]
+
+The type of unit expressed by the numeric quantity. The numeric and type expressions make up the entire extent statement. 
+
+The default values are:  "Linear feet" and "Cubic feet".  Other terms may be added to this list.
+
+See DACS 2.5</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>generalAccessionNote</PropertyName>
+	<Element_Label>General Accession Note</Element_Label>
+	<Definition>A catch all note field for any information that does not fit in any of the more specifically defined fields. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>inventory</PropertyName>
+	<Element_Label>Inventory</Element_Label>
+	<Definition>A list of the containers and their contents making up an accession. In the AT, the box list may be composed in the field, copied and pasted into the field, or referenced as an external document. The reference to the external document may be recorded here or in the External Documents list. </Definition>
+	<Examples>Box 1:   Diaries
+
+Box 2:   Letters to Mr. Smith's family
+
+Box 3:   Personal records for ranch employees
+
+Box 4:   Drafts of ranch maps
+
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>locations</PropertyName>
+	<Element_Label>Locations</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>processingPlan</PropertyName>
+	<Element_Label>Processing Plan</Element_Label>
+	<Definition>A description or an outline describing plans, listing assignments, and noting other matters pertinent to the processing of the accession. </Definition>
+	<Examples>The materials are to be arranged by Margaret when she returns from vacation.
+
+Margaret's students will create descriptive records.
+
+Project manager will review, output, and load the encoded finding aid.   </Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>processingPriority</PropertyName>
+	<Element_Label>Processing Priority</Element_Label>
+	<Definition>A term indicating the priority the repository assigns to completing processing of the accession. The default terms can be modified. </Definition>
+	<Examples>High
+
+Medium
+
+Low</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>processingStartedDate</PropertyName>
+	<Element_Label>Processing Started Date</Element_Label>
+	<Definition>Date on which the processing of the accession began.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>processingStatus</PropertyName>
+	<Element_Label>Processing Status</Element_Label>
+	<Definition>A term for describing the status of the process, i.e., just begun, near completion, completed, etc. The default terms can be modified.  </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>processors</PropertyName>
+	<Element_Label>Processors</Element_Label>
+	<Definition>A field for entering the names of the staff members responsible for processing of the collection. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>repository</PropertyName>
+	<Element_Label>Repository</Element_Label>
+	<Definition>The name of the repository having custody of the accession. The values in this list may be modified by adding or deleting repository records. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>resourceType</PropertyName>
+	<Element_Label>Resource Type</Element_Label>
+	<Definition>A list of terms used by a repository for categorizing its resources into basic types. 
+
+The default values are:  Collection, Papers, and Records. These values may be customized. 
+
+See DACS 2.3.18</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>restrictionsApply</PropertyName>
+	<Element_Label>Restrictions Apply</Element_Label>
+	<Definition>Indication if restrictions apply to the accession. 
+
+See DACS 4.1.5 - 4.1.6; 4.2.5 - 4.2.7, 4.3.4 - 4.3.6</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>retentionRule</PropertyName>
+	<Element_Label>Retention Rule</Element_Label>
+	<Definition>A note indicating the retention authority or rule for the accession. </Definition>
+	<Examples>See the Campus Retention Schedule.</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>rightsTransferred</PropertyName>
+	<Element_Label>Rights Transferred</Element_Label>
+	<Definition>Indication that intellectual property rights have been transferred from the source of the accession to the repository. 
+
+See DACS 4.4</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>rightsTransferredDate</PropertyName>
+	<Element_Label>Rights Transferred Date</Element_Label>
+	<Definition>The date when the source of the accession transferred the intellectual property rights of the materials to the repository. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>rightsTransferredNote</PropertyName>
+	<Element_Label>Rights Transferred Note</Element_Label>
+	<Definition>A note field for describing any aspect of the transfer of intellectual property rights from the source of the accession to the repository. </Definition>
+	<Examples>Carl A. Rose has transferred intellectual property rights of the materials he created to the Regents of the University of California. </Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>title</PropertyName>
+	<Element_Label>Title</Element_Label>
+	<Definition>The title assigned to an accession or resource. The accession title need not be the same as the resource title. Moreover, a title need not be expressed for the accession record, as it can be implicitly inherited from the resource record to which the accession is linked.
+
+See DACS 2.3.18-2.3.22</Definition>
+	<Examples>John Smith diaries
+
+Office of the President correspondence
+
+Catherine Clarke civil rights collection
+
+Collection of Mary Oppen materials
+
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>userDefinedBoolean1</PropertyName>
+	<Element_Label>User Defined Boolean 1</Element_Label>
+	<Definition>A checkbox defined by the user. The label may be modified by the user to indicate the purpose of the field. The field may be used to record data or track actions that can be represented by a value of either True or False. Two such fields are provided.  For example:  The accession has been appraised:  T/F</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>userDefinedBoolean2</PropertyName>
+	<Element_Label>User Defined Boolean 2</Element_Label>
+	<Definition>A checkbox defined by the user. The label may be modified by the user to indicate the purpose of the field. The field may be used to record data or track actions that can be represented by a value of either True or False. Two such fields are provided.  For example:  The accession has been appraised:  T/F</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>userDefinedDate1</PropertyName>
+	<Element_Label>User Defined Date 1</Element_Label>
+	<Definition>A date field definable by the user. The label may be modified by the user to indicate the purpose of the field. The date may be associated with another field, such as a Boolean field, to indicate the date an event took place. Two such fields are provided. For example, the date an appraisal of the accession occurred. 
+
+</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>userDefinedDate2</PropertyName>
+	<Element_Label>User Defined Date 2</Element_Label>
+	<Definition>A date field definable by the user. The label may be modified by the user to indicate the purpose of the field. The date may be associated with another field, such as a Boolean field, to indicate the date an event took place. Two such fields are provided. For example, the date an appraisal of the accession occurred. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>userDefinedInteger1</PropertyName>
+	<Element_Label>User Defined Integer 1</Element_Label>
+	<Definition>A field for an integer, e.g., 2, 42, 1966, definable by the user. The label may be modified by the user to indicate the nature of the field. There are two such fields. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>userDefinedInteger2</PropertyName>
+	<Element_Label>User Defined Integer 2</Element_Label>
+	<Definition>A field for an integer, e.g., 2, 42, 1966, definable by the user. The label may be modified by the user to indicate the nature of the field. There are two such fields. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>userDefinedReal1</PropertyName>
+	<Element_Label>User Defined Real 1</Element_Label>
+	<Definition>A field for recording a real number, e.g., 1922.32, definable by the user. The label may be modified to indicate the purpose of the field. There are two such fields.  This kind of field might be used to indicate the monetary value of an appraisal:  2500.00.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>userDefinedReal2</PropertyName>
+	<Element_Label>User Defined Real 2</Element_Label>
+	<Definition>A field for recording a real number, e.g., 1922.32, definable by the user. The label may be modified to indicate the purpose of the field. There are two such fields.  This kind of field might be used to indicate the monetary value of an appraisal:  2500.00.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>userDefinedString1</PropertyName>
+	<Element_Label>User Defined String 1</Element_Label>
+	<Definition>A string field limited to 255 characters and definable by the user. The label may be modified to indicate the purpose of the field. There are three such fields. This field might be used to indicate the name of the agent that appraised the collection. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>userDefinedString2</PropertyName>
+	<Element_Label>User Defined String 2</Element_Label>
+	<Definition>A string field limited to 255 characters and definable by the user. The label may be modified to indicate the purpose of the field. There are three such fields. This field might be used to indicate the name of the agent that appraised the collection. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>userDefinedString3</PropertyName>
+	<Element_Label>User Defined String 3</Element_Label>
+	<Definition>A string field limited to 255 characters and definable by the user. The label may be modified to indicate the purpose of the field. There are three such fields. This field might be used to indicate the name of the agent that appraised the collection. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>userDefinedText1</PropertyName>
+	<Element_Label>User Defined Text 1</Element_Label>
+	<Definition>A field allowing for the recording of a large amount of text information and definable by the user. The label may be defined to indicate the purpose of the field. There are four such fields.  The field might be used to describe the state or order of the accession before it was physically transferred to the repository. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>userDefinedText2</PropertyName>
+	<Element_Label>User Defined Text 2
+</Element_Label>
+	<Definition>A field allowing for recording a large amount of text information and definable by the user. The label may be defined to indicate the purpose of the field. There are four such fields.  The field might be used to describe the state or order of the accession before it was physically transferred to the repository. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>userDefinedText3</PropertyName>
+	<Element_Label>User Defined Text 3</Element_Label>
+	<Definition>A field allowing for recording a large amount of text information and definable by the user. The label may be defined to indicate the purpose of the field. There are four such fields.  The field might be used to describe the state or order of the accession before it was physically transferred to the repository. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>userDefinedText4</PropertyName>
+	<Element_Label>User Defined Text 4</Element_Label>
+	<Definition>A field allowing for recording a large amount of text information and definable by the user. The label may be defined to indicate the purpose of the field. There are four such fields.  The field might be used to describe the state or order of the accession before it was physically transferred to the repository. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>useRestrictions</PropertyName>
+	<Element_Label>Use Restrictions</Element_Label>
+	<Definition>A check box to indicate that there are use restrictions for materials in the accession. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Accessions</ClassName>
+	<PropertyName>useRestrictionsNote</PropertyName>
+	<Element_Label>Use Restrictions Note</Element_Label>
+	<Definition>A statement indicating which materials have use restrictions, how the materials can be used, what the authority of the restriction is, and for how long the restriction will be in effect.</Definition>
+	<Examples>Manuscripts in box 33 are fragile; photocopies must be used instead. </Examples>
+</RECORD>
+<RECORD>
+	<ClassName>AccessionsLocations</ClassName>
+	<PropertyName>accession</PropertyName>
+	<Element_Label>Accession</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>AccessionsLocations</ClassName>
+	<PropertyName>location</PropertyName>
+	<Element_Label>Location</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>AccessionsLocations</ClassName>
+	<PropertyName>note</PropertyName>
+	<Element_Label>Note</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>AccessionsResources</ClassName>
+	<PropertyName>Accession</PropertyName>
+	<Element_Label>Accession</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>AccessionsResources</ClassName>
+	<PropertyName>accessionNumber</PropertyName>
+	<Element_Label>Accession Number</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>AccessionsResources</ClassName>
+	<PropertyName>accessionTitle</PropertyName>
+	<Element_Label>Accession Title</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>AccessionsResources</ClassName>
+	<PropertyName>resource</PropertyName>
+	<Element_Label>Resource</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>AccessionsResources</ClassName>
+	<PropertyName>resourceIdentifier</PropertyName>
+	<Element_Label>Resource Identifier</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>AccessionsResources</ClassName>
+	<PropertyName>resourceTitle</PropertyName>
+	<Element_Label>Resource Title</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionAnalogInstances</ClassName>
+	<PropertyName>barcode</PropertyName>
+	<Element_Label>Container Barcode</Element_Label>
+	<Definition>A barcode affixed to the container or item and not to the location.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionAnalogInstances</ClassName>
+	<PropertyName>container1Indicator</PropertyName>
+	<Element_Label>Container 1 Indicator</Element_Label>
+	<Definition>First container indicator composed of letters or letters and numbers, e.g., "A" or "2a"</Definition>
+</RECORD>
+<!--<RECORD>
+	<ClassName>ArchDescriptionAnalogInstances</ClassName>
+	<PropertyName>container1AlphaNumericIndicator</PropertyName>
+	<Element_Label>Container 1 Alphanumeric Indicator</Element_Label>
+	<Definition>First container indicator, but composed of letters or letters and numbers, e.g., "A" or "2a"</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionAnalogInstances</ClassName>
+	<PropertyName>container1NumericIndicator</PropertyName>
+	<Element_Label>Container 1 Numeric Indicator</Element_Label>
+	<Definition>First container number.</Definition>
+	<Examples></Examples>
+</RECORD>-->
+<RECORD>
+	<ClassName>ArchDescriptionAnalogInstances</ClassName>
+	<PropertyName>container1Type</PropertyName>
+	<Element_Label>Container 1 Type</Element_Label>
+	<Definition>Type of container. Default values may be modified.
+
+See DACS 2.5.4-2.5.6</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionAnalogInstances</ClassName>
+	<PropertyName>container2Indicator</PropertyName>
+	<Element_Label>Container 2 Indicator</Element_Label>
+	<Definition>Second container indicator composed of letters or letters and numbers, e.g., "A" or "2a"</Definition>
+</RECORD>
+<!--<RECORD>
+	<ClassName>ArchDescriptionAnalogInstances</ClassName>
+	<PropertyName>container2AlphaNumericIndicator</PropertyName>
+	<Element_Label>Container 2 Alphanumeric Indicator</Element_Label>
+	<Definition>Second container indicator, but composed of letters or letters and numbers, e.g.,  "A" or "2a"</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionAnalogInstances</ClassName>
+	<PropertyName>container2NumericIndicator</PropertyName>
+	<Element_Label>Container 2 Numeric Indicator</Element_Label>
+	<Definition>Second container number.</Definition>
+	<Examples></Examples>
+</RECORD>-->
+<RECORD>
+	<ClassName>ArchDescriptionAnalogInstances</ClassName>
+	<PropertyName>container2Type</PropertyName>
+	<Element_Label>Container 2 Type</Element_Label>
+	<Definition>Type of container. Default values may be modified.
+
+See DACS 2.5.4-2.5.6</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionAnalogInstances</ClassName>
+	<PropertyName>container3Indicator</PropertyName>
+	<Element_Label>Container 3 Indicator</Element_Label>
+	<Definition>Third container indicator composed of letters or letters and numbers, e.g., "A" or "2a"</Definition>
+</RECORD>
+<!--<RECORD>
+	<ClassName>ArchDescriptionAnalogInstances</ClassName>
+	<PropertyName>container3AlphaNumericIndicator</PropertyName>
+	<Element_Label>Container 3 Alphanumeric Indicator</Element_Label>
+	<Definition>Third container indicator, but composed of letters or letters and numbers, e.g.,  "A" or "2a". </Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionAnalogInstances</ClassName>
+	<PropertyName>container3NumericIndicator</PropertyName>
+	<Element_Label>Container 3 Numeric Indicator</Element_Label>
+	<Definition>Third container number.</Definition>
+	<Examples></Examples>
+</RECORD>-->
+<RECORD>
+	<ClassName>ArchDescriptionAnalogInstances</ClassName>
+	<PropertyName>container3Type</PropertyName>
+	<Element_Label>Container 3 Type</Element_Label>
+	<Definition>Type of container. Default values may be modified.
+
+See DACS 2.5.4-2.5.6</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionAnalogInstances</ClassName>
+	<PropertyName>containerLabel</PropertyName>
+	<Element_Label>Container Label</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionAnalogInstances</ClassName>
+	<PropertyName>instanceLabel</PropertyName>
+	<Element_Label>Instance Label</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionAnalogInstances</ClassName>
+	<PropertyName>instanceType</PropertyName>
+	<Element_Label>Instance Type</Element_Label>
+	<Definition>REQUIRED FIELD. A term indicating the format of the material being described.  The list of instance types may be modified.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionAnalogInstances</ClassName>
+	<PropertyName>location</PropertyName>
+	<Element_Label>Location</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionNames</ClassName>
+	<PropertyName>form</PropertyName>
+	<Element_Label>Name Link Form</Element_Label>
+	<Definition>An indication of topical, geographical, chronological or form descriptors, singly or in some combination, used to modify a name as it is applied in a certain context.</Definition>
+	<Examples>An indication of topical, geographical, chronological or form descriptors, singly or in some combination, used to modify a name as it is applied in a certain context.</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionNames</ClassName>
+	<PropertyName>name</PropertyName>
+	<Element_Label>Name</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionNames</ClassName>
+	<PropertyName>nameLinkFunction</PropertyName>
+	<Element_Label>Name Link Function</Element_Label>
+	<Definition>REQUIRED FIELD. An indication of what function (creator, source, or subject) the name has in regards to its  link to a certain description record.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionNames</ClassName>
+	<PropertyName>role</PropertyName>
+	<Element_Label>Name Link Creator / Subject  Role</Element_Label>
+	<Definition>An indication of what role the name has in regards to its function as indicated in how it is linked (e.g., creator, source, or subject) to a certain description record. For example, a name may be linked as a creator to a record, but with the more specific role of "illustrator".</Definition>
+	<Examples>Select from the pull down list the term that describes the role of the agent as a creator or subject.  </Examples>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionNotes</ClassName>
+	<PropertyName>eadIngestProblem</PropertyName>
+	<Element_Label>Ead Ingest Problem</Element_Label>
+	<Definition>A field for parking EAD elements in the source EAD that do not map to any AT field.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionNotes</ClassName>
+	<PropertyName>internalOnly</PropertyName>
+	<Element_Label>Note Internal Only Status</Element_Label>
+	<Definition>A checkbox for indicating the content of a particular note is to be set to internal only status.  Checking the checkbox means the note will be set to audience=”internal” in the exported EAD or  redacted from the exported EAD.  The note will be redacted from all other exports of the description.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionNotes</ClassName>
+	<PropertyName>multiPart</PropertyName>
+	<Element_Label>Multi Part</Element_Label>
+	<Definition>A checkbox for indicating that a note has multiple parts.  Multiple parts refers to EAD encoding conventions whereby a &lt;bioghist&gt; element may contain a &lt;chronology&gt;.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionNotes</ClassName>
+	<PropertyName>noteContent</PropertyName>
+	<Element_Label>Note Content</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionNotes</ClassName>
+	<PropertyName>sequenceNumber</PropertyName>
+	<Element_Label>Note Sequence</Element_Label>
+	<Definition>An integer for indicating the desired sequence of the notes for a resource or resource component</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionNotes</ClassName>
+	<PropertyName>title</PropertyName>
+	<Element_Label>Note Label</Element_Label>
+	<Definition>A label or title for the note that is different than the note type expression. Outputs as a &lt;head&gt; in an EAD element. </Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionRepeatingData</ClassName>
+	<PropertyName>content</PropertyName>
+	<Element_Label>Content</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionRepeatingData</ClassName>
+	<PropertyName>eadIngestProblem</PropertyName>
+	<Element_Label>Ead Ingest Problem</Element_Label>
+	<Definition>A field for parking EAD elements in the source EAD that do not map to any AT field.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionRepeatingData</ClassName>
+	<PropertyName>repeatingDataType</PropertyName>
+	<Element_Label>Repeating Data Type</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionRepeatingData</ClassName>
+	<PropertyName>sequenceNumber</PropertyName>
+	<Element_Label>Sequence Number</Element_Label>
+	<Definition>An integer for indicating the desired sequence of the notes for a resource or resource component. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ArchDescriptionRepeatingData</ClassName>
+	<PropertyName>title</PropertyName>
+	<Element_Label>Title</Element_Label>
+	<Definition>A label or title for the note that is different than the note type expression. Outputs as a &lt;head&gt; in an EAD element. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>conditionOfMaterial</PropertyName>
+	<Element_Label>Condition Of Material</Element_Label>
+	<Definition>This rating is intended to describe the overall condition of the materials in a collection; items or groups of materials of particular concern will be indicated in the conservation note.
+
+5. Excellent: little damage with no further deterioration expected, based on the high quality of the material.
+4. Very good: little damage with some further deterioration possible, due to the mixed quality of the material.
+3. Good: expected deterioration with some further deterioration possible.
+2. Fair: somewhat worse than expected deterioration with some further deterioration possible.
+1. Poor: significant damage/ deterioration that makes collection difficult to use.
+	</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>physicalAccess</PropertyName>
+	<Element_Label>Physical Access</Element_Label>
+	<Definition>This rating applies to a collection’s physical arrangement. In considering the level of the physical access, the surveyors will take into account the complexity and size of collection. For example, a small, relatively homogenous collection in rough
+order is generally more physically accessible than a large, heterogeneous collection in rough order, and the ratings will reflect that fact. (Note that arrangement to the item level may not be desirable for many collections; a rating of 4 may be the top rating that is desirable for a collection.)
+
+5. Full arrangement to item level in series and, as appropriate, subseries. Single volumes are orderly and indexed (i.e. chronological accounts with a name index).
+4. Arrangement in series to file level. There is generally good order within the files. Single volumes are orderly (i.e. an account book in alphabetical order or a neat scrapbook in thematic order).
+3. Rough arrangement by date, document type, function, source, or other characteristic; papers not thoroughly screened, but have been unfolded and flattened; series not fully established; files not fully established; researchers often must work through voluminous extraneous material to locate pertinent items. Single volumes might have had more than one use, or have items pasted in or otherwise be somewhat disorganized.
+2. Partial or superficial arrangement and/or non-standard housing and labeling discourage use except with special staff assistance.
+1. Totally unarranged; many, sometimes most, documents not yet removed from envelopes, unfolded, and flattened. Completely inaccessible to researcher.
+	</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>qualityOfHousing</PropertyName>
+	<Element_Label>Quality Of Housing</Element_Label>
+	<Definition>The rating is intended to describe the overall quality of housing of the materials in a collection; items or groups of materials within a collection may be in better or poorer housing than what the overall rating indicates.
+
+5. Collection housed completely in acid-free boxes and folders in good condition. Boxes and folders have reasonable amount of material in them. Boxes and folders are correct size and type for the materials they house. For bound volumes, binding is in excellent condition.
+4. Collection housed partially in acid-free boxes and folders in good condition. Most boxes and folders have reasonable amount of material in them. Most boxes and folders are correct size and type for the materials they house. For bound volumes, binding is in very good condition (expected wear).
+3. Collection housed in non-archival boxes and folders but they are in good condition. Most boxes and folders have reasonable amount of material in them. Most boxes and folders are correct size and type for the materials they house. For bound volumes, binding is in good condition (somewhat the worse for wear yet intact).
+2. Collection housed in non-archival boxes and folders. Significant number of boxes and folders might have unreasonable amount of material in them or are not the correct size and type for the materials they house. For bound volumes, binding is in fair condition (boards might be detached).
+1. Collection housed in non-archival boxes, might have items loose on the shelf. Majority of material is not in folders and/or boxes are overstuffed or understuffed. For bound volumes, binding is in poor condition, lacking boards or otherwise compromising the text block.
+	</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>intellectualAccess</PropertyName>
+	<Element_Label>Intellectual Access</Element_Label>
+	<Definition>Finding aids typically provide the best intellectual access to archival collections. A good finding aid includes some overall description of the collection and an appropriate level of inventory (box, folder or item-level) for the contents. While a catalog record or a simple inventory might provide adequate access to a small or simple collection, it may not be sufficient for a larger or more complex collection; the ratings are designed to take that into account.  The ratings reflect the growing expectation that a collection is only truly accessible when a researcher can find information about it online. The highest ratings are reserved for collections with multiple online access points.
+
+Notes on terminology:
+A substandard finding aid may be a preliminary inventory created for all or part of a collection at the time of donation or accession. It may also be a more conventional finding aid that is done to an earlier standard that is now considered insufficient for the materials being described. A collection-level description may be a MARC record, a set of catalog cards, or an online or offline document that describes the physical and intellectual characteristics of a collection. In some cases, an accession record can be considered a collection-level description, if it is sufficiently detailed and would be made available to a researcher.
+
+5. Researcher has excellent access to collection: There is a good online finding aid (EAD, HTML, PDF, or other format). There is a collection-level MARC record for the collection in the institution's OPAC and/or in a national bibliographic utility such as OCLC. The collection may also be described in other online or offline sources that are available to researchers (such as a printed or online guide to collections).
+4. Researcher has good access to collection: There is a good finding aid, but it is not available online. There is a collection-level MARC record for the collection in the institution's OPAC and/or in a national bibliographic utility such as OCLC. There is a good finding aid, online or offline, but there is no collection-level MARC record for the collection in the institution's OPAC and/or in a national bibliographic utility such as OCLC. Given the quality of the finding aid, the finding aid alone provides good access. In both cases, the collection may also be described in other online or offline sources that are available to researchers.
+3. Researcher has fair access to collection: The finding aid is substandard or there is no finding aid. There is a collection-level MARC record for the collection in the institution's OPAC and/or in a national bibliographic utility such as OCLC. In the absence of a full MARC record, there is another type of online collection-level description. The collection-level description in online or offline sources available to researchers provides sufficient access because it is a small or straightforward collection.
+2. Researcher has poor access to collection: Collection has no finding aid or a substandard finding aid. The collection has printed catalog cards or another type of offline collection-level description, but no collection-level MARC record in the OPAC or a national bibliographic utility. Collection has no finding aid or a substandard finding aid. The collection has a MARC record in the OPAC or national bibliographic utility, but that does not provide sufficient access because it is a large or complex collection. In either case, the collection may be described in other online or offline sources available to researchers, but because of the complexity of the collection or the inadequacy of the sources, this provides insufficient access.
+1. Researcher has no access to collection: Internal documentation such as a donor/control file or brief or inaccessible accession record serves as the only description of the collection. While such internal documentation may vary in quantity and quality, by its nature it is inaccessible to researchers.
+	</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>interest</PropertyName>
+	<Element_Label>Interest</Element_Label>
+	<Definition>Interest Ranking
+5 very high
+4 high
+3 moderate
+2 slight
+1 negligible
+	</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>documentationQuality</PropertyName>
+	<Element_Label>Documentation Quality</Element_Label>
+	<Definition>Quality of Documentation Ranking
+5 very rich
+4 rich
+3 moderately rich
+2 incidentally valuable
+1 slight
+	</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>researchValue</PropertyName>
+	<Element_Label>Research Value</Element_Label>
+	<Definition>A collection is considered valuable to researchers to the extent that it includes relatively rare, extensive, or detailed information on topics that have received considerable prior attention, are gaining currency, or have apparent potential to attract significant researcher interest. A topic may be of very high, high, moderate, slight, or negligible interest. The intrinsic interest of the collection itself may also be considered as a topic.
+Depending on the rarity, extensiveness, and detail of a body of material, the depth and breath of the documentation on a topic represented in a collection may be very rich, rich, moderately rich, incidentally valuable, or slight. The Research Value Rating is determined by adding the ratings of the topics best or most substantially represented in each collection to the ratings of the quality of documentation on those topics in the collection.
+	</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>userNumericalRating1</PropertyName>
+	<Element_Label>Numerical Rating 1</Element_Label>
+	<Definition>This could be used for things like recommended processing level (collection-level only through item-level), exhibit value (if exhibits are an important aspect of an institution's mission), institutional value (if a repository wishes to distinguish this from overall research value) or fundability. 
+	</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>userNumericalRating2</PropertyName>
+	<Element_Label>Numerical Rating 2</Element_Label>
+	<Definition>This could be used for things like recommended processing level (collection-level only through item-level), exhibit value (if exhibits are an important aspect of an institution's mission), institutional value (if a repository wishes to distinguish this from overall research value) or fundability. 
+	</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>generalNote</PropertyName>
+	<Element_Label>General Note</Element_Label>
+	<Definition>Indicates areas of particular concern with regard to the physical condition of the collection.
+	</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>conservationNote</PropertyName>
+	<Element_Label>Conservation Note</Element_Label>
+	<Definition>Indicates areas of particular concern with regard to the physical condition of the collection.
+	</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>architecturalMaterials</PropertyName>
+	<Element_Label>Architectural Materials</Element_Label>
+	<Definition>Each institution can decide if they want every format present to be checked off, regardless of quantity, or if there has to be a certain number or represent a certain percentage of the collection in order to be checked.
+	</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>artOriginals</PropertyName>
+	<Element_Label>Art Originals</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>artifacts</PropertyName>
+	<Element_Label>Artifacts</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>audioMaterials</PropertyName>
+	<Element_Label>Audio Materials</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>biologicalSpecimens</PropertyName>
+	<Element_Label>Biological Specimens</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>botanicalSpecimens</PropertyName>
+	<Element_Label>Botanical Specimens</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>computerStorageUnits</PropertyName>
+	<Element_Label>Computer Storage Units</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>film</PropertyName>
+	<Element_Label>Film (negative, slide, or motion picture)</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>glass</PropertyName>
+	<Element_Label>Glass</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>photographs</PropertyName>
+	<Element_Label>Photographs</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>scrapbooks</PropertyName>
+	<Element_Label>Scrapbooks</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>technicalDrawingsAndSchematics</PropertyName>
+	<Element_Label>Technical Drawings &amp; Schematics</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>textiles</PropertyName>
+	<Element_Label>Textiles</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>vellumAndParchment</PropertyName>
+	<Element_Label>Vellum And Parchment</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>videoMaterials</PropertyName>
+	<Element_Label>Video Materials</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>other</PropertyName>
+	<Element_Label>Other</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>specialFormat1</PropertyName>
+	<Element_Label>Special Format 1</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>specialFormat2</PropertyName>
+	<Element_Label>Special Format 2</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>specialFormatNote</PropertyName>
+	<Element_Label>Special Format Note</Element_Label>
+	<Definition>Additional or explanatory information about the special formats present.  If “Other” is checked it should be described here.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>potentialMoldOrMoldDamage</PropertyName>
+	<Element_Label>Potential Mold Or Mold Damage</Element_Label>
+	<Definition>These are issues that may require more immediate attention because these materials might experience accelerated deterioration or they might impact adjacent materials.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>recentPestDamage</PropertyName>
+	<Element_Label>Recent Pest Damage</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>deterioratingFilmBase</PropertyName>
+	<Element_Label>Deteriorating Film Base</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>specialConservationIssue1</PropertyName>
+	<Element_Label>Special Conservation Issue 1</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>specialConservationIssue2</PropertyName>
+	<Element_Label>Special Conservation Issue 2</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>specialConservationIssue3</PropertyName>
+	<Element_Label>Special Conservation Issue 3</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>brittlePaper</PropertyName>
+	<Element_Label>Brittle Paper</Element_Label>
+	<Definition>These are issues that are fairly standard components of archival collections.  A repository may want to flag them, but not necessarily take immediate action in light of more pressing priorities.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>metalFasteners</PropertyName>
+	<Element_Label>Metal Fasteners</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>newspaper</PropertyName>
+	<Element_Label>Newspaper</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>tape</PropertyName>
+	<Element_Label>Tape</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>thermofaxPaper</PropertyName>
+	<Element_Label>Thermofax Paper</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>otherConservationIssue1</PropertyName>
+	<Element_Label>Other Conservation Issue 1</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>otherConservationIssue2</PropertyName>
+	<Element_Label>Other Conservation Issue 2</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>otherConservationIssue3</PropertyName>
+	<Element_Label>Other Conservation Issue 3</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>exhibitionValueNote</PropertyName>
+	<Element_Label>Exhibition Value Note</Element_Label>
+	<Definition>Indicates whether the collection itself or individual items found in the collection might be especially appropriate for exhibition.  For example, this field might note a unique artifact or a letter or photograph of historical significance.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>monetaryValue</PropertyName>
+	<Element_Label>Monetary Value</Element_Label>
+	<Definition>Appraised or estimated market value of the assessed materials.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>monetaryValueNote</PropertyName>
+	<Element_Label>Monetary Value Note</Element_Label>
+	<Definition>Indicates who provided the monetary value , date of appraisal, and any other relevant information.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>estimatedProcessingTimePerFoot</PropertyName>
+	<Element_Label>Estimated Processing Time Per Foot</Element_Label>
+	<Definition>The time to arrange and describe the material, including the creation of finding aids and catalog records as appropriate. Estimated processing time does not account for any specialized conservation measures that may be required. The project is using a metric of 8 hours per foot for collections that are relatively straightforward or in good order (including many 20th century collections), and 15 hours per foot for more complex collections.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>totalExtent</PropertyName>
+	<Element_Label>Total Extent</Element_Label>
+	<Definition>Linear or cubic footage of all of the accession(s)/resource(s) being surveyed.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>totalEstimatedProcessingTime</PropertyName>
+	<Element_Label>Total Estimated Processing Time</Element_Label>
+	<Definition>Hours per foot multiplied by the total linear footage.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>whoDidSurvey</PropertyName>
+	<Element_Label>Surveyed By</Element_Label>
+	<Definition>Name of the person or team who performed the assessment.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>amountOfTimeSurveyTook</PropertyName>
+	<Element_Label>Time it Took to Complete Survey</Element_Label>
+	<Definition>The amount of time to complete surveying for the collection, expressed in number of hours.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>reviewNeeded</PropertyName>
+	<Element_Label>Review Needed</Element_Label>
+	<Definition>Yes/No fields that indicate whether any special review is required for the collection because of its format, subject matter, or circumstances.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>whoNeedsToReview</PropertyName>
+	<Element_Label>Who Needs To Review</Element_Label>
+	<Definition>Indicates who ought to perform the review.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>reviewNote</PropertyName>
+	<Element_Label>Review Note</Element_Label>
+	<Definition>Explanation of the outcome of any special review.</Definition>
+</RECORD>
+    <RECORD>
+	<ClassName>Assessments</ClassName>
+	<PropertyName>inactive</PropertyName>
+	<Element_Label>Inactive</Element_Label>
+	<Definition>Indicates if the assessment record is no longer considered “active” and thus should not be included in searches or reports.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>BibItems</ClassName>
+	<PropertyName>itemValue</PropertyName>
+	<Element_Label>Item Value</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>BibItems</ClassName>
+	<PropertyName>sequenceNumber</PropertyName>
+	<Element_Label>Sequence Number</Element_Label>
+	<Definition>An integer for indicating the desired sequence of the notes for a resource or resource component.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Bibliography</ClassName>
+	<PropertyName>eadIngestProblem</PropertyName>
+	<Element_Label>Ead Ingest Problem</Element_Label>
+	<Definition>A field for parking EAD elements in the source EAD that do not map to any AT field.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Bibliography</ClassName>
+	<PropertyName>note</PropertyName>
+	<Element_Label>Note</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Bibliography</ClassName>
+	<PropertyName>repeatingDataType</PropertyName>
+	<Element_Label>Repeating Data Type</Element_Label>
+	<Definition>An integer for indicating the desired sequence of the notes for a resource or resource component.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Bibliography</ClassName>
+	<PropertyName>sequenceNumber</PropertyName>
+	<Element_Label>Sequence Number</Element_Label>
+	<Definition>An integer for indicating the desired sequence of the notes for a resource or resource component.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Bibliography</ClassName>
+	<PropertyName>title</PropertyName>
+	<Element_Label>Title</Element_Label>
+	<Definition>A label or title for the note that is different than the note type expression. Outputs as a &lt;head&gt; in an EAD element. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ChronologyItems</ClassName>
+	<PropertyName>eventDate</PropertyName>
+	<Element_Label>Event Date</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ChronologyItems</ClassName>
+	<PropertyName>eventDescription</PropertyName>
+	<Element_Label>Event Description</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ChronologyItems</ClassName>
+	<PropertyName>sequenceNumber</PropertyName>
+	<Element_Label>Sequence Number</Element_Label>
+	<Definition>A field for indicating the desired sequence of the notes for a resource or resource component</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ChronologyList</ClassName>
+	<PropertyName>content</PropertyName>
+	<Element_Label>Content</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ChronologyList</ClassName>
+	<PropertyName>eadIngestProblem</PropertyName>
+	<Element_Label>Ead Ingest Problem</Element_Label>
+	<Definition>A field for parking EAD elements in the source EAD that do not map to any AT field.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ChronologyList</ClassName>
+	<PropertyName>note</PropertyName>
+	<Element_Label>Note</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ChronologyList</ClassName>
+	<PropertyName>repeatingDataType</PropertyName>
+	<Element_Label>Repeating Data Type</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ChronologyList</ClassName>
+	<PropertyName>sequenceNumber</PropertyName>
+	<Element_Label>Sequence Number</Element_Label>
+	<Definition>An integer for indicating the desired sequence of the notes for a resource or resource component.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ChronologyList</ClassName>
+	<PropertyName>title</PropertyName>
+	<Element_Label>Title</Element_Label>
+	<Definition>A label or title for the note that is different than the note type expression. Outputs as a &lt;head&gt; in an EAD element. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ChronologyList</ClassName>
+	<PropertyName>type</PropertyName>
+	<Element_Label>Type</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>DatabaseFields</ClassName>
+	<PropertyName>dataType</PropertyName>
+	<Element_Label>Data Type</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>DatabaseFields</ClassName>
+	<PropertyName>fieldLabel</PropertyName>
+	<Element_Label>Field Label</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>DatabaseFields</ClassName>
+	<PropertyName>fieldName</PropertyName>
+	<Element_Label>Field Name</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>DatabaseFields</ClassName>
+	<PropertyName>returnScreenOrder</PropertyName>
+	<Element_Label>Return Screen Order</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>DatabaseTables</ClassName>
+	<PropertyName>tableName</PropertyName>
+	<Element_Label>Table Name</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>Deaccessions</ClassName>
+	<PropertyName>deaccessionDate</PropertyName>
+	<Element_Label>Deaccession Date</Element_Label>
+	<Definition>REQUIRED FIELD: The date the materials were deaccessioned.</Definition>
+	<Examples>22 July 02
+
+7-22-2003</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Deaccessions</ClassName>
+	<PropertyName>deaccessionsId</PropertyName>
+	<Element_Label>Deaccessions Id</Element_Label>
+	<Definition>The internal database number for a specific deaccession record. The Deaccession Id is a unique number, but it is not used outside the AT. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Deaccessions</ClassName>
+	<PropertyName>description</PropertyName>
+	<Element_Label>Description</Element_Label>
+	<Definition>REQUIRED FIELD: Description of the materials that have been deaccessioned.</Definition>
+	<Examples>Periodicals, newspaper clippings, and family financial records. 
+
+Trophies awarded at dog shows. </Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Deaccessions</ClassName>
+	<PropertyName>disposition</PropertyName>
+	<Element_Label>Disposition</Element_Label>
+	<Definition>A description indicating what was done with the deaccessioned materials. </Definition>
+	<Examples>Financial records returned to the family.
+
+Dog show trophies returned to the donor's wife. </Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Deaccessions</ClassName>
+	<PropertyName>extent</PropertyName>
+	<Element_Label>Extent</Element_Label>
+	<Definition>A numeric expression indicating the amount of materials deaccessioned. </Definition>
+	<Examples>10 [linear feet]
+
+32 [cubic feet]
+
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Deaccessions</ClassName>
+	<PropertyName>extentType</PropertyName>
+	<Element_Label>Extent Measurement</Element_Label>
+	<Definition>The type of measurement for the extent amount. </Definition>
+	<Examples>[10] linear feet
+
+[32] cubic feet</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Deaccessions</ClassName>
+	<PropertyName>notification</PropertyName>
+	<Element_Label>Notification</Element_Label>
+	<Definition>A checkbox indicating the source of the materials has been notified of the deaccession.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Deaccessions</ClassName>
+	<PropertyName>reason</PropertyName>
+	<Element_Label>Reason</Element_Label>
+	<Definition>Explanation for why the materials were deaccessioned.</Definition>
+	<Examples>Library does not retain clipping files and periodicals as part of archival collections. The content of most of these materials is already owned by the repository. Financial records are not pertinent to the rationale for acquiring the collection. 
+
+The dog show trophies have low research value and are of greater value to members of the family. </Examples>
+</RECORD>
+<RECORD>
+	<ClassName>DefaultValues</ClassName>
+	<PropertyName>atField</PropertyName>
+	<Element_Label>AT Field</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>DefaultValues</ClassName>
+	<PropertyName>tableName</PropertyName>
+	<Element_Label>Table Name</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>DefaultValues</ClassName>
+	<PropertyName>valueAsString</PropertyName>
+	<Element_Label>Value As String</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>DigitalObjects</ClassName>
+	<PropertyName>componentId</PropertyName>
+	<Element_Label>Component Id</Element_Label>
+	<Definition>A string that identifies the component within the Digital Object record.</Definition>
+	<Examples>m1.1
+
+1264a</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>DigitalObjects</ClassName>
+	<PropertyName>dateBegin</PropertyName>
+	<Element_Label>Begin</Element_Label>
+	<Definition>REQUIRED FIELD, when Date End is used and if Date Expression or Title is not used. An integer representing the year a single item was created or the first date of an inclusive date range for an aggregation of items. A.D. years are expressed as four digit integers, whereas B.C. dates are expressed as negative numbers. </Definition>
+	<Examples>
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>DigitalObjects</ClassName>
+	<PropertyName>dateEnd</PropertyName>
+	<Element_Label>End</Element_Label>
+	<Definition>REQUIRED FIELD, when Date Begin is used and if Date Expression or Title is not used.The second date in a set of inclusive dates for a range of materials, or the single date in Date Begin field repeated as a Date End expression. A.D. years are expressed as four digit integers, whereas B.C. dates are expressed as negative numbers.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>DigitalObjects</ClassName>
+	<PropertyName>dateExpression</PropertyName>
+	<Element_Label>Date Expression</Element_Label>
+	<Definition>REQUIRED FIELD, if Title or Date Begin and Date End are not used.  A natural language expression for indicating the date of the content captured in the digital object. </Definition>
+	<Examples>Before the writer's death in 1967.
+
+Between 1985 and 1993.
+
+Circa 1887.</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>DigitalObjects</ClassName>
+	<PropertyName>digitalObjectId</PropertyName>
+	<Element_Label>Digital Object Id</Element_Label>
+	<Definition>The internal database number for a specific digital object record. The digital object ID is a unique number, but it is not used outside the AT. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>DigitalObjects</ClassName>
+	<PropertyName>eadDaoActuate</PropertyName>
+	<Element_Label>EAD Dao Acutate</Element_Label>
+	<Definition>A control that defines whether a link occurs automatically or must be requested by the user. It is used in conjunction with the SHOW attribute to determine link behavior in an EAD document. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>DigitalObjects</ClassName>
+	<PropertyName>eadDaoShow</PropertyName>
+	<Element_Label>EAD Dao Show</Element_Label>
+	<Definition>A control that defines whether a remote resource that is the target of a link appears at the point of the link, replaces the existing link, or appears in a new window. It is used in conjunction with the ACTUATE attribute to determine link behavior in an EAD document. The values in the pull down list cannot be modified. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>DigitalObjects</ClassName>
+	<PropertyName>fileVersions</PropertyName>
+	<Element_Label>File Versions</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>DigitalObjects</ClassName>
+	<PropertyName>label</PropertyName>
+	<Element_Label>Label</Element_Label>
+	<Definition>A term used to describe the part and its position within the digital object being described. More often used for the component parts of the digital object than the top-level digital object record. 
+</Definition>
+	<Examples>Audio:  Tape 1, Track 1, Section 1, etc. 
+
+Image:  Image 1, Picture 1, etc.
+
+Text:  Page 1, Leaf 1, First leaf, Chapter 1, Section 1, etc.
+
+Video:  Tape 1, Part 1, Section 1, etc. </Examples>
+</RECORD>
+<RECORD>
+	<ClassName>DigitalObjects</ClassName>
+	<PropertyName>languageCode</PropertyName>
+	<Element_Label>Language Code</Element_Label>
+	<Definition>The name and code of the language that makes up the predominant part of the digital object or a component part. The list of languages and language codes cannot be modified. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>DigitalObjects</ClassName>
+	<PropertyName>metsIdentifier</PropertyName>
+	<Element_Label>Digital Object ID</Element_Label>
+	<Definition>REQUIRED FIELD:  The unique identifier for identifying the Digital Object.</Definition>
+	<Examples>http://ucsd.edu/spcoll/mss0024.xml
+
+caljsioa_85-8-2209hh
+
+ark:/20775/bb3038379j</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>DigitalObjects</ClassName>
+	<PropertyName>objectType</PropertyName>
+	<Element_Label>Object Type</Element_Label>
+	<Definition>A descriptor identifying the basic type of the digital object. This set of descriptors corresponds to the MODS typeOfResource element and cannot be modified. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>DigitalObjects</ClassName>
+	<PropertyName>componentId</PropertyName>
+	<Element_Label>Component Identifier</Element_Label>
+	<Definition></Definition>
+</RECORD>
+<RECORD>
+	<ClassName>DigitalObjects</ClassName>
+	<PropertyName>restrictionsApply</PropertyName>
+	<Element_Label>Restrictions Apply</Element_Label>
+	<Definition>A check box for indicating that restrictions apply. The restrictions can be explained using either Conditions Governing Access note or the Conditions Governing Use Note on the digital object Notes tab. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>DigitalObjects</ClassName>
+	<PropertyName>title</PropertyName>
+	<Element_Label>Title</Element_Label>
+	<Definition>REQUIRED FIELD, if Date Expression or Date Begin and Date end are not used.  The title of the digital object as a whole may be the same as that of the resource or resource component record to which the digital object record is linked. However, it can be different than that expressed in the linked resource record.</Definition>
+	<Examples>Stanley Elkins, grandfather 
+(linked to a resource component record having the title "Family portraits")
+
+Letter to New Atlantic
+(linked to a resource component record having the title "Letter to New Atlantic")
+
+Cedar Fire</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Events</ClassName>
+	<PropertyName>eventDescription</PropertyName>
+	<Element_Label>Event Description</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>Events</ClassName>
+	<PropertyName>eventId</PropertyName>
+	<Element_Label>Event Id</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>Events</ClassName>
+	<PropertyName>sequenceNumber</PropertyName>
+	<Element_Label>Sequence Number</Element_Label>
+	<Definition>A field for indicating the desired sequence of the notes for a resource or resource component</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ExternalReference</ClassName>
+	<PropertyName>actuate</PropertyName>
+	<Element_Label>Actuate</Element_Label>
+	<Definition>A control that defines whether a link occurs automatically or must be requested by the user. It is used in conjunction with the SHOW attribute to determine link behavior. The values in the pull down list cannot be modified.</Definition>
+	<Examples>
+
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>ExternalReference</ClassName>
+	<PropertyName>content</PropertyName>
+	<Element_Label>Content</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ExternalReference</ClassName>
+	<PropertyName>eadIngestProblem</PropertyName>
+	<Element_Label>EAD Ingest Problem</Element_Label>
+	<Definition>A field for parking EAD elements in the source EAD that do not map to any AT field. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ExternalReference</ClassName>
+	<PropertyName>href</PropertyName>
+	<Element_Label>HREF</Element_Label>
+	<Definition>The location of the file, ideally a URI, since that provides the most functionality for this feature. </Definition>
+	<Examples>www.library.caluni.edu/archives/smith.doc</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>ExternalReference</ClassName>
+	<PropertyName>repeatingDataType</PropertyName>
+	<Element_Label>Repeating Data Type</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ExternalReference</ClassName>
+	<PropertyName>sequenceNumber</PropertyName>
+	<Element_Label>External Reference Sequence Number</Element_Label>
+	<Definition>The number of the reference to an external document in a list of such references.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>ExternalReference</ClassName>
+	<PropertyName>show</PropertyName>
+	<Element_Label>Show </Element_Label>
+	<Definition>A control that defines whether a remote resource that is the target of a link appears at the point of the link, replaces the existing link, or appears in a new window. It is used in conjunction with the ACTUATE attribute to determine link behavior. The values in the pull down list cannot be modified. </Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>ExternalReference</ClassName>
+	<PropertyName>title</PropertyName>
+	<Element_Label>Title</Element_Label>
+	<Definition>The title of an external document referenced from the accession record. The document may be of any form or content. A web accessible file, a network accessible file, a file on the same computer as the application, or an analog document in a file cabinet may each be referenced here.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>FileVersions</ClassName>
+	<PropertyName>eadDaoActuate</PropertyName>
+	<Element_Label>EAD Dao Acutate</Element_Label>
+	<Definition>A control that defines whether a link occurs automatically or must be requested by the user. It is used in conjunction with the SHOW attribute to determine link behavior. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>FileVersions</ClassName>
+	<PropertyName>eadDaoShow</PropertyName>
+	<Element_Label>EAD Dao Show</Element_Label>
+	<Definition>A control that defines whether a remote resource that is the target of a link appears at the point of the link, replaces the existing link, or appears in a new window. It is used in conjunction with the ACTUATE attribute to determine link behavior. The values in the pull down list cannot be modified. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>FileVersions</ClassName>
+	<PropertyName>fileVersionId</PropertyName>
+	<Element_Label>File Version Id</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>FileVersions</ClassName>
+	<PropertyName>sequenceNumber</PropertyName>
+	<Element_Label>Sequence Number</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>FileVersions</ClassName>
+	<PropertyName>uri</PropertyName>
+	<Element_Label>URI</Element_Label>
+	<Definition>REQUIRED FIELD:  The location, presumably web accessible, of the file containing the digital content described in the digital object record. </Definition>
+	<Examples>http://www.cdu.edu/ynhsc/trout1.tiff
+
+http://www.cdu.edu/ynhsc/snakeriverjourney.pdf
+
+http://www.cdu/edu/ynhsc/flycast.wav</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>FileVersions</ClassName>
+	<PropertyName>useStatement</PropertyName>
+	<Element_Label>Use Statement</Element_Label>
+	<Definition>REQUIRED FIELD: A descriptor indicating the intended use of the file referenced in the URI field. The list of values may be modified. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Index</ClassName>
+	<PropertyName>content</PropertyName>
+	<Element_Label>Content</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>Index</ClassName>
+	<PropertyName>eadIngestProblem</PropertyName>
+	<Element_Label>Ead Ingest Problem</Element_Label>
+	<Definition>A field for parking EAD elements in the source EAD that do not map to any AT field.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Index</ClassName>
+	<PropertyName>note</PropertyName>
+	<Element_Label>Note</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>Index</ClassName>
+	<PropertyName>repeatingDataType</PropertyName>
+	<Element_Label>Repeating Data Type</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>Index</ClassName>
+	<PropertyName>sequenceNumber</PropertyName>
+	<Element_Label>Sequence Number</Element_Label>
+	<Definition>An integer for indicating the desired sequence of the notes for a resource or resource component.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Index</ClassName>
+	<PropertyName>title</PropertyName>
+	<Element_Label>Title</Element_Label>
+	<Definition>A label or title for the note that is different than the note type expression. Outputs as a &lt;head&gt; in an EAD element. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>IndexItems</ClassName>
+	<PropertyName>itemType</PropertyName>
+	<Element_Label>Item Type</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>IndexItems</ClassName>
+	<PropertyName>itemValue</PropertyName>
+	<Element_Label>Item Value</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>IndexItems</ClassName>
+	<PropertyName>reference</PropertyName>
+	<Element_Label>Reference</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>IndexItems</ClassName>
+	<PropertyName>referenceText</PropertyName>
+	<Element_Label>Reference Text</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>IndexItems</ClassName>
+	<PropertyName>sequenceNumber</PropertyName>
+	<Element_Label>Sequence Number</Element_Label>
+	<Definition>An integer for indicating the desired sequence of the notes for a resource or resource component.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ListDefinition</ClassName>
+	<PropertyName>content</PropertyName>
+	<Element_Label>Content</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ListDefinition</ClassName>
+	<PropertyName>eadIngestProblem</PropertyName>
+	<Element_Label>Ead Ingest Problem</Element_Label>
+	<Definition>A field for parking EAD elements in the source EAD that do not map to any AT field.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ListDefinition</ClassName>
+	<PropertyName>note</PropertyName>
+	<Element_Label>Note</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ListDefinition</ClassName>
+	<PropertyName>repeatingDataType</PropertyName>
+	<Element_Label>Repeating Data Type</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ListDefinition</ClassName>
+	<PropertyName>sequenceNumber</PropertyName>
+	<Element_Label>Sequence Number</Element_Label>
+	<Definition>An integer for indicating the desired sequence of the notes for a resource or resource component.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ListDefinition</ClassName>
+	<PropertyName>title</PropertyName>
+	<Element_Label>Title</Element_Label>
+	<Definition>A label or title for the note that is different than the note type expression. Outputs as a &lt;head&gt; in an EAD element. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ListDefinitionItems</ClassName>
+	<PropertyName>itemValue</PropertyName>
+	<Element_Label>Item Value</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ListDefinitionItems</ClassName>
+	<PropertyName>label</PropertyName>
+	<Element_Label>Label</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ListDefinitionItems</ClassName>
+	<PropertyName>sequenceNumber</PropertyName>
+	<Element_Label>Sequence Number</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ListOrdered</ClassName>
+	<PropertyName>content</PropertyName>
+	<Element_Label>Content</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ListOrdered</ClassName>
+	<PropertyName>eadIngestProblem</PropertyName>
+	<Element_Label>Ead Ingest Problem</Element_Label>
+	<Definition>A field for parking EAD elements in the source EAD that do not map to any AT field.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ListOrdered</ClassName>
+	<PropertyName>note</PropertyName>
+	<Element_Label>Note</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ListOrdered</ClassName>
+	<PropertyName>numeration</PropertyName>
+	<Element_Label>Numeration</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ListOrdered</ClassName>
+	<PropertyName>repeatingDataType</PropertyName>
+	<Element_Label>Repeating Data Type</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ListOrdered</ClassName>
+	<PropertyName>sequenceNumber</PropertyName>
+	<Element_Label>Sequence Number</Element_Label>
+	<Definition>An integer for indicating the desired sequence of the notes for a resource or resource component.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ListOrdered</ClassName>
+	<PropertyName>title</PropertyName>
+	<Element_Label>Title</Element_Label>
+	<Definition>A label or title for the note that is different than the note type expression. Outputs as a &lt;head&gt; in an EAD element. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ListOrderedItems</ClassName>
+	<PropertyName>itemValue</PropertyName>
+	<Element_Label>Item Value</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>ListOrderedItems</ClassName>
+	<PropertyName>sequenceNumber</PropertyName>
+	<Element_Label>Sequence Number</Element_Label>
+	<Definition>An integer for indicating the desired sequence of the notes for a resource or resource component.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Locations</ClassName>
+	<PropertyName>area</PropertyName>
+	<Element_Label>Area</Element_Label>
+	<Definition>The name or descriptor for the area within the shelving location in which the resource is located to provide context for values entered in either the shelving coordinates, the barcode, or the classification elements.</Definition>
+	<Examples>Manuscript Stacks
+
+Oversize shelves
+
+Video collection</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Locations</ClassName>
+	<PropertyName>barcode</PropertyName>
+	<Element_Label>Barcode</Element_Label>
+	<Definition>REQUIRED FIELD, if building and coordinate 1 or classification are not used.  The barcode applied to a container located at the location specified in the record.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Locations</ClassName>
+	<PropertyName>building</PropertyName>
+	<Element_Label>Building</Element_Label>
+	<Definition>REQUIRED FIELD, with Coordinate 1, if neither barcode or classification are used. The name of the building in which the shelving area is located. </Definition>
+	<Examples>Geisel Library
+
+Bobst Library
+
+La Jolla Historical Society
+
+Qualcomm Technical Building</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Locations</ClassName>
+	<PropertyName>classificationNumber</PropertyName>
+	<Element_Label>Classification Number</Element_Label>
+	<Definition>REQUIRED FIELD, if building and coordinate 1 or barcode are not used. The classification number applied to a container or sequence of containers located at the location specified in the record.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Locations</ClassName>
+	<PropertyName>coordinate1</PropertyName>
+	<Element_Label>Coordinate 1</Element_Label>
+	<Definition>The identifier for the range in a stacks area.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Locations</ClassName>
+	<PropertyName>coordinate1AlphaNumIndicator</PropertyName>
+	<Element_Label>Coordinate 1 Alphanumeric Indicator</Element_Label>
+	<Definition>An alphanumeric indicator for the number of the value expressed in the corresponding Coordinate Label.</Definition>
+	<Examples>1a  [range]
+
+5b  [Mapcase]
+
+1d  [Bin]</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Locations</ClassName>
+	<PropertyName>coordinate1Label</PropertyName>
+	<Element_Label>Coordinate 1 Label</Element_Label>
+	<Definition>A term designating the first coordinate for the location where the material is permanently shelved. </Definition>
+	<Examples>Range
+
+Map case
+
+File cabinet
+
+Bin</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Locations</ClassName>
+	<PropertyName>coordinate1NumericIndicator</PropertyName>
+	<Element_Label>Coordinate 1 Numeric Indicator</Element_Label>
+	<Definition>REQUIRED FIELD, with building if neither barcode or classification are used:  A numeric indicator for the number of the value expressed in the corresponding Coordinate Label. Required unless barcode or classification is expressed. </Definition>
+	<Examples>1 [range]
+
+5 [Mapcase]
+
+22 [Bin]</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Locations</ClassName>
+	<PropertyName>coordinate2</PropertyName>
+	<Element_Label>Coordinate 2</Element_Label>
+	<Definition>The identifier for the section in a range of shelves. </Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Locations</ClassName>
+	<PropertyName>coordinate2AlphaNumIndicator</PropertyName>
+	<Element_Label>Coordinate 2 Alphanumeric Indicator</Element_Label>
+	<Definition>An alphanumeric indicator for the number of the value expressed in the corresponding Coordinate Label.</Definition>
+	<Examples>2A [Section]
+
+B2 [Drawer]
+
+1c [Slot]
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Locations</ClassName>
+	<PropertyName>coordinate2Label</PropertyName>
+	<Element_Label>Coordinate 2 Label</Element_Label>
+	<Definition>A term designating the second coordinate for the location where the material is permanently shelved. </Definition>
+	<Examples>[Range]-Section
+
+[Mapcase]-Drawer
+
+[File case]-Drawer
+
+[Bin]-Slot</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Locations</ClassName>
+	<PropertyName>coordinate2NumericIndicator</PropertyName>
+	<Element_Label>Coordinate 2 Numeric Indicator</Element_Label>
+	<Definition>A numeric indicator for the number of the value expressed in the corresponding Coordinate Label.</Definition>
+	<Examples>A [Section]
+
+2 [Drawer]
+
+18 [Slot]
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Locations</ClassName>
+	<PropertyName>coordinate3</PropertyName>
+	<Element_Label>Coordinate 3</Element_Label>
+	<Definition>The identifier for the shelf in a section within a range of shelves. </Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Locations</ClassName>
+	<PropertyName>coordinate3AlphaNumIndicator</PropertyName>
+	<Element_Label>Coordinate 3 Alphanumeric Indicator</Element_Label>
+	<Definition>An alphanumeric indicator for the number of the value expressed in the corresponding Coordinate Label.</Definition>
+	<Examples>1f [Shelf]</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Locations</ClassName>
+	<PropertyName>coordinate3Label</PropertyName>
+	<Element_Label>Coordinate 3 Label</Element_Label>
+	<Definition>A term designating the third coordinate for the location where the material is permanently shelved. </Definition>
+	<Examples>[Range]-[Section]-Shelf</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Locations</ClassName>
+	<PropertyName>coordinate3NumericIndicator</PropertyName>
+	<Element_Label>Coordinate 3 Numeric Indicator</Element_Label>
+	<Definition>A numeric indicator for the number of the value expressed in the corresponding Coordinate Label.</Definition>
+	<Examples>5 [Shelf]</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Locations</ClassName>
+	<PropertyName>coordinates</PropertyName>
+	<Element_Label>Coordinates</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>Locations</ClassName>
+	<PropertyName>floor</PropertyName>
+	<Element_Label>Floor</Element_Label>
+	<Definition>The designation (number, letter, etc.) of the floor in the building in which the shelving area is located.</Definition>
+	<Examples>Main floor
+
+Floor 13
+
+Ist floor, left wing</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Locations</ClassName>
+	<PropertyName>locationId</PropertyName>
+	<Element_Label>Location Id</Element_Label>
+	<Definition>The internal database number for a specific location record. The Location ID is a unique number, but it is not used outside the AT. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Locations</ClassName>
+	<PropertyName>repository</PropertyName>
+	<Element_Label>Repository</Element_Label>
+	<Definition>The repository to which the shelving location is assigned. Typically, the repository having custody of the material to be shelved.</Definition>
+	<Examples>Fales Library
+
+University Archives
+
+Mandeville Special Collections Library
+
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Locations</ClassName>
+	<PropertyName>room</PropertyName>
+	<Element_Label>Room</Element_Label>
+	<Definition>The name of the room in which the shelving area is located.</Definition>
+	<Examples>Rare Book and Manuscript Library
+
+Stacks
+
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>LookupList</ClassName>
+	<PropertyName>listName</PropertyName>
+	<Element_Label>List Name</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>LookupList</ClassName>
+	<PropertyName>listType</PropertyName>
+	<Element_Label>List Type</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>LookupList</ClassName>
+	<PropertyName>lookupListId</PropertyName>
+	<Element_Label>Lookup List Id</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>LookupList</ClassName>
+	<PropertyName>pairedValues</PropertyName>
+	<Element_Label>Paired Values</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>LookupList</ClassName>
+	<PropertyName>restrictToNmtoken</PropertyName>
+	<Element_Label>Restrict to NMTOKEM</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>LookupListItems</ClassName>
+	<PropertyName>code</PropertyName>
+	<Element_Label>Code</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>LookupListItems</ClassName>
+	<PropertyName>editable</PropertyName>
+	<Element_Label>Editable</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>LookupListItems</ClassName>
+	<PropertyName>listItem</PropertyName>
+	<Element_Label>List Item</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>NameContactNotes</ClassName>
+	<PropertyName>label</PropertyName>
+	<Element_Label>Label</Element_Label>
+	<Definition>A label for characterizing the nature of the note. The label will be kept in association with the note for which it was created.</Definition>
+	<Examples>Initial contact
+
+Follow-up contact
+
+Conversation with Mr. Smith's daughter
+
+Appraisal survey
+
+Gift agreement
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>NameContactNotes</ClassName>
+	<PropertyName>noteText</PropertyName>
+	<Element_Label>Note</Element_Label>
+	<Definition>A note for clarifying any of the data recorded in the contact fields, or for describing an event or transaction regarding the entity recorded in the name record. </Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>NameContactNotes</ClassName>
+	<PropertyName>sequenceNumber</PropertyName>
+	<Element_Label>Name Contact Note Sequence</Element_Label>
+	<Definition>An integer for indicating the sequential position of the note in relation to other notes for the same contact information.</Definition>
+	<Examples> </Examples>
+</RECORD>
+<RECORD>
+	<ClassName>NameContactNotes</ClassName>
+	<PropertyName>simpleRepeatableNoteId</PropertyName>
+	<Element_Label>Simple Repeatable Note Id</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>citation</PropertyName>
+	<Element_Label>Citation</Element_Label>
+	<Definition>A bibliographic reference citing any sources used for establishing the name entry and the name description. 
+
+
+See DACS 11.26
+</Definition>
+	<Examples>Eichenwald, Kurt. Conspiracy of fools: a true story. New York: Broadway Books, 2005, for "Glissan, Benjamin" and "Skillings, Jeffrey"</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>contactAddress1</PropertyName>
+	<Element_Label>Address 1</Element_Label>
+	<Definition>A street address for the entity recorded in the name record.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>contactAddress2</PropertyName>
+	<Element_Label>Address 2</Element_Label>
+	<Definition>Additional address information for the entity recorded in the name record.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>contactCity</PropertyName>
+	<Element_Label>City</Element_Label>
+	<Definition>The name of the city or town in which the entity is located.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>contactCountry</PropertyName>
+	<Element_Label>Country</Element_Label>
+	<Definition>The name of the country in which the entity is located.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>contactEmail</PropertyName>
+	<Element_Label>E-mail</Element_Label>
+	<Definition>The primary email address for contacting the person.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>contactFax</PropertyName>
+	<Element_Label>FAX</Element_Label>
+	<Definition>The primary FAX number for contacting the entity.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>contactMailCode</PropertyName>
+	<Element_Label>Mail Code</Element_Label>
+	<Definition>The zip code or other mail code used for the entity's address.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>contactName</PropertyName>
+	<Element_Label>Name</Element_Label>
+	<Definition>A name in natural order of a person who serves as the primary contact for the entity recorded in the name record.</Definition>
+	<Examples>Shirley Watkins (contact for the UCSD Chancellor)
+
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>contactPhone</PropertyName>
+	<Element_Label>Telephone</Element_Label>
+	<Definition>The primary telephone number for contacting the entity.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>contactRegion</PropertyName>
+	<Element_Label>Region</Element_Label>
+	<Definition>The state, province, etc. in which the city is located.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>corporatePrimaryName</PropertyName>
+	<Element_Label>Primary Name</Element_Label>
+	<Definition>REQUIRED FIELD. The primary name by which a corporate body or conference is known. 
+
+See DACS 9.8, 11.5, 14ff
+</Definition>
+	<Examples>Bollingen Foundation
+
+Irvine Company
+
+United States (for United States. Bureau of Insular Affairs.)
+
+University of California, San Diego (for University of California, San Diego)
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>corporateSubordinate1</PropertyName>
+	<Element_Label>Subordinate 1</Element_Label>
+	<Definition>The name of an organizational unit within the corporate body named in the primary name entry.
+
+See DACS 9.8, 11.5, 14ff
+</Definition>
+	<Examples>Bureau of Insular Affairs (for United States. Bureau of Insular Affairs.)
+
+Academic Computing Services (for University of California, San Diego. Academic Computing Services)
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>corporateSubordinate2</PropertyName>
+	<Element_Label>Subordinate 2</Element_Label>
+	<Definition>The name of a corporate unit subordinate to the unit or jurisdiction entered as the primary name. Also could be the name of a meeting entered under a jurisdiction. , city section,. a title. or a jurisdiction name that is also an ecclesiastical entity. 
+
+See DACS 9.8, 11.5, 14ff
+</Definition>
+	<Examples>House (for United States. 40th Congress., 3d sess., 1868-1869. House)
+
+
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>createSortNameAutomatically</PropertyName>
+	<Element_Label>Create Sort Name Automatically</Element_Label>
+	<Definition>Unchecking the Create Sort Name Automatically checkbox enables the Sort Name to be manually edited. 
+
+Removing the Sort Name completely from a record will cause the record not to validate.
+</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>descriptionNote</PropertyName>
+	<Element_Label>Description Note</Element_Label>
+	<Definition>A note providing biographical background in the case of a person or family, or an organizational / administrative history in the case of a corporate body.
+
+Include any of the sub-elements noted in DACS. Enter as prose, list or combination of prose and list.
+
+See DACS 10.13-10.36, 11.12
+</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>descriptionType</PropertyName>
+	<Element_Label>Description Type</Element_Label>
+	<Definition>An indication of what kind of name description is recorded in the description field. Default list value can be modified.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>familyName</PropertyName>
+	<Element_Label>Family Name</Element_Label>
+	<Definition>REQUIRED FIELD. The last name, or surname for a family. 
+
+See DACS 9.8, 11.5, 12.29ff
+</Definition>
+	<Examples>Farquhar (for Farquhar family)
+
+Giroux (for Giroux family)
+
+Charron-Lecorre (for Charron-Lecorre family)
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>familyNamePrefix</PropertyName>
+	<Element_Label>Prefix</Element_Label>
+	<Definition>A term associated with the family name and preceding it.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>nameId</PropertyName>
+	<Element_Label>Name Id</Element_Label>
+	<Definition>The internal database number for a specific names record. The nameID is a unique number, but it is not used outside the AT. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>nameRule</PropertyName>
+	<Element_Label>Rules</Element_Label>
+	<Definition>REQUIRED FIELD, if Name Source is not used. An indication of the rules used to formulate the name entry. Default list values can be modified.
+
+See DACS 11.20
+</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>nameSource</PropertyName>
+	<Element_Label>Source</Element_Label>
+	<Definition>REQUIRED FIELD, if Name Rules is not used. An indicator of the authoritative source from which the name was taken. Default list values can be modified. </Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>nameType</PropertyName>
+	<Element_Label>Name Type</Element_Label>
+	<Definition>REQUIRED FIELD.  An indicator of the type of name being described: 1: corporate body, 2: person, 3: family. The list of these three types may not be modified. 
+
+See DACS 11.6</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>number</PropertyName>
+	<Element_Label>Number</Element_Label>
+	<Definition>For personal names, a roman numeral or a roman numeral and a subsequent part of a forename. 
+
+For corporate names, the number of a part / section / meeting. 
+
+
+
+</Definition>
+	<Examples>II Comnenus (For John II Comnenus, Emperor of the East
+
+II (For John Paul II)
+
+97th, 2nd session (For United States Congress, 97th, 2nd session)</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>personalDates</PropertyName>
+	<Element_Label>Dates</Element_Label>
+	<Definition>A date expression used for distinguishing names that are alike in other respects. 
+
+See DACS 9.8, 11.5, 12.17
+</Definition>
+	<Examples>1874-1965 (for Churchill, Winston, Sir, 1874-1965)
+
+d. 1877 (for Black Foot, Chief, d. 1877)
+
+1088-1143 (for John II Comnenus. Emperor of the East, 1088-1143) 
+
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>personalDirectOrder</PropertyName>
+	<Element_Label>Direct Order</Element_Label>
+	<Definition>A check box for indicating if the name should be displayed in inverted (last name, first name) order or in natural order (first name last name). If checked, the sort name will be in inverted order; if unchecked, it will be in natural order. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>personalFullerForm</PropertyName>
+	<Element_Label>Fuller Form</Element_Label>
+	<Definition>The fuller form of first and middle names typically.
+
+See DACS 9.8, 11.5, 12.18
+</Definition>
+	<Examples>Hilda Doolittle (for H.D., Hilda Doolittle, 1886-1961)
+
+Geoffrey Austin for Gresham, G. 
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>personalPrefix</PropertyName>
+	<Element_Label>Prefix</Element_Label>
+	<Definition>Any word associated with a name that in regular use would come before the name, such as Mr., Miss, etc.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>personalPrimaryName</PropertyName>
+	<Element_Label>Primary Name</Element_Label>
+	<Definition>REQUIRED FIELD. The last name, surname, or primary name of a person.
+
+See DACS 9.8, 11.5, 12.1-12.11
+</Definition>
+	<Examples>Churchill (for Churchill, Winston, Sir, 1874-1965)
+
+Black Foot (for Black Foot, Chief, d. 1877) 
+
+H.D. (for H. D., Hilda Doolittle, 1886-1961
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>personalRestOfName</PropertyName>
+	<Element_Label>Rest of Name</Element_Label>
+	<Definition>The first name element or forename and additional names, e.g, middle names, for the person named in the record. 
+
+See DACS 9.8, 11.5, 12.1-12.11
+</Definition>
+	<Examples>Winston (for Churchill, Winston, Sir, 1874-1965)
+
+Humphrey (for Ward, Humphrey, Mrs., 1851-1920) 
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>personalSuffix</PropertyName>
+	<Element_Label>Suffix</Element_Label>
+	<Definition>A term following the name that qualifies the name and is not a title.</Definition>
+	<Examples>Jr.
+Sr.
+fils
+
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>personalTitle</PropertyName>
+	<Element_Label>Title</Element_Label>
+	<Definition>A title that is part of the name.
+
+See DACS 9.8, 11.5, 12.12-12.17
+</Definition>
+	<Examples>Sir (for Churchill, Winston, Sir, 1874-1965)
+
+Chief (for Black Foot, Chief, d. 1877)
+
+Emperor of the East (for John II Comnenus. Emperor of the East.)
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>qualifier</PropertyName>
+	<Element_Label>Qualifier</Element_Label>
+	<Definition>A term or phrase for distinguishing a name from another of the same form. The qualifier may be a place term, a date, or a generic descriptor.
+
+See DACS 11.5, 14.4 - 14.11</Definition>
+	<Examples>Bronx, New York, N.Y. as a qualifier for "St. James Church"
+
+2nd Circuit as a qualifier for "Court of Appeals"
+
+Florists as a qualifier for "Smith family"</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>salutation</PropertyName>
+	<Element_Label>Salutation</Element_Label>
+	<Definition>The form of the name to be used in a salutation in correspondence or other written documents. </Definition>
+	<Examples>Mr. Kennedy (for "Kennedy, X. J.")
+
+Mr. &amp; Mrs. Joseph Paint (for "Paint, Joseph")
+
+Mr. Bartleby (for "Amherst Scriveners")</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Names</ClassName>
+	<PropertyName>sortName</PropertyName>
+	<Element_Label>Sort Name</Element_Label>
+	<Definition>REQUIRED FIELD, automatically generated from recorded data. The manner in which the name elements recorded will be arranged and displayed in exports and reports. 
+
+The sort name may be edited by unchecking the Create Sort Name Automatically checkbox and then entering the form of the sort name desired. "
+
+Removing the Sort Name completely from a record will cause the record not to validate.
+</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>NonPreferredNames</ClassName>
+	<PropertyName>corporatePrimaryName</PropertyName>
+	<Element_Label>Primary Name</Element_Label>
+	<Definition>REQUIRED FIELD. The primary name by which a corporate body or conference is known. 
+
+See DACS 9.8, 11.5, 14ff
+</Definition>
+	<Examples>Bollingen Foundation
+
+Irvine Company
+
+United States (for United States. Bureau of Insular Affairs.)
+
+University of California, San Diego (for University of California, San Diego)
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>NonPreferredNames</ClassName>
+	<PropertyName>corporateSubordinate1</PropertyName>
+	<Element_Label>Subordinate 1</Element_Label>
+	<Definition>The name of an organizational unit within the corporate body named in the primary name entry.
+
+See DACS 9.8, 11.5, 14ff
+</Definition>
+	<Examples>Bureau of Insular Affairs (for United States. Bureau of Insular Affairs.)
+
+Academic Computing Services (for University of California, San Diego. Academic Computing Services)
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>NonPreferredNames</ClassName>
+	<PropertyName>corporateSubordinate2</PropertyName>
+	<Element_Label>Subordinate 2</Element_Label>
+	<Definition>The name of a corporate unit subordinate to the unit or jurisdiction entered as the primary name. Also could be the name of a meeting entered under a jurisdiction, city section, a title  or a jurisdiction name that is also an ecclesiastical entity
+. 
+See DACS 9.8, 11.5, 14ff
+</Definition>
+	<Examples>House (for United States. 40th Congress., 3d sess., 1868-1869. House)</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>NonPreferredNames</ClassName>
+	<PropertyName>createSortNameAutomatically</PropertyName>
+	<Element_Label>Create Sort Name Automatically</Element_Label>
+	<Definition>Unchecking the Create Sort Name Automatically checkbox enables the Sort Name to be manually edited.
+
+Removing the sort name completely from the record will cause the record not validate.
+</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>NonPreferredNames</ClassName>
+	<PropertyName>familyName</PropertyName>
+	<Element_Label>Family Name</Element_Label>
+	<Definition>REQUIRED FIELD. The last or surname for a family. 
+
+See DACS 9.8, 11.5, 12.29ff
+</Definition>
+	<Examples>Farquhar (for Farquhar family)
+
+Giroux (for Giroux family)
+
+Charron-Lecorre (for Charron-Lecorre family)
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>NonPreferredNames</ClassName>
+	<PropertyName>familyNamePrefix</PropertyName>
+	<Element_Label>Prefix</Element_Label>
+	<Definition>A term associated with the family name and preceding it.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>NonPreferredNames</ClassName>
+	<PropertyName>nameId</PropertyName>
+	<Element_Label>Name Id</Element_Label>
+	<Definition>The internal database number for a specific names record. The nameID is a unique number, but it is not used outside the AT. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>NonPreferredNames</ClassName>
+	<PropertyName>nameType</PropertyName>
+	<Element_Label>Name Type</Element_Label>
+	<Definition>An indicator of the type of name being described: 1: corporate body, 2: person, 3: family. 
+
+For Non-Preferred Names the name type is inferred from the type of the authorized name to which the non-preferred name is linked
+</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>NonPreferredNames</ClassName>
+	<PropertyName>number</PropertyName>
+	<Element_Label>Number</Element_Label>
+	<Definition>For personal names, a roman numeral or a roman numeral and a subsequent part of a forename. 
+
+For corporate names, the number of a part / section / meeting. 
+</Definition>
+	<Examples>II Comnenus (For John II Comnenus, Emperor of the East
+
+II (For John Paul II)
+
+97th, 2nd session (For United States Congress, 97th, 2nd session)
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>NonPreferredNames</ClassName>
+	<PropertyName>personalDates</PropertyName>
+	<Element_Label>Dates</Element_Label>
+	<Definition>A date expression used for distinguishing names that are alike in other respects. 
+
+See DACS 9.8, 11.5, 12.17
+</Definition>
+	<Examples>1874-1965 (for Churchill, Winston, Sir, 1874-1965)
+
+d. 1877 (for Black Foot, Chief, d. 1877)
+
+1088-1143 (for John II Comnenus. Emperor of the East, 1088-1143) 
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>NonPreferredNames</ClassName>
+	<PropertyName>personalDirectOrder</PropertyName>
+	<Element_Label>Direct Order</Element_Label>
+	<Definition>A check box for indicating if the name should be displayed in inverted (last name, first name) order or in natural order (first name last name). If checked, the sort name will be in inverted order; if unchecked, it will be in natural order. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>NonPreferredNames</ClassName>
+	<PropertyName>personalFullerForm</PropertyName>
+	<Element_Label>Fuller Form</Element_Label>
+	<Definition>The fuller form of first and middle names typically.
+
+See DACS 9.8, 11.5, 12.18
+</Definition>
+	<Examples>Hilda Doolittle (for H.D., Hilda Doolittle, 1886-1961)
+
+Geoffrey Austin for Gresham, G. 
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>NonPreferredNames</ClassName>
+	<PropertyName>personalPrefix</PropertyName>
+	<Element_Label>Prefix</Element_Label>
+	<Definition>Any word associated with a name that in regular use would come before the name, such as Mr., Miss, etc.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>NonPreferredNames</ClassName>
+	<PropertyName>personalPrimaryName</PropertyName>
+	<Element_Label>Primary Name</Element_Label>
+	<Definition>REQUIRED FIELD. The last name, surname, or primary name of a person.
+
+See DACS 9.8, 11.5, 12.1-12.11
+</Definition>
+	<Examples>Churchill (for Churchill, Winston, Sir, 1874-1965)
+
+Black Foot (for Black Foot, Chief, d. 1877) 
+
+H.D. (for H. D., Hilda Doolittle, 1886-1961
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>NonPreferredNames</ClassName>
+	<PropertyName>personalRestOfName</PropertyName>
+	<Element_Label>Rest of Name</Element_Label>
+	<Definition>The first name element or forename and additional names, e.g, middle, for the person named in the record. 
+
+See DACS 9.8, 11.5, 12.1-12.11
+</Definition>
+	<Examples>Winston (for Churchill, Winston, Sir, 1874-1965)
+
+Humphrey (for Ward, Humphrey, Mrs., 1851-1920)
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>NonPreferredNames</ClassName>
+	<PropertyName>personalSuffix</PropertyName>
+	<Element_Label>Suffix</Element_Label>
+	<Definition>A term following the name that qualifies the name and is not a title.</Definition>
+	<Examples>Jr.
+Sr.
+fils
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>NonPreferredNames</ClassName>
+	<PropertyName>personalTitle</PropertyName>
+	<Element_Label>Title</Element_Label>
+	<Definition>A title that is part of the name.
+
+See DACS 9.8, 11.5, 12.12-12.17
+</Definition>
+	<Examples>Sir (for Churchill, Winston, Sir, 1874-1965)
+
+Chief (for Black Foot, Chief, d. 1877)
+
+Emperor of the East (for John II Comnenus. Emperor of the East.)
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>NonPreferredNames</ClassName>
+	<PropertyName>qualifier</PropertyName>
+	<Element_Label>Qualifier</Element_Label>
+	<Definition>A term or phrase for distinguishing a name from another of the same form. The qualifier may be a place term, a date, or a generic descriptor.
+
+See DACS 11.5, 14.4 - 14.11</Definition>
+	<Examples>Bronx, New York, N.Y. as a qualifier for "St. James Church"
+
+2nd Circuit as a qualifier for "Court of Appeals"
+
+Florists as a qualifier for "Smith family"</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>NonPreferredNames</ClassName>
+	<PropertyName>sortName</PropertyName>
+	<Element_Label>Sort Name</Element_Label>
+	<Definition>The manner in which the name elements recorded will be arranged and displayed in exports and reports. 
+
+The sort name may be edited by unchecking the Create Sort Name Automatically checkbox and then entering the form of the sort name desired.. Removing the sort name completely from the record will cause the record not to validate
+</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>NotesEtcTypes</ClassName>
+	<PropertyName>notesEtcLabel</PropertyName>
+	<Element_Label>Label</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>NotesEtcTypes</ClassName>
+	<PropertyName>notesEtcName</PropertyName>
+	<Element_Label>Notes Etc. Name</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>Repositories</ClassName>
+	<PropertyName>address1</PropertyName>
+	<Element_Label>Address 1</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>Repositories</ClassName>
+	<PropertyName>address2</PropertyName>
+	<Element_Label>Address 2</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>Repositories</ClassName>
+	<PropertyName>address3</PropertyName>
+	<Element_Label>Address 3</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>Repositories</ClassName>
+	<PropertyName>agencyCode</PropertyName>
+	<Element_Label>Agency Code</Element_Label>
+	<Definition>A code compliant with ISO/DIS 15511 Information and Documentation International Standard Identifier for Libraries and Related Organizations (ISIL). Used in headers of various AT exports.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Repositories</ClassName>
+	<PropertyName>brandingDevice</PropertyName>
+	<Element_Label>Branding Device</Element_Label>
+	<Definition>A URL or other file location identifier referencing a file that contains a branding device to be used in the repository's online finding aids. A typical branding device is a university seal. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Repositories</ClassName>
+	<PropertyName>city</PropertyName>
+	<Element_Label>City / Town</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>Repositories</ClassName>
+	<PropertyName>country</PropertyName>
+	<Element_Label>Country</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>Repositories</ClassName>
+	<PropertyName>countryCode</PropertyName>
+	<Element_Label>Country Code</Element_Label>
+	<Definition>A unique code for the country in which the materials being described are held. Codes are to be taken from ISO 3166-1 Codes for the Representation of Names of Countries, column A2. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Repositories</ClassName>
+	<PropertyName>descriptiveLanguage</PropertyName>
+	<Element_Label>Descriptive Language</Element_Label>
+	<Definition>The language typically used by the repository for describing archival materials in its custody. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Repositories</ClassName>
+	<PropertyName>email</PropertyName>
+	<Element_Label>Email</Element_Label>
+	<Definition>The email address by which the repository may be contacted. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Repositories</ClassName>
+	<PropertyName>fax</PropertyName>
+	<Element_Label>Fax</Element_Label>
+	<Definition>The telephone number to which a FAX can be sent to the repository.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Repositories</ClassName>
+	<PropertyName>institutionName</PropertyName>
+	<Element_Label>Institution Name</Element_Label>
+	<Definition>The name of the parent institution of which the repository is a part</Definition>
+	<Examples>Carpe Diem University (for Your Name Here Special Collections Library)
+
+UC San Diego (for Mandeville Special Collections Library)
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Repositories</ClassName>
+	<PropertyName>mailCode</PropertyName>
+	<Element_Label>Mail Code</Element_Label>
+	<Definition>In the United States, the zip code, which is a five or nine digit number. Or a similar number for other countries. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Repositories</ClassName>
+	<PropertyName>ncesId</PropertyName>
+	<Element_Label>NCES ID</Element_Label>
+	<Definition>A numeric identifier assigned to educational institutions by the National Center for Education Statistics.</Definition>
+	<Examples>063153010004</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Repositories</ClassName>
+	<PropertyName>region</PropertyName>
+	<Element_Label>Region</Element_Label>
+	<Definition>The state, province, or other region in which the city or town is located.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Repositories</ClassName>
+	<PropertyName>RepositoryId</PropertyName>
+	<Element_Label>Repository Id</Element_Label>
+	<Definition>The internal database number for a specific repository record. The repositoryID is a unique number, but it is not used outside the AT.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Repositories</ClassName>
+	<PropertyName>repositoryName</PropertyName>
+	<Element_Label>Repository</Element_Label>
+	<Definition>REQUIRED FIELD. The name of the repository which has administrative responsibility for and custody of the materials described in the accession, resource, and digital object modules of the application. </Definition>
+	<Examples>Your Name Here Special Collections Library
+
+Mandeville Special Collections Library
+
+Rancho Santa Fe Historical Society
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Repositories</ClassName>
+	<PropertyName>shortName</PropertyName>
+	<Element_Label>Short Name</Element_Label>
+	<Definition>REQUIRED FIELD. An abbreviation or acronym of the repository name, which can be better accommodated in the user interface</Definition>
+	<Examples>YNHSCL (for Your Name Here Special Collections Library)
+
+MSCL (for Mandeville Special Collections Library)
+
+RSFHS (for Rancho Santa Fe Historical Society)
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Repositories</ClassName>
+	<PropertyName>telephone</PropertyName>
+	<Element_Label>Telephone</Element_Label>
+	<Definition>The telephone number by which the repository may be contacted.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Repositories</ClassName>
+	<PropertyName>url</PropertyName>
+	<Element_Label>Repository URL</Element_Label>
+	<Definition>The web accessible location of the repository's information site.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryNotes</ClassName>
+	<PropertyName>label</PropertyName>
+	<Element_Label>Label</Element_Label>
+	<Definition>A phrase or title that summarizes the nature of the note. 
+
+Select an appropriate label from the list of default labels, or modify the list to suit the needs of the repository.
+</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryNotes</ClassName>
+	<PropertyName>noteText</PropertyName>
+	<Element_Label>Note Text</Element_Label>
+	<Definition>The text of the note described by the label or title. </Definition>
+	<Examples>"[Hours of Operation:]
+
+The YNHSCL is open Monday through Friday from 8:30 a.m. to 5:30 p.m. Extended service hours are provided when classes are in session on Wednesdays from 5:30 to 9:00 p.m. and Sundays from 1:00 to 5:00 p.m. 
+
+
+[Repository History]
+
+The Your Name Here Special Collections Library was established in 1955 with a man date from Jackson Carter, then President of Carpe Diem University. Carter's basic concern was to create a repository for the vital records of the university and a for libraries of some of the founding faculty.
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryNotes</ClassName>
+	<PropertyName>sequenceNumber</PropertyName>
+	<Element_Label>Sequence Number</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryNotes</ClassName>
+	<PropertyName>simpleRepeatableNoteId</PropertyName>
+	<Element_Label>Simple Repeatable Note Id</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryNotesDefaultValues</ClassName>
+	<PropertyName>defaultContent</PropertyName>
+	<Element_Label>Default Content</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryNotesDefaultValues</ClassName>
+	<PropertyName>defaultTitle</PropertyName>
+	<Element_Label>Default Title</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryNotesDefaultValues</ClassName>
+	<PropertyName>noteType</PropertyName>
+	<Element_Label>Note Type</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryNotesDefaultValues</ClassName>
+	<PropertyName>repository</PropertyName>
+	<Element_Label>Repository</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>administrationOffices</PropertyName>
+	<Element_Label>Administration Offices</Element_Label>
+	<Definition>A whole number, 100 or 2000, representing the total square footage of space allocated to the repository's administrative offices.  </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>classrooms</PropertyName>
+	<Element_Label>Classrooms</Element_Label>
+	<Definition>A whole number, 100 or 2000, representing the total square footage of space allocated to the repository for classroom and seminar use.  </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>collectionsStorage</PropertyName>
+	<Element_Label>Collections Storage</Element_Label>
+	<Definition>A whole number, 100 or 2000, representing the total square footage of space allocated to the repository for storage of its collections. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>collFociHistorical</PropertyName>
+	<Element_Label>Historical</Element_Label>
+	<Definition>A check box to indicate if the repository collects historical records.
+</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>collFociInstitutional</PropertyName>
+	<Element_Label>Institutional</Element_Label>
+	<Definition>A check box to indicate if the repository collects institutional records.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>collFociManuscript</PropertyName>
+	<Element_Label>Manuscript</Element_Label>
+	<Definition>A check box to indicate if the repository collects single manuscripts.  </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>collFociOther</PropertyName>
+	<Element_Label>Other</Element_Label>
+	<Definition>A check box to indicate other categories of materials the repository collects. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>collFociPersonalPapers</PropertyName>
+	<Element_Label>Personal Papers</Element_Label>
+	<Definition>A check box to indicate if the repository collects personal papers.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>digitization</PropertyName>
+	<Element_Label>Digitization</Element_Label>
+	<Definition>A check box to indicate if the repository offers digitization services to its patrons. Such services would include a patron's ability to acquire a digital copy of a repository item.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>exhibitLoans</PropertyName>
+	<Element_Label>Exhibit Loans</Element_Label>
+	<Definition>A checkbox to indicate if the repository will loan its materials for exhibitions by other agencies.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>foodBeverage</PropertyName>
+	<Element_Label>Food Beverage</Element_Label>
+	<Definition>A checkbox to indicate if a repository provides food and beverage to patrons as a service</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>functDistAdmin</PropertyName>
+	<Element_Label>Admininstration</Element_Label>
+	<Definition>A real number, such 1.0 or 2.25, to indicate the amount of staff assigned to administration of the repository. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>functDistPreservation</PropertyName>
+	<Element_Label>Preservation</Element_Label>
+	<Definition>A real number, such 1.0 or 2.25, to indicate the amount of staff assigned to preservation management of the repository's collection.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>functDistProcessing</PropertyName>
+	<Element_Label>Processing</Element_Label>
+	<Definition>A real number, such 1.0 or 2.25, to indicate the amount of staff assigned to processing of the repository's collection.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>functDistReference</PropertyName>
+	<Element_Label>Reference</Element_Label>
+	<Definition>A real number, such 1.0 or 2.25, to indicate the amount of staff assigned to providing reference services to the repository's patrons. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>majorSubjectAreas</PropertyName>
+	<Element_Label>Major Subject Areas</Element_Label>
+	<Definition>A text field for recording, in paragraph or list fashion, the subject areas, primary or comprehensive, the repository collects in. The subject report can be used to create the list, which can then be pasted into this field. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>netUsableArea</PropertyName>
+	<Element_Label>Net Usable Area</Element_Label>
+	<Definition>A whole number, 100 or 2000, representing the total square footage of space allocated to the repository to support its collections and activities. As a rule of thumb, the values expressed for administrative offices, classrooms, storage, and reading room would be the total of net usable space. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>nonProfessionalFTE</PropertyName>
+	<Element_Label>Non-Professional FTE</Element_Label>
+	<Definition>A real number such as 3.0 or 3.75 to indicate the amount of non-professional staff employed by the repository.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>percentageOffSite</PropertyName>
+	<Element_Label>Percentage Off Site</Element_Label>
+	<Definition>A ratio representing the portion of a repository's overall collection that is stored off-site from the repository, e.g., 30%.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>photographicReproduction</PropertyName>
+	<Element_Label>Photographic Reproduction</Element_Label>
+	<Definition>A check box to indicate if the repository offers photographic reproduction services to this patrons. Such services would include the patron being able to acquire a photocopy of a repository item. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>professionalFTE</PropertyName>
+	<Element_Label>Professional FTE</Element_Label>
+	<Definition>A real number such as 3.0 or 3.75 to indicate the amount of professional staff employed by the repository.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>readingRoom</PropertyName>
+	<Element_Label>Reading Room</Element_Label>
+	<Definition>A whole number, 100 or 2000, representing the total square footage of space allocated to the repository's reading room.   </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>retailGiftSales</PropertyName>
+	<Element_Label>Retail Gift Sales</Element_Label>
+	<Definition>A check box to indicate if the repository offers gifts for sale to the public. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>studentFTE</PropertyName>
+	<Element_Label>Student FTE</Element_Label>
+	<Definition>A real number such as 3.0 or 3.75 to indicate the amount of student staff employed by the repository.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>volunteerFTE</PropertyName>
+	<Element_Label>Volunteer FTE</Element_Label>
+	<Definition>A real number such as 3.0 or 3.75 to indicate the amount of volunteer staff utilized by the repository.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>RepositoryStatistics</ClassName>
+	<PropertyName>yearOfReport</PropertyName>
+	<Element_Label>Year Of Report</Element_Label>
+	<Definition>REQUIRED FIELD. A four digit integer indicating the year of repository activity and operation represented by the statistics. For a fiscal year such as FY 1969-1970, use the second year of the fiscal year.
+</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>author</PropertyName>
+	<Element_Label>Author</Element_Label>
+	<Definition>The names(s) of the agents responsible for creating the content of the finding aid or its encoding.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>bulkDateBegin</PropertyName>
+	<Element_Label>Begin</Element_Label>
+	<Definition>REQUIRED FIELD if Bulk Date End is used. First date in a bulk date range. Bulk dates may only be used if inclusive dates are use, and bulk dates must occur within inclusive dates. 
+
+See DACS 2.4.10
+</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>bulkDateEnd</PropertyName>
+	<Element_Label>End</Element_Label>
+	<Definition>REQUIRED FIELD if Bulk Date Begin is used. The second date in a bulk date range.
+
+See DACS 2.4.10
+</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>containerSummary</PropertyName>
+	<Element_Label>Container Summary</Element_Label>
+	<Definition>Enumerated list of container and container types housing the resource materials</Definition>
+	<Examples>10 record cartons, 6 archives boxes, 3 oversize folders.
+
+12 shoeboxes. 
+
+4 archives boxes, 32 tubes.
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>dateBegin</PropertyName>
+	<Element_Label>Begin</Element_Label>
+	<Definition>REQUIRED FIELD, if Date Expression is not used, or if Date End is used, or if Bulk Date Begin and Bulk Date End are used.  The date of the material if a single date, or the first date in the case of a date range.
+
+See DACS 2.4.7 - 2.4.16
+</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>dateEnd</PropertyName>
+	<Element_Label>End</Element_Label>
+	<Definition>REQUIRED FIELD, if Date Expression is not used, or if Date Begin is used, or if Bulk Date Begin and Bulk Date End are used. The second date of the material. In the case of a single date, the single date is repeated. The repetition serves searching in access systems. Or the end date in an inclusive date range. 
+
+See DACS 2.4.7 - 2.4.16
+</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>dateExpression</PropertyName>
+	<Element_Label>Date Expression</Element_Label>
+	<Definition>REQUIRED FIELD, if Date Begin and Date End are not used.  Natural language expression for the date or date range of the materials. Allows for statements such as circa, between, after, etc., as well as combined single, inclusive, and bulk dates.
+
+See DACS 2.4
+</Definition>
+	<Examples>Circa 1953
+
+Between 1935 and 1937
+
+After 1967
+
+1939-1945 inclusive, 1940-9143 bulk. 
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>descriptionRules</PropertyName>
+	<Element_Label>Description Rules</Element_Label>
+	<Definition>Indication of the rules followed for describing the resource.
+
+The values in the list may be modified.  </Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>displayCreator</PropertyName>
+	<Element_Label>Display Creator</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>displayRepository</PropertyName>
+	<Element_Label>Display Repository</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>displaySource</PropertyName>
+	<Element_Label>Display Source</Element_Label>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>eadFaLocation</PropertyName>
+	<Element_Label>EAD FA Location</Element_Label>
+	<Definition>A URI for where the online version of the finding aid is located.</Definition>
+	<Examples>http:www.cdu.edu/ynhscl/maxims.xml</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>eadFaUniqueIdentifier</PropertyName>
+	<Element_Label>EAD FA Unique Identifier</Element_Label>
+	<Definition>A unique identifier for the finding aid within a repository context.</Definition>
+	<Examples>maxims.xml</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>editionStatement</PropertyName>
+	<Element_Label>Edition Statement</Element_Label>
+	<Definition>Information about the edition of the finding aid.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>extentNumber</PropertyName>
+	<Element_Label>Extent Number</Element_Label>
+	<Definition>REQUIRED FIELD: An expression consisting of two discrete elements:
+
+1)  A numeric value for indicating the number of units in the extent statement, e.g, 5, 11.5, 245, and,
+
+2)  A text expression for indicating the type of measurement being counted, e.g, linear foot, cubic foot, etc.  
+
+Together the two elements comprise the complete extent statement.  
+
+The list of values for type of measurement can be modified.  
+
+See DACS 2.5
+
+</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>extentType</PropertyName>
+	<Element_Label>Extent Measurement</Element_Label>
+	<Definition>[Does not display in UI except as part of definition for Extent Number.]
+
+REQUIRED FIELD. A term indicating the type of unit used to measure the extent of a resource.  Values on the pull down list may be modified.  
+
+See DACS 2.5
+</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>findingAidDate</PropertyName>
+	<Element_Label>Finding Aid Date</Element_Label>
+	<Definition>Date finding aid is first published.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>findingAidFilingTitle</PropertyName>
+	<Element_Label>Finding Aid Filing Title</Element_Label>
+	<Definition>A modified version of the formal title of the finding aid. Designed to aid browsing and sorting of finding aid title lists. </Definition>
+	<Examples>Wayne (Bruce M.) Papers
+Rooney Family Papers
+Communist Party of the United States Records</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>findingAidNote</PropertyName>
+	<Element_Label>Finding Aid Note</Element_Label>
+	<Definition>Information about the finding aid.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>findingAidStatus</PropertyName>
+	<Element_Label>Finding Aid Status</Element_Label>
+	<Definition>A description of the status of the overall finding aid. Default values may be modified.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>findingAidSubtitle</PropertyName>
+	<Element_Label>Finding Aid Subtitle</Element_Label>
+	<Definition>Any phrase serving as a secondary part of the main title.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>findingAidTitle</PropertyName>
+	<Element_Label>Finding Aid Title</Element_Label>
+	<Definition>A title for the finding aid and not for the resource per se. </Definition>
+	<Examples>Register of the Collection of Jason Twirly
+
+Inventory of the Papers of the Reese Family
+
+List of the Drawings and Models of the Simon and Simon Architectural Firm
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>instances</PropertyName>
+	<Element_Label>Instances</Element_Label>
+	<Definition>Instances refer to the media in which the content described in the record is contained. The content may be contained completely in more than one type of media. For instance, a microfilm may be one instance of a letter, while a digital object may be another.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>internalOnly</PropertyName>
+	<Element_Label>Internal Only</Element_Label>
+	<Definition>A field for indicating the complete description in a resource or resource component record and all the child records is to be either omitted from outputs or output, in the case of EADs, with the "AUDIENCE=internal" attribute.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>languageCode</PropertyName>
+	<Element_Label>Language</Element_Label>
+	<Definition>REQUIRED FIELD:. Predominant language of the resource, with the code for the language. . The values of the list cannot be modified. 
+
+Use the Language of Materials note to indicate other languages represented in the resource. 
+
+See DACS 4.5
+</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>languageOfFindingAid</PropertyName>
+	<Element_Label>Language of Finding Aid</Element_Label>
+	<Definition>The language(s) of the finding aid.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>level</PropertyName>
+	<Element_Label>Level</Element_Label>
+	<Definition>REQUIRED FIELD:. Label for the hierarchical level of the materials being described.
+
+The list of values cannot be modified. 
+</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>otherLevel</PropertyName>
+	<Element_Label>Other Level</Element_Label>
+	<Definition>REQUIRED FIELD, if the otherlevel attribute is used for level.  The specific term for the other level attribute is to be recorded in this data element. 
+		
+		Recorded data values may not contain any spaces.  “Test1,” “Test-1,” and “Test_1” are all valid, whereas “Test 1” is not valid.  Invalid data values will result in an invalid EAD.  
+	</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>repository</PropertyName>
+	<Element_Label>Repository</Element_Label>
+	<Definition>The name of the repository having custody of the resource. The values in this list may be modified by adding or deleting repository records. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>repositoryProcessingNote</PropertyName>
+	<Element_Label>Repository Processing Note</Element_Label>
+	<Definition>A catch all field for recording any information not supported by other fields available in the resource record. The content of this field is not included in exports and reports. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>resourceId</PropertyName>
+	<Element_Label>Resource Id</Element_Label>
+	<Definition>The internal database number for a specific resource record. The resourceID is a unique number, but it is not used outside the AT.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>resourceIdentifier</PropertyName>
+	<Element_Label>Resource Identifier</Element_Label>
+	<Definition>REQUIRED FIELD: . A unique identifier assigned to the resource being described. The identifier must be unique within the context of the repository. 
+
+Four elements are provided for the resource identifier. In reports, the elements are separated by full stops, e.g., ".".
+
+However, the entire identifiers may be included in the first element, provided the identifier is less than 20 characters in length. 
+</Definition>
+	<Examples>R.001 (Two elements "R" + "001")
+
+MSS 025 (A single element)
+
+Archives.RSS.0333 (Three elements "Archives" + "RSS" + "0333")</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>resourceIdentifier1</PropertyName>
+	<Element_Label>Resource Identifier 1</Element_Label>
+	<Definition>The number assigned to each discrete archival resource within a repository. First of four component parts.  Within the context of a repository, the resource identifier must be unique.  </Definition>
+	<Examples>R.001 (Two elements "R" + "001")
+
+MSS 025 (A single element)
+
+Archives.RSS.0333 (Three elements "Archives" + "RSS" + "0333")</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>resourceIdentifier2</PropertyName>
+	<Element_Label>Resource Identifier 2</Element_Label>
+	<Definition>The number assigned to each discrete archival resource within a repository. Second of four component parts.</Definition>
+	<Examples>R.001 (Two elements "R" + "001")
+
+MSS 025 (A single element)
+
+Archives.RSS.0333 (Three elements "Archives" + "RSS" + "0333")</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>resourceIdentifier3</PropertyName>
+	<Element_Label>Resource Identifier 3</Element_Label>
+	<Definition>The number assigned to each discrete archival resource within a repository. Third of four component parts.</Definition>
+	<Examples>R.001 (Two elements "R" + "001")
+
+MSS 025 (A single element)
+
+Archives.RSS.0333 (Three elements "Archives" + "RSS" + "0333")</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>resourceIdentifier4</PropertyName>
+	<Element_Label>Resource Identifier 4</Element_Label>
+	<Definition>The number assigned to each discrete archival resource within a repository. Fourth of four component parts.</Definition>
+	<Examples>R.001 (Two elements "R" + "001")
+
+MSS 025 (A single element)
+
+Archives.RSS.0333 (Three elements "Archives" + "RSS" + "0333")</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>restrictionsApply</PropertyName>
+	<Element_Label>Restrictions Apply</Element_Label>
+	<Definition>An indication that some kind of restriction applies to the materials described in the record. Additional description of the restriction should be provided in the appropriate notes for the record where the restriction occurs. 
+
+See DACS 4.1 - 4.6
+</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>revisionDate</PropertyName>
+	<Element_Label>Revision Date</Element_Label>
+	<Definition>The date a finding aid was revised.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>revisionDescription</PropertyName>
+	<Element_Label>Revision Description</Element_Label>
+	<Definition>Information describing how or why a finding aid was revised.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>series</PropertyName>
+	<Element_Label>Series</Element_Label>
+	<Definition>Information about a monographic series to which the finding aid may belong.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>sponsorNote</PropertyName>
+	<Element_Label>Sponsor Note</Element_Label>
+	<Definition>Name of agent(s) who funded the acquisition, arrangement, and / or description of the resource.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Resources</ClassName>
+	<PropertyName>title</PropertyName>
+	<Element_Label>Title</Element_Label>
+	<Definition>REQUIRED FIELD: . The title assigned to the resource. 
+
+See DACS 2.3
+</Definition>
+	<Examples>Graciany Miranda Archilla papers
+
+Wisconsin Environmental Policy Act files
+
+Bacot family papers
+
+Cameron family account book
+
+Caroline and Erwin Swann collection of caricatures and cartoons
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>ResourcesComponents</ClassName>
+	<PropertyName>bulkDateBegin</PropertyName>
+	<Element_Label>Bulk Date Begin</Element_Label>
+	<Definition>REQUIRED FIELD if Bulk Date End is used. First date in a bulk date range. Bulk dates may only be used if inclusive dates are use, and bulk dates must occur within inclusive dates. 
+
+See DACS 2.4.10
+</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ResourcesComponents</ClassName>
+	<PropertyName>bulkDateEnd</PropertyName>
+	<Element_Label>Bulk Date End</Element_Label>
+	<Definition>REQUIRED FIELD if Bulk Date Begin is used. The second date in a bulk date range.
+
+See DACS 2.4.10
+</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ResourcesComponents</ClassName>
+	<PropertyName>componentUniqueIdentifier</PropertyName>
+	<Element_Label>Component Unique Identifier</Element_Label>
+	<Definition>A phrase or descriptor that uniquely identifies the component with the resource description.</Definition>
+	<Examples>Series 1.
+
+Subseries 8.</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>ResourcesComponents</ClassName>
+	<PropertyName>containerSummary</PropertyName>
+	<Element_Label>Container Summary</Element_Label>
+	<Definition>Enumerated list of container and container types housing the materials described in the component record.</Definition>
+	<Examples>10 record cartons, 6 archives boxes, 3 oversize folders.
+
+12 shoeboxes. 
+
+4 archives boxes, 32 tubes. 
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>ResourcesComponents</ClassName>
+	<PropertyName>dateBegin</PropertyName>
+	<Element_Label>Date Begin</Element_Label>
+	<Definition>REQUIRED FIELD, if title is not used, and if Date Expression is not used, or if Date End is used, or if Bulk Date Begin and Bulk Date End are used.  The date of the material if a single date, or the first date in the case of a date range.
+
+See DACS 2.4.7 - 2.4.16
+</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ResourcesComponents</ClassName>
+	<PropertyName>dateEnd</PropertyName>
+	<Element_Label>Date End</Element_Label>
+	<Definition>REQUIRED FIELD,if title is not used, and if Date Expression is not used, or if Date Begin is used, or if Bulk Date Begin and Bulk Date End are used. The second date of the material. In the case of a single date, the single date is repeated. The repetition serves searching in access systems. Or the end date in an inclusive date range.
+
+See DACS 2.4.7 - 2.4.16
+</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ResourcesComponents</ClassName>
+	<PropertyName>dateExpression</PropertyName>
+	<Element_Label>Date Expression</Element_Label>
+	<Definition>REQUIRED FIELD if title is not used. Natural language expression for the date or date range of the materials. Allows for statements such as circa, between, after, etc., as well as combined single, inclusive, and bulk dates.
+
+See DACS 2.4
+</Definition>
+	<Examples>Circa 1953
+
+Between 1935 and 1937
+
+After 1967
+
+1939-1945 inclusive, 1940-9143 bulk</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>ResourcesComponents</ClassName>
+	<PropertyName>extentNumber</PropertyName>
+	<Element_Label>Extent Number</Element_Label>
+	<Definition>REQUIRED FIELD: An expression consisting of two discrete elements:
+
+1)  A numeric value for indicating the number of units in the extent statement, e.g, 5, 11.5, 245, and,
+
+2)  A text expression for indicating the type of measurement being counted, e.g, linear foot, cubic foot, etc.  
+
+Together the two elements comprise the complete extent statement.  
+
+The list of values for type of measurement can be modified.  
+
+See DACS 2.5</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ResourcesComponents</ClassName>
+	<PropertyName>extentType</PropertyName>
+	<Element_Label>Extent Measurement</Element_Label>
+	<Definition>[Does not display in UI, except as part of the Extent Number definition.]
+
+Type of measurement for the extent of the materials described in the component record.
+
+See DACS 2.5
+</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ResourcesComponents</ClassName>
+	<PropertyName>instances</PropertyName>
+	<Element_Label>Instances</Element_Label>
+	<Definition>Instances refer to the media in which the content described in the record is contained. The content may be contained completely in more than one type of media. For instance, a microfilm may be one instance of a letter, while a digital object may be another.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ResourcesComponents</ClassName>
+	<PropertyName>internalOnly</PropertyName>
+	<Element_Label>Internal Only</Element_Label>
+	<Definition>A field for indicating the complete description in a resource or resource component record and all the child records is to be either omitted from outputs or output, in the case of EADs, with the "AUDIENCE=internal" attribute.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ResourcesComponents</ClassName>
+	<PropertyName>languageCode</PropertyName>
+	<Element_Label>Language Code</Element_Label>
+	<Definition>Predominant language of the resource, with the code for the language. . The values of the list cannot be modified. 
+
+See DACS 4.5
+</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ResourcesComponents</ClassName>
+	<PropertyName>level</PropertyName>
+	<Element_Label>Level</Element_Label>
+	<Definition>REQUIRED FIELD:. Label for the hierarchical level of the materials being described.. The list of values cannot be modified.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ResourcesComponents</ClassName>
+	<PropertyName>otherLevel</PropertyName>
+	<Element_Label>Other Level</Element_Label>
+	<Definition>REQUIRED FIELD, if otherlevel attribute is used. The specific term for the otherlevel level attribute. Required if the otherlevel value is used for level. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ResourcesComponents</ClassName>
+	<PropertyName>repositoryProcessingNote</PropertyName>
+	<Element_Label>Repository Processing Note</Element_Label>
+	<Definition>A catch all field for anything not supported by other fields available in the resource record. The content of this field is not included in exports and reports. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ResourcesComponents</ClassName>
+	<PropertyName>resourceComponentId</PropertyName>
+	<Element_Label>Resource Component Id</Element_Label>
+	<Definition>The internal database number for a specific resource component record. The resourceComponentID is a unique number, but it is not used outside the AT.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ResourcesComponents</ClassName>
+	<PropertyName>restrictionsApply</PropertyName>
+	<Element_Label>Restrictions Apply</Element_Label>
+	<Definition>An indication that some kind of restriction applies to the materials described in the record. Additional description of the restriction should be provided in the appropriate notes for the record where the restriction occurs. 
+
+See DACS 4.1 - 4.4
+</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>ResourcesComponents</ClassName>
+	<PropertyName>title</PropertyName>
+	<Element_Label>Title</Element_Label>
+	<Definition>REQUIRED FIELD if date is not used. The title assigned to the resource. 
+
+See DACS 2.3
+</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Subjects</ClassName>
+	<PropertyName>subjectId</PropertyName>
+	<Element_Label>Subject Id</Element_Label>
+	<Definition>The internal database number for a specific subject record. The subjectID is a unique number, but it is not used outside the AT.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Subjects</ClassName>
+	<PropertyName>subjectScopeNote</PropertyName>
+	<Element_Label>Scope Note</Element_Label>
+	<Definition>A field for indicating how a subject term is to be applied in a specific implementation of the AT. Primarily to support use of local subject terms. </Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Subjects</ClassName>
+	<PropertyName>subjectSource</PropertyName>
+	<Element_Label>Source</Element_Label>
+	<Definition>REQUIRED FIELD. An indication of the authority of the term,.i.e., in what thesaurus it appears.</Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Subjects</ClassName>
+	<PropertyName>subjectTerm</PropertyName>
+	<Element_Label>Subject Term</Element_Label>
+	<Definition>REQUIRED FIELD. A descriptor for indicating the content or type of a resource.</Definition>
+	<Examples>Simple terms:
+Hiking
+Playing cards
+
+Modified terms:
+Hydroelectric power plants -- Snake River
+Owens Valley (Calif.) - Fiction
+
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Subjects</ClassName>
+	<PropertyName>subjectTermType</PropertyName>
+	<Element_Label>Type</Element_Label>
+	<Definition>REQUIRED FIELD. An indicator for expressing the type or category of a subject term. </Definition>
+	<Examples></Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Users</ClassName>
+	<PropertyName>accessClass</PropertyName>
+	<Element_Label>Access Class</Element_Label>
+	<Definition>The level of access to the application granted to the user.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Users</ClassName>
+	<PropertyName>department</PropertyName>
+	<Element_Label>Department</Element_Label>
+	<Definition>The name of the department to which the user is assigned. </Definition>
+	<Examples>Fales Library
+
+University Archives
+
+Archives of Contemporary Photographs
+
+
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Users</ClassName>
+	<PropertyName>email</PropertyName>
+	<Element_Label>Email Address</Element_Label>
+	<Definition>The email address by which the user can be contacted. </Definition>
+	<Examples>susie@cdu.edu
+
+user1@gmail.com
+
+Christopher.Platt@soma.gov
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Users</ClassName>
+	<PropertyName>fullName</PropertyName>
+	<Element_Label>Full Name</Element_Label>
+	<Definition>The full name of the user designated by the user name.</Definition>
+	<Examples>Suzanne O'Neal (susie)
+
+Alredo Humbodlt (userone)
+
+Christopher Platt (snowman)
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Users</ClassName>
+	<PropertyName>repository</PropertyName>
+	<Element_Label>Repository</Element_Label>
+	<Definition>The name of the repository to which the user is associated.  Values in the list may be modified by adding or deleting repository records to the application. </Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Users</ClassName>
+	<PropertyName>title</PropertyName>
+	<Element_Label>Title</Element_Label>
+	<Definition>The title the user has, if any.</Definition>
+	<Examples>Processing Archivist
+
+Subject Analyst
+
+Metadata Specialist
+</Examples>
+</RECORD>
+<RECORD>
+	<ClassName>Users</ClassName>
+	<PropertyName>UserId</PropertyName>
+	<Element_Label>User Id</Element_Label>
+	<Definition>The internal database number for a specific user record. The userID is a unique number, but it is not used outside the AT.</Definition>
+</RECORD>
+<RECORD>
+	<ClassName>Users</ClassName>
+	<PropertyName>userName</PropertyName>
+	<Element_Label>Username</Element_Label>
+	<Definition>REQUIRED FIELD:  The name of the user that will be used for logging on to the AT application.</Definition>
+	<Examples>Susie
+
+Userone
+
+Snowman
+</Examples>
+</RECORD>
+</RECORDS>

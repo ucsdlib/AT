@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+    <class name="ArchDescriptionStructuredDataItems"
+           abstract="true">
+
+        <id name="archDescStructDataItemId" type="long" column="archDescStructDataItemId">
+            <!--<generator class="org.hibernate.id.enhanced.TableGenerator">-->
+                <!--<param name="optimizer">hilo</param>-->
+                <!--<param name="segment_value">structuredData</param>-->
+                <!--<param name="increment_size">10</param>-->
+            <!--</generator>-->
+            <generator class="org.hibernate.id.enhanced.SequenceStyleGenerator">
+                <param name="optimizer">hilo</param>
+                <param name="sequence_name">structured_data_sequence</param>
+                <param name="increment_size">1000</param>
+            </generator>
+            <!--<generator class="increment"/>-->
+       </id>
+
+        <version name="version" type="java.lang.Long" column="version"/>
+
+        <property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+            <column name="lastUpdated"/>
+            <column name="created"/>
+            <column name="lastUpdatedBy"/>
+            <column name="createdBy"/>
+        </property>
+
+        <property name="sequenceNumber"
+                  column="sequenceNumber"
+                  type="int"
+                  not-null="true"/>
+
+
+		<union-subclass name="BibItems" table="BibItems">
+			<property name="itemValue"
+					  column="itemValue"
+					  type="text"
+					  not-null="true"/>
+
+			<many-to-one name="structuredDataParent"
+						 class="Bibliography"
+						 column="parentId"
+						 access="field"
+						 fetch="join"
+						 outer-join="true"/>
+		</union-subclass>
+
+
+		<union-subclass name="ListOrderedItems" table="ListOrderedItems">
+			<property name="itemValue"
+					  column="itemValue"
+					  type="text"
+					  not-null="true"/>
+
+			<many-to-one name="structuredDataParent"
+						 class="ListOrdered"
+						 column="parentId"
+						 access="field"
+						 fetch="join"
+						 outer-join="true"/>
+		</union-subclass>
+
+		<union-subclass name="ListDefinitionItems" table="ListDefinitionItems">
+			<property name="itemValue"
+					  column="itemValue"
+					  type="text"
+					  not-null="true"/>
+
+			<property name="label"
+					  column="label"
+					  type="text"/>
+
+			<many-to-one name="structuredDataParent"
+						 class="ListDefinition"
+						 column="parentId"
+						 access="field"
+						 fetch="join"
+						 outer-join="true"/>
+		</union-subclass>
+
+
+        <union-subclass name="ChronologyItems" table="ChronologyItems">
+			<property name="eventDate"
+					  column="eventDate"
+					  type="text"
+					  not-null="true"/>
+
+            <many-to-one name="structuredDataParent"
+                         class="ChronologyList"
+                         column="parentId"
+                         access="field"
+                         fetch="join"
+                         outer-join="true"/>
+
+			<set name="events"
+				 cascade="all-delete-orphan"
+				 inverse="true"
+				 lazy="false"
+				 access="field">
+				<key>
+					<column name="archDescStructDataItemId"/>
+				</key>
+				<one-to-many class="Events"/>
+			</set>
+
+        </union-subclass>
+
+        <union-subclass name="IndexItems" table="IndexItems">
+			<property name="itemValue"
+					  column="itemValue"
+					  type="text"
+					  not-null="true"/>
+
+			<property name="itemType"
+					  column="itemType"
+					  type="text"
+					  not-null="true"/>
+
+			<property name="reference"
+					  column="reference"
+					  type="text"/>
+
+			<property name="referenceText"
+					  column="referenceText"
+					  type="string"/>
+
+            <many-to-one name="structuredDataParent"
+                         class="Index"
+                         column="parentId"
+                         access="field"
+                         fetch="join"
+                         outer-join="true"/>
+        </union-subclass>
+
+
+    </class>
+</hibernate-mapping>

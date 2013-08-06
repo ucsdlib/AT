@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+	<class name="org.archiviststoolkit.model.Locations"
+		   table="LocationsTable" lazy="true">
+
+		<id name="locationId" column="locationId" type="java.lang.Long">
+			<generator class="native"></generator>
+		</id>
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+			<column name="lastUpdated"/>
+			<column name="created"/>
+			<column name="lastUpdatedBy"/>
+			<column name="createdBy"/>
+		</property>
+
+		<property name="building"
+				  column="building"
+				  type="string"
+				  length="50"/>
+
+		<property name="floor"
+				  column="floor"
+				  type="string"
+				  length="50"/>
+
+		<property name="room"
+				  column="room"
+				  type="string"
+				  length="50"/>
+
+		<property name="area"
+				  column="area"
+				  type="string"
+				  length="50"/>
+
+		<property name="coordinate1Label"
+				  column="coordinate1Label"
+				  type="string"
+				  length="50"/>
+
+		<property name="coordinate1NumericIndicator"
+				  column="coordinate1NumericIndicator"
+				  type="double"/>
+
+		<property name="coordinate1AlphaNumIndicator"
+				  column="coordinate1AlphaNumIndicator"
+				  type="string"
+				  length="20"/>
+
+		<property name="coordinate2Label"
+				  column="coordinate2Label"
+				  type="string"
+				  length="50"/>
+
+		<property name="coordinate2NumericIndicator"
+				  column="coordinate2NumericIndicator"
+				  type="double"/>
+
+		<property name="coordinate2AlphaNumIndicator"
+				  column="coordinate2AlphaNumIndicator"
+				  type="string"
+				  length="20"/>
+
+		<property name="coordinate3Label"
+				  column="coordinate3Label"
+				  type="string"
+				  length="50"/>
+
+		<property name="coordinate3NumericIndicator"
+				  column="coordinate3NumericIndicator"
+				  type="double"/>
+
+		<property name="coordinate3AlphaNumIndicator"
+				  column="coordinate3AlphaNumIndicator"
+				  type="string"
+				  length="20"/>
+
+		<property name="classificationNumber"
+				  column="classificationNumber"
+				  type="string"
+				  length="50"/>
+
+		<property name="barcode"
+				  column="barcode"
+				  type="string"
+				  length="50"/>
+
+		<set name="instances"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="locationId"/>
+			</key>
+			<one-to-many class="ArchDescriptionAnalogInstances"/>
+		</set>
+
+		<set name="accessions"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="locationId"/>
+			</key>
+			<one-to-many class="AccessionsLocations"/>
+		</set>
+
+		<many-to-one name="repository"
+					 class="org.archiviststoolkit.model.Repositories"
+					 column="repositoryId"
+					 not-null="true"/>
+
+		<filter name="repository" condition=":repositoryId = repositoryId"/>
+
+	</class>
+
+	<filter-def name="repository">
+		<filter-param name="repositoryId" type="java.lang.Long"/>
+	</filter-def>
+
+</hibernate-mapping>

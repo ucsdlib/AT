@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+	<class name="org.archiviststoolkit.model.ATPluginData" table="ATPluginData" lazy="false">
+
+        <id name="atPluginDataId" column="atPluginDataId">
+			<generator class="native"/>
+		</id>
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+			<column name="lastUpdated"/>
+			<column name="created"/>
+			<column name="lastUpdatedBy"/>
+			<column name="createdBy"/>
+		</property>
+
+		<property name="dataString"
+				  column="dataString"
+                  not-null="true"
+                  type="text"/>
+
+		<property name="dataType"
+				  column="dataType"
+				  type="string"
+				  not-null="true"
+                  length="100"/>
+
+        <property name="dataName"
+				  column="dataName"
+				  type="string"
+				  not-null="true"
+                  length="255"/>
+
+        <property name="dataVersion"
+				  column="dataVersion"
+				  type="integer"/>
+
+        <property name="isObject"
+				  column="isObject"
+				  type="boolean"/>
+
+        <property name="pluginName"
+				  column="pluginName"
+				  type="string"
+				  not-null="true"
+                  length="255"/>
+
+    </class>
+ </hibernate-mapping>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping> 
+	<class name="org.archiviststoolkit.structure.InLineTagAttributes" table="InLineTagAttributes" lazy="false">
+
+		<id name="inLineTagAttributeId" column="inLineTagAttributeId" type="java.lang.Long">
+			<generator class="native"></generator>
+		</id>
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="valueList"
+				  column="valueList"
+				  type="string"/>
+
+		<property name="attributeName"
+				  column="attributeName"
+				  type="string"
+				  not-null="true"/>
+
+		<many-to-one name="tag"
+					 class="org.archiviststoolkit.structure.InLineTags"
+					 column="inLineTagId"
+					 access="field"
+					 fetch="join"
+					 outer-join="true"/>
+
+	</class>
+</hibernate-mapping>

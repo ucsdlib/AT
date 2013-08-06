@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+	<class name="org.archiviststoolkit.model.BasicNames" abstract="true">
+
+		<id name="nameId" column="nameId" type="java.lang.Long">
+            <!--<generator class="org.hibernate.id.enhanced.TableGenerator">-->
+                <!--<param name="optimizer">hilo</param>-->
+                <!--<param name="segment_value">names</param>-->
+                <!--<param name="increment_size">10</param>-->
+            <!--</generator>-->
+            <!--<generator class="increment"/>-->
+
+            <generator class="org.hibernate.id.enhanced.SequenceStyleGenerator">
+                <param name="optimizer">hilo</param>
+                <param name="sequence_name">name_sequence</param>
+                <param name="increment_size">10000</param>
+            </generator>
+        </id>
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+			<column name="lastUpdated" not-null="true"/>
+			<column name="created" not-null="true"/>
+			<column name="lastUpdatedBy" not-null="true"/>
+			<column name="createdBy" not-null="true"/>
+		</property>
+
+		<!-- core name fields-->
+		<property name="nameType"
+				  column="nameType"
+				  not-null="true"
+				  type="string"/>
+
+		<property name="sortName"
+				  column="sortName"
+				  not-null="true"
+				  type="string"/>
+
+		<property name="createSortNameAutomatically"
+				  column="createSortNameAutomatically"
+				  not-null="true"
+				  type="boolean"/>
+
+		<property name="number"                                                        
+				  column="nameNumber"
+				  length="255"
+				  type="string"/>
+
+		<property name="qualifier"
+				  column="qualifier"
+				  length="255"
+				  type="string"/>
+
+		<!-- corporate name fields-->
+		<property name="corporatePrimaryName"
+				  column="corporatePrimaryName"
+				  length="255"
+				  type="string"/>
+
+		<property name="corporateSubordinate1"
+				  column="corporateSubordinate1"
+				  length="255"
+				  type="string"/>
+
+		<property name="corporateSubordinate2"
+				  column="corporateSubordinate2"
+				  length="255"
+				  type="string"/>
+
+		<!-- personal name fields-->
+		<property name="personalPrimaryName"
+				  column="personalPrimaryName"
+				  length="255"
+				  type="string"/>
+
+		<property name="personalRestOfName"
+				  column="personalRestOfName"
+				  length="255"
+				  type="string"/>
+
+		<property name="personalPrefix"
+				  column="personalPrefix"
+				  length="255"
+				  type="string"/>
+
+		<property name="personalSuffix"
+				  column="personalSuffix"
+				  length="255"
+				  type="string"/>
+
+		<property name="personalDates"
+				  column="personalDates"
+				  length="255"
+				  type="string"/>
+
+		<property name="personalFullerForm"
+				  column="personalFullerForm"
+				  length="255"
+				  type="string"/>
+
+		<property name="personalTitle"
+				  column="personalTitle"
+				  length="255"
+				  type="string"/>
+
+		<property name="personalDirectOrder"
+				  column="personalDirectOrder"
+				  type="boolean"/>
+
+		<!-- family name fields-->
+		<property name="familyName"
+				  column="familyName"
+				  length="255"
+				  type="string"/>
+
+		<property name="familyNamePrefix"
+				  column="familyNamePrefix"
+				  length="255"
+				  type="string"/>
+
+    <union-subclass name="NonPreferredNames" table="NonPreferredNames">
+			<!-- Bidirectional, required as BillingDetails is USER_ID NOT NULL. This is also
+										a read-only property that will never be updated. -->
+			<many-to-one name="primaryName"
+						 class="Names"
+						 column="primaryNameId"
+						 access="field"
+						 fetch="join"
+						 not-null="true"
+						 outer-join="true"/>
+		</union-subclass>
+
+		<union-subclass name="Names" table="Names"  lazy = "false">
+
+			<property name="nameSource"
+					  column="nameSource"
+					  length="50"
+					  type="string"/>
+
+			<property name="nameRule"
+					  column="nameRule"
+					  length="50"
+					  type="string"/>
+
+			<!-- description fields-->
+			<property name="descriptionType"
+					  column="descriptionType"
+					  type="string"/>
+
+			<property name="descriptionNote"
+					  column="descriptionNote"
+					  type="text"/>
+
+			<property name="citation"
+					  column="citation"
+					  type="text"/>
+
+			<!-- contact information fields-->
+			<property name="salutation"
+					  column="salutation"
+					  type="string"/>
+
+			<property name="contactAddress1"
+					  column="contactAddress1"
+					  type="string"/>
+
+			<property name="contactAddress2"
+					  column="contactAddress2"
+					  type="string"/>
+
+			<property name="contactCity"
+					  column="contactCity"
+					  type="string"/>
+
+			<property name="contactRegion"
+					  column="contactRegion"
+					  type="string"/>
+
+			<property name="contactCountry"
+					  column="contactCountry"
+					  type="string"/>
+
+			<property name="contactMailCode"
+					  column="contactMailCode"
+					  type="string"/>
+
+			<property name="contactPhone"
+					  column="contactPhone"
+					  type="string"/>
+
+			<property name="contactFax"
+					  column="contactFax"
+					  type="string"/>
+
+			<property name="contactEmail"
+					  column="contactEmail"
+					  type="string"/>
+
+			<property name="contactName"
+					  column="contactName"
+					  type="string"/>
+
+      <property name="md5Hash"
+        column="md5Hash"
+        index="md5Hash"
+        unique="true"
+        type="string"/>
+
+      <set name="contactNotes"
+				 cascade="all-delete-orphan"
+				 inverse="true"
+				 lazy="true"
+				 order-by="sequenceNumber asc"
+				 access="field">
+				<key>
+					<column name="nameId" not-null="true"/>
+				</key>
+				<one-to-many class="NameContactNotes"/>
+			</set>
+
+			<set name="nonPreferredNames"
+				 cascade="all-delete-orphan"
+				 inverse="true"
+				 lazy="true"
+				 order-by="sortName asc"
+				 access="field">
+				<key>
+					<column name="primaryNameId" not-null="true"/>
+				</key>
+				<one-to-many class="NonPreferredNames"/>
+			</set>
+
+			<set name="archDescriptionNames"
+				 cascade="all-delete-orphan"
+				 inverse="true"
+				 lazy="true"
+				 access="field">
+				<key>
+					<column name="primaryNameId" not-null="true"/>
+				</key>
+				<one-to-many class="ArchDescriptionNames"/>
+			</set>
+		</union-subclass>
+
+	</class>
+
+	<query name="findAllNamesSorted"><![CDATA[
+		from Names n
+			order by n.sortName
+	]]></query>
+
+
+	<query name="lookupName"><![CDATA[
+		from Names name where name.familyName like :searchString
+			or name.corporatePrimaryName like :searchString
+			or name.personalPrimaryName like :searchString
+			order by name.sortName
+	]]></query>
+
+
+</hibernate-mapping>
+

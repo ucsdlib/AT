@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+
+<hibernate-configuration>
+
+    <session-factory>
+
+        <!-- Database connection settings -->
+        <!--<property name="connection.driver_class">com.mysql.jdbc.Driver</property>-->
+
+        <!--
+          <property name="connection.url">jdbc:mysql://clio.bobst.nyu.edu/AT</property>
+          <property name="connection.username">root</property>
+          <property name="connection.password">notAccess</property>
+
+          <property name="connection.url">jdbc:mysql://dlibdev.nyu.edu:3308/AT_QA</property>
+          <property name="connection.username">atadmin</property>
+          <property name="connection.password">archd0lph1n</property>
+
+          <property name="connection.url">jdbc:mysql://dlibdev.nyu.edu:3308/AT</property>
+          <property name="connection.username">atuser</property>
+          <property name="connection.password">cr4ckA1t</property>
+          -->
+
+
+        <!--<property name="hibernate.hbm2ddl.auto">update</property>-->
+
+        <property name="hibernate.max_fetch_depth">3</property>
+
+        <!-- JDBC connection pool (use the built-in) -->
+        <!--<property name="connection.pool_size">10</property>-->
+
+        <property name="hibernate.c3p0.min_size">5</property>
+        <!--This maxsize was changed from a 100 to 15 on 8/30/2010-->
+        <property name="hibernate.c3p0.max_size">15</property>
+        <property name="hibernate.c3p0.timeout">299</property>
+        <!--<property name="hibernate.c3p0.timeout">300</property>-->
+        <!--<property name="hibernate.c3p0.max_statements">50</property>-->
+        <!--<property name="hibernate.c3p0.idle_test_period">3000</property>-->
+
+        <!-- Disable the second-level cache  -->
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+        <property name="cache.use_query_cache">false</property>
+        <property name="cache.use_minimal_puts">false</property>
+
+        <!--<property name="connection.charSet">UTF-8</property>-->
+
+        <!-- SQL dialect -->
+        <!--<property name="dialect">org.hibernate.dialect.MySQLDialect</property>-->
+
+        <!-- Echo all executed SQL to stdout -->
+        <!-- Print SQL to stdout, format it nicely  -->
+        <property name="show_sql">false</property>
+        <property name="format_sql">true</property>
+        <property name="use_sql_comments">true</property>
+
+        <mapping resource="org/archiviststoolkit/model/Resources.hbm.xml"/>
+
+        <mapping resource="org/archiviststoolkit/model/ArchDescriptionSubjects.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/ArchDescriptionNames.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/ArchDescriptionRepeatingData2.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/ArchDescriptionInstances2.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/ArchDescriptionStructuredDataItems.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/Events.hbm.xml"/>
+
+        <!--<mapping resource="org/archiviststoolkit/model/BibItems.hbm.xml"/>-->
+        <!--<mapping resource="org/archiviststoolkit/model/ChronologyItems.hbm.xml"/>-->
+        <mapping resource="org/archiviststoolkit/model/Deaccessions.hbm.xml"/>
+
+        <mapping resource="org/archiviststoolkit/model/ResourcesComponents.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/DigitalObjects.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/FileVersions.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/Locations.hbm.xml"/>
+
+        <mapping resource="org/archiviststoolkit/model/Accessions.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/AccessionsResources.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/AccessionsLocations.hbm.xml"/>
+
+        <mapping resource="org/archiviststoolkit/model/Subjects.hbm.xml"/>
+
+        <mapping resource="org/archiviststoolkit/model/BasicNames.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/SimpleRepeatableNotes.hbm.xml"/>
+
+        <mapping resource="org/archiviststoolkit/model/Users.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/Repositories.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/RepositoryNotesDefaultValues.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/RepositoryStatistics.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/LookupList.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/LookupListItems.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/structure/DatabaseTables.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/structure/DatabaseFields.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/Sessions.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/Constants.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/structure/NotesEtcTypes.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/structure/DefaultValues.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/structure/InLineTags.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/structure/InLineTagAttributes.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/RDEScreen.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/RDEScreenPanels.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/RDEScreenPanelItems.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/RecordLocks.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/ATPluginData.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/Assessments.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/AssessmentsResources.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/AssessmentsAccessions.hbm.xml"/>
+        <mapping resource="org/archiviststoolkit/model/AssessmentsDigitalObjects.hbm.xml"/>
+        <!--mapping for repeating dates-->
+        <mapping resource="org/archiviststoolkit/model/ArchDescriptionDates.hbm.xml"/>
+        <!--mapping for repeating physical descriptions-->
+        <mapping resource="org/archiviststoolkit/model/ArchDescriptionPhysicalDescriptions.hbm.xml"/>
+
+    </session-factory>
+
+</hibernate-configuration>

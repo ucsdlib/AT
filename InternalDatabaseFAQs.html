@@ -1,0 +1,217 @@
+<html>
+
+<head>
+<meta name=Title content="FAQs for Archivists' Toolkit Internal Database">
+<meta name=Keywords content="">
+<meta http-equiv=Content-Type content="text/html; charset=macintosh">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="FAQs_AT_Internal_DB_files/filelist.xml">
+<title>FAQs for Archivists' Toolkit Internal Database</title>
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Times New Roman";
+	panose-1:0 2 2 6 3 5 4 5 2 3;}
+@font-face
+	{font-family:Arial;
+	panose-1:0 2 11 6 4 2 2 2 2 2;}
+@font-face
+	{font-family:"Courier New";
+	panose-1:0 2 7 3 9 2 2 5 2 4;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:0 5 2 1 2 1 8 4 8 7;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:0 2 11 6 4 3 5 4 4 2;}
+@font-face
+	{font-family:Calibri;
+	panose-1:0 2 15 5 2 2 2 4 3 2;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:Calibri;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+table.MsoNormalTable
+	{font-size:10.0pt;
+	font-family:Calibri;}
+span.BalloonTextChar
+	{font-size:8.0pt;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0:level1
+	{text-indent:-.25in;
+	tab-stops:list .5in;}
+@list l1:level1
+	{text-indent:-.25in;
+	tab-stops:list .5in;
+	font-size:10.0pt;
+	font-family:Symbol;}
+@list l2:level1
+	{text-indent:-.25in;
+	tab-stops:list .5in;
+	font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level1
+	{text-indent:-.25in;
+	tab-stops:list .5in;
+	font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+</head>
+
+<body bgcolor=white lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p align=center style='margin-top:12.25pt;text-align:center'><span
+style='font-size:16.0pt;font-family:Arial'>FAQs for Archivists' Toolkit
+Internal Database</span></p>
+
+<p style='margin-bottom:12.0pt'>&nbsp;</p>
+
+<p>The Archivists’ Toolkit now includes, starting with <b><u>Version 2.0 Update
+9</u></b><span style='font-weight:normal'>, support for an internal database
+based on HyperSQL 2.0 (HSQLDB). <a href="http://hsqldb.org/">HyperSQL</a> is a
+small, reliable, high performance database engine used in many open source and
+commercial applications. This means that an external database such as MySQL, MS
+SQL, or Oracle no longer needs to be configured for use in following usage
+scenarios: </span></p>
+
+<p style='margin-left:.5in;text-indent:-.25in;tab-stops:list .5in'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Only one
+user requires access to the AT database at a given time.  Basically, this is
+for a single user environment in which a network does not exist or is not being
+used.  </p>
+
+<p style='margin-left:.5in;text-indent:-.25in;tab-stops:list .5in'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>User wants
+to evaluate the AT using a local database instead of the Sandbox.  The
+performance of the internal AT database will greatly exceed that of the AT
+Sandbox and will provide a more realistic impression of how the application
+performs.  </p>
+
+<p style='margin-left:.5in;text-indent:-.25in;tab-stops:list .5in'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>User needs
+a local database, easy to setup and performing sufficiently, for the purpose of
+testing local data management processes. </p>
+
+<p><b>Setting Up the Internal Database:</b></p>
+
+<p style='margin-left:.25in'>Setup/configuration of the Internal Database is
+done the same way setup for any of the other supported database is currently
+done. First use the &quot;Maintenance Program&quot; to &quot;Initialize a blank
+database&quot;. Select the option for an “Internal Database” from the “Database
+Type” combo box. This selection will populate all the other connection setting
+fields.  The rest of the database setup process is the same as for other
+database types supported by the AT.  </p>
+
+<p><b>Using the Internal Database:</b></p>
+
+<p style='margin-left:.25in'>To use the internal database after it has been
+setup, it needs to be selected first like any other database. When the
+Archivists Toolkit starts up and displays the &quot;login&quot; dialog, press
+the &quot;Select Server&quot; button. This should bring up the &quot;Connection
+Settings&quot; dialog. Once again, just select the &quot;Internal Database&quot;
+from the &quot;Database Type&quot; combo box and all the connection information
+is entered automatically. Hit the &quot;OK&quot; button and the AT should now
+proceed to asking for an user ID and password before fully connecting to the “Internal
+Database.”  </p>
+
+<p><b>Common Questions:</b></p>
+
+<p style='margin-left:.5in;text-indent:-.25in;tab-stops:list .5in'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>If I am using the internal database, can I transfer to it data
+from another database such as MySQL, MS SQL, or Oracle? </p>
+
+<p style='margin-left:1.0in'>No, we currently don't support the migration of
+data between any of the database types supported by the AT, including the
+internal database.</p>
+
+<p style='margin-left:.5in;text-indent:-.25in;tab-stops:list .5in'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>How much data can I store in the Internal Database?</p>
+
+<p style='margin-left:1.0in'>The amount of data that can be stored is limited
+only by the available disk space on the user's computer.</p>
+
+<p style='margin-left:.5in;text-indent:-.25in;tab-stops:list .5in'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>How do I create a Backup of the Internal Database?</p>
+
+<p style='margin-left:1.0in'>First, shut down the AT if it's running. Then
+search for the &quot;at_db&quot; folder in your &quot;Documents and
+Settings&quot; folder if you use Windows, or in your home directory if you use
+Mac OS X or Linux. Once you locate the folder, create a zip archive of it. This
+is your backup file and it can be restored by simple deleting the
+&quot;at_db&quot; folder (if one exists), then unzipping it, in the same
+location. You can also move this backup file to another computer and unzip it
+in the appropriate folder as a way to share this data.</p>
+
+<p style='margin-left:.5in;text-indent:-.25in;tab-stops:list .5in'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>How do I re-initialize the Internal Database and start fresh with
+an empty version?</p>
+
+<p style='margin-left:1.0in'>In the event you need to re-initialize the
+Internal Database, simply delete the &quot;at_db&quot; folder and run the
+&quot;Maintenance Program&quot; to initialize it as before.</p>
+
+<p style='margin-left:.5in;text-indent:-.25in;tab-stops:list .5in'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>If I upgrade my version of the AT and had an Internal Database
+setup, do I have to run the &quot;Maintenance Program&quot; again to initialize
+the Internal Database again?</p>
+
+<p style='margin-left:1.0in'>No, updating the version of the AT, doesn't
+require the Internal Database to be initialized again. </p>
+
+<p style='margin-left:.5in;text-indent:-.25in;tab-stops:list .5in'><span
+style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Can I provide access to the Internal Database over a network. For
+example, I want multiple people to share data like with MySQL, MS SQL, or
+Oracle?</p>
+
+<p style='margin-left:1.0in'><a name="_GoBack"></a>Yes, since the Internal
+Database is based on HyperSQL, then it can be setup to allow network
+connections from multiple AT instances. However, we currently provide no
+technical support for doing this: you will have to consult the <a
+href="http://hsqldb.org/web/hsqlDocsFrame.html">HyperSQL User Guide</a> for
+information on how to accomplish this. Please note, that we advise only users
+with good technical backgrounds to attempt this. </p>
+
+</div>
+
+</body>
+
+</html>

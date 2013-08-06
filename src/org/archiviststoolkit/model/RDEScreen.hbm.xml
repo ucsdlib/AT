@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+	<class name="org.archiviststoolkit.model.RDEScreen"
+		   table="RDEScreen" lazy="false">
+
+		<id name="rdeScreenId" column="rdeScreenId" type="java.lang.Long">
+			<generator class="native"></generator>
+		</id>
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+			<column name="lastUpdated"/>
+			<column name="created"/>
+			<column name="lastUpdatedBy"/>
+			<column name="createdBy"/>
+		</property>
+
+        <property name="rdeScreenName"
+                  column="rdeScreenName"
+                  unique="true"
+				  not-null="true"
+                  type="string"/>
+
+		<!--9/2/2008 This code was commented but the methods will be left in the object so that if this functionality
+		ever has to be added the code is already there!
+
+		<property name="keepScreenPrivate"
+				  column="keepScreenPrivate"
+				  type="boolean"/>
+
+		<property name="letOthersEdit"
+				  column="letOthersEdit"
+				  type="boolean"/>-->
+
+		<property name="className"
+				  column="className"
+				  type="string"/>
+
+		<many-to-one name="user"
+					 class="org.archiviststoolkit.model.Users"
+					 column="userId"
+					 access="field"
+					 fetch="join"
+					 outer-join="true"/>
+
+		<set name="screenPanels"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 sort="natural"
+			 lazy="false"
+			 fetch="subselect">
+			<key>
+				<column name="rdeScreenId" not-null="true"/>
+			</key>
+			<one-to-many class="org.archiviststoolkit.model.RDEScreenPanels"/>
+		</set>
+
+	</class>
+
+
+</hibernate-mapping>
+

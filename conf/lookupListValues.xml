@@ -1,0 +1,6085 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atLookupLists xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://archiviststoolkit.org/toolkit/ATspecification/lookupListValues.xsd">
+
+<!-- Reviewed and revised by AT Team (BDW lead) on 8 Nov. 2007. -->
+
+	<!--Type 1 List: The list may be edited by adding modifying, merging, or deleting values.   -->
+	
+	<list name="Acquisition type" listType="1">
+		
+		<usage className="org.archiviststoolkit.model.Accessions" field="acquisitionType"/>
+		
+		<value>Deposit</value>
+		
+		<value>Gift</value>
+		
+		<value>Purchase</value>
+		
+		<value>Transfer</value>
+		
+	</list>		
+	
+	<list listType="1" name="Calendar" restrictToNmtoken="true">
+		
+		<value>gregorian</value>
+		
+	</list>
+	
+	<list name="Container types" listType="1" restrictToNmtoken="true">
+		
+		<usage className="org.archiviststoolkit.model.ArchDescriptionAnalogInstances"
+			field="container1Type"/>
+		
+		<usage className="org.archiviststoolkit.model.ArchDescriptionAnalogInstances"
+			field="container2Type"/>
+		
+		<usage className="org.archiviststoolkit.model.ArchDescriptionAnalogInstances"
+			field="container3Type"/>
+		
+		<value>Bin</value>
+		
+		<value>Box</value>
+		
+		<value>Box-folder</value>
+		
+		<value>Carton</value>
+		
+		<value>Cassette</value>
+		
+		<value>Disk</value>
+		
+		<value>Drawer</value>
+		
+		<value>Folder</value>
+		
+		<value>Frame</value>
+		
+		<value>Map-case</value>
+		
+		<value>Object</value>
+		
+		<value>Oversize</value>
+		
+		<value>Page</value>
+		
+		<value>Reel</value>
+		
+		<value>Reel-Frame</value>
+		
+		<value>Volume</value>
+		
+	</list>
+	
+	<list name="Description rules" listType="1" pairedValues="true">
+		
+		<!-- Default  values drawn from the MARC code list for Description Conventions: http://www.loc.gov/marc/relators/reladesc.html  . -->
+		
+		<usage className="org.archiviststoolkit.model.Resources" field="descriptionRules"/>
+		
+		<pair>
+			
+			<value>Anglo-American Cataloguing Rules</value>
+			
+			<code>aacr</code>
+			
+		</pair>
+		
+		<pair>
+			
+			<value>Cataloging Cultural Objects</value>
+			
+			<code>cco</code>
+			
+		</pair>
+		
+		<pair>
+			
+			<value>Describing Archives: A Content Standard</value>
+			
+			<code>dacs</code>
+			
+		</pair>
+		
+		<pair>
+			
+			<value>Rules for Archival Description</value>
+			
+			<code>rad</code>
+			
+		</pair>
+		
+	</list>
+	
+	<list listType="1" name="Era" restrictToNmtoken="true">
+		
+		<value>ce</value>
+		
+	</list>
+	
+	<list name="Extent type" listType="1">
+		
+		<usage className="org.archiviststoolkit.model.Accessions" field="extentType"/>
+		
+		<usage className="org.archiviststoolkit.model.Resources" field="extentType"/>
+		
+		<usage className="org.archiviststoolkit.model.ResourcesComponents" field="extentType"/>
+		
+		<usage className="org.archiviststoolkit.model.Deaccessions" field="extentType"/>
+		
+		<value>Cubic feet</value>
+		
+		<value>Linear feet</value>
+		
+	</list>
+	
+	<list name="File use attributes" listType="1">
+	
+	<!-- Default  values drawn from the UC, San Diego Libraries list of File Use Types. -->
+		
+		<usage className="org.archiviststoolkit.model.FileVersions" field="useStatement"/>
+		
+		<value>Audio-Clip</value>
+			
+		<value>Audio-Master</value>
+		
+		<value>Audio-Master-Edited</value>
+		
+		<value>Audio-Service</value>
+		
+		<value>Audio-Streaming</value>
+		
+		<value>Image-Master</value>
+		
+		<value>Image-Master-Edited</value>
+		
+		<value>Image-Service</value>
+		
+		<value>Image-Service-HighRes</value>
+		
+		<value>Image-Service-MedRes</value>
+		
+		<value>Image-Service-LowRes</value>
+		
+		<value>Image-Service-Edited</value>
+		
+		<value>Image-Thumbnail</value>
+		
+		<value>Text-Codebook</value>
+		
+		<value>Text-Data</value>
+		
+		<value>Text-Data Definition</value>
+				
+		<value>Text-Georeference</value>
+		
+		<value>Text-Master</value>
+		
+		<value>Text-OCR-Edited</value>
+		
+		<value>Text-OCR-Unedited</value>
+
+		<value>Text-Service</value>
+
+		<value>Text-TEI-Transcripted</value>
+		
+		<value>Text-TEI-Translated</value>
+			
+		<value>Video-Clip</value>
+				
+		<value>Video-Master</value>
+		
+		<value>Video-Master-Edited</value>
+		
+		<value>Video-Service</value>
+		
+		<value>Video-Streaming</value>
+	
+		
+	</list>
+	
+	<list name="Finding aid status" listType="1" restrictToNmtoken="true">
+		
+		<usage className="org.archiviststoolkit.model.Resources" field="findingAidStatus"/>
+		
+		<value>Completed</value>
+		<value>In_process</value>
+		<value>Under_revision</value>
+		<value>Unprocessed</value>
+		
+	</list>
+	
+	<list name="Name description type" listType="1">
+		
+		<usage className="org.archiviststoolkit.model.Names" field="descriptionType"/>
+		
+		<value>Administrative History</value>
+		
+		<value>Biography</value>
+		
+	</list>
+	
+	<list name="Name link form" listType="1">
+		
+		<usage className="org.archiviststoolkit.model.ArchDescriptionNames" field="form"/>
+		
+		<value>Administration</value>
+		
+		<value>Archives</value>
+		
+		<value>Correspondence</value>
+		
+		<value>Diaries</value>
+		
+		<value>History</value>
+		
+		<value>History-Sources</value>
+		
+		<value>Pictorial works</value>
+		
+		<value>Trials, litigation, etc.</value>
+		
+	</list>
+	
+	<list name="Name source" listType="1" pairedValues="true">
+		
+		<!-- Terms derived from MARC code list for Term, Name, Title Sources: http://www.loc.gov/marc/relators/relasour.html -->
+		
+		<usage className="org.archiviststoolkit.model.Names" field="nameSource"/>
+		
+		<pair>
+			
+			<value>Local Sources</value>
+			
+			<code>local</code>
+			
+		</pair>
+		
+		<pair>
+			
+			<value>NACO Authority File</value>
+			
+			<code>naf</code>
+			
+		</pair>
+		
+		<pair>
+			
+			<value>NAD/ARK II Authority Database</value>
+			
+			<code>nad</code>
+			
+		</pair>
+		
+		<pair>
+			
+			<value>Union List of Artist Names</value>
+			
+			<code>ulan</code>
+			
+		</pair>
+		
+	</list>
+	
+	<list name="Name rules" listType="1" pairedValues="true">
+		
+		<!-- Terms drawn from MARC Code List for Description Conventions: http://www.loc.gov/marc/relators/reladesc.html  -->
+		
+		<usage className="org.archiviststoolkit.model.Names" field="nameRule"/>
+		
+		<pair>
+			
+			<value>Anglo-American Cataloguing Rules</value>
+			
+			<code>aacr</code>
+			
+		</pair>
+		
+		<pair>
+			
+			<value>Describing Archives: A Content Standard</value>
+			
+			<code>dacs</code>
+			
+		</pair>
+		
+		<pair>
+			
+			<value>Local</value>
+			
+			<code>local</code>
+			
+		</pair>
+		
+	</list>
+	
+	<list name="Processing Priorities" listType="1">
+		
+		<usage className="org.archiviststoolkit.model.Accessions" field="processingPriority"/>
+		
+		<value>High</value>
+		
+		<value>Medium</value>
+		
+		<value>Low</value>
+		
+	</list>
+	
+	<list name="Processing Statuses" listType="1">
+		
+		<usage className="org.archiviststoolkit.model.Accessions" field="processingStatus"/>
+		
+		<value>New</value>
+		
+		<value>In Progress</value>
+		
+		<value>Processed</value>
+		
+	</list>
+	
+	<list name="Repository Note Types" listType="1">
+		
+		<usage className="org.archiviststoolkit.model.RepositoryNotes" field="label"/>
+		
+		<value>Access Policy</value>
+		
+		<value>Collection Policy</value>
+		
+		<value>Hours of Operation</value>
+		
+		<value>Repository History</value>
+		
+		<value>Repository Description</value>
+	
+	</list>
+	
+	<list name="Resource type" listType="1">
+		
+		<usage className="org.archiviststoolkit.model.Accessions" field="resourceType"/>
+		
+		<value>Collection</value>
+		
+		<value>Papers</value>
+		
+		<value>Records</value>
+		
+	</list>
+	
+	<list name="Subject term source" listType="1" pairedValues="true">
+		
+		<!-- Terms derived from MARC code list for Term, Name, Title Sources: http://www.loc.gov/marc/relators/relasour.html -->
+		
+		<usage className="org.archiviststoolkit.model.Subjects" field="subjectSource"/>
+		
+		<pair>
+			
+			<value>Art &amp; Architecture Thesaurus</value>
+			
+			<code>aat</code>
+			
+		</pair>
+		
+		<pair>
+			
+			<value>Dictionary of Occupational Titles</value>
+			
+			<code>dot</code>
+			
+		</pair>
+		
+		<pair>
+			
+			<value>Genre Terms: A Thesaurus for Use in Rare Book and Special Collections Cataloging</value>
+			
+			<code>rbgenr</code>
+			
+		</pair>
+		
+		<pair>
+			
+			<value>GeoRef Thesaurus</value>
+			
+			<code>georeft</code>
+			
+		</pair>
+		
+		<pair>
+			
+			<value>Getty Thesaurus of Geographic Names</value>
+			
+			<code>tgn</code>
+			
+		</pair>
+		
+		<pair>
+			
+			<value>Library of Congress Subject Headings</value>
+			
+			<code>lcsh</code>
+			
+		</pair>
+		
+		<pair>
+			
+			<value>Local sources</value>
+			
+			<code>local</code>
+			
+		</pair>
+		
+		<pair>
+			
+			<value>Medical Subject Headings</value>
+			
+			<code>mesh</code>
+			
+		</pair>
+		
+		<pair>
+			
+			<value>Thesaurus for Graphic Materials</value>
+			
+			<code>gmgpc</code>
+			
+		</pair>
+		
+	</list>
+
+	<!-- Type 2 List:  The list may not be edited either by adding values, merging values, modifying values, or deleting values. -->
+
+	<list name="Actuate" listType="2">
+		
+		<!-- Drawn from the values provided for the "actuate" attribute in the list of linking  attributes in the EAD TAG Library: http://www.loc.gov/ead/tglib/att_link.html.  -->
+		
+		<usage className="org.archiviststoolkit.model.ExternalReference" field="actuate"/>
+		
+		<usage className="org.archiviststoolkit.model.FileVersions" field="eadDaoActuate"/>
+		
+		<usage className="org.archiviststoolkit.model.DigitalObjects" field="eadDaoActuate"/>
+		
+		<value>none</value>
+		
+		<value>other</value>
+		
+		<value>onLoad</value>
+		
+		<value>onRequest</value>
+		
+	</list>
+	
+	<list name="Digital object types" listType="2">
+		
+		<!-- Drawn from the MODS value set for the <typeOfResource> element: http://www.loc.gov/standards/mods/v3/mods-3-3-outline-review-new.html#typeOfResource. -->
+		
+		<usage className="org.archiviststoolkit.model.DigitalObjects" field="objectType"/>
+		
+		<value>cartographic</value>
+		
+		<value>mixed material</value>
+		
+		<value>moving image</value>
+		
+		<value>notated music</value>
+		
+		<value>software, multimedia</value>
+		
+		<value>sound recording</value>
+		
+		<value>sound recording-musical</value>
+		
+		<value>sound recording-nonmusical</value>
+		
+		<value>still image</value>
+		
+		<value>text</value>
+		
+		<value>three dimensional object</value>
+		
+	</list>
+	
+	<list name="Index value types" listType="2">
+		
+		<usage className="org.archiviststoolkit.model.IndexItems" field="itemType"/>
+					
+		<value>Corporate Name</value>
+		
+		<value>Genre Form</value>
+		
+		<value>Name</value>
+		
+		<value>Occupation</value>
+				
+		<value>Personal Name</value>
+
+		<value>Subject</value>
+
+		<value>Family Name</value>
+
+		<value>Function</value>
+
+		<value>Geographic Name</value>
+
+		<value>Title</value>
+		
+	</list>
+	
+	<list name="Language codes" listType="2" pairedValues="true">
+		
+		<!-- Drawn from the MARC code list for Languages: http://www.loc.gov/marc/languages/langhome.html -->
+
+		<usage className="org.archiviststoolkit.model.Resources" field="languageCode"/>
+
+		<usage className="org.archiviststoolkit.model.ResourcesComponents" field="languageCode"/>
+
+		<usage className="org.archiviststoolkit.model.DigitalObjects" field="languageCode"/>
+
+		<usage className="org.archiviststoolkit.model.Repositories" field="descriptiveLanguage"/>
+
+		<pair>
+
+			<value>No linguistic content</value>
+
+			<code>No_linguistic_content</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Undetermined</value>
+
+			<code>und</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Abkhaz</value>
+
+			<code>abk</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Achinese</value>
+
+			<code>ace</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Acoli</value>
+
+			<code>ach</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Adangme</value>
+
+			<code>ada</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Adygei</value>
+
+			<code>ady</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Afar</value>
+
+			<code>aar</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Afrihili</value>
+
+			<code>afh</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Afrikaans</value>
+
+			<code>afr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Afroasiatic (Other)</value>
+
+			<code>afa</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Akan</value>
+
+			<code>aka</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Akkadian</value>
+
+			<code>akk</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Albanian</value>
+
+			<code>alb</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Aleut</value>
+
+			<code>ale</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Algonquian (Other)</value>
+
+			<code>alg</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Altaic (Other)</value>
+
+			<code>tut</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Amharic</value>
+
+			<code>amh</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Apache languages</value>
+
+			<code>apa</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Arabic</value>
+
+			<code>ara</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Aragonese Spanish</value>
+
+			<code>arg</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Aramaic</value>
+
+			<code>arc</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Arapaho</value>
+
+			<code>arp</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Arawak</value>
+
+			<code>arw</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Armenian</value>
+
+			<code>arm</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Artificial (Other)</value>
+
+			<code>art</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Assamese</value>
+
+			<code>asm</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Athapascan (Other)</value>
+
+			<code>ath</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Australian languages</value>
+
+			<code>aus</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Austronesian (Other)</value>
+
+			<code>map</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Avaric</value>
+
+			<code>ava</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Avestan</value>
+
+			<code>ave</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Awadhi</value>
+
+			<code>awa</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Aymara</value>
+
+			<code>aym</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Azerbaijani</value>
+
+			<code>aze</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Bable</value>
+
+			<code>ast</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Balinese</value>
+
+			<code>ban</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Baltic (Other)</value>
+
+			<code>bat</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Baluchi</value>
+
+			<code>bal</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Bambara</value>
+
+			<code>bam</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Bamileke languages</value>
+
+			<code>bai</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Banda</value>
+
+			<code>bad</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Bantu (Other)</value>
+
+			<code>bnt</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Basa</value>
+
+			<code>bas</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Bashkir</value>
+
+			<code>bak</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Basque</value>
+
+			<code>baq</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Batak</value>
+
+			<code>btk</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Beja</value>
+
+			<code>bej</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Belarusian</value>
+
+			<code>bel</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Bemba</value>
+
+			<code>bem</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Bengali</value>
+
+			<code>ben</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Berber (Other)</value>
+
+			<code>ber</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Bhojpuri</value>
+
+			<code>bho</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Bihari</value>
+
+			<code>bih</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Bikol</value>
+
+			<code>bik</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Bislama</value>
+
+			<code>bis</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Bosnian</value>
+
+			<code>bos</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Braj</value>
+
+			<code>bra</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Breton</value>
+
+			<code>bre</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Bugis</value>
+
+			<code>bug</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Bulgarian</value>
+
+			<code>bul</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Buriat</value>
+
+			<code>bua</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Burmese</value>
+
+			<code>bur</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Caddo</value>
+
+			<code>cad</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Carib</value>
+
+			<code>car</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Catalan</value>
+
+			<code>cat</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Caucasian (Other)</value>
+
+			<code>cau</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Cebuano</value>
+
+			<code>ceb</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Celtic (Other)</value>
+
+			<code>cel</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Central American Indian (Other)</value>
+
+			<code>cai</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Chagatai</value>
+
+			<code>chg</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Chamic languages</value>
+
+			<code>cmc</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Chamorro</value>
+
+			<code>cha</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Chechen</value>
+
+			<code>che</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Cherokee</value>
+
+			<code>chr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Cheyenne</value>
+
+			<code>chy</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Chibcha</value>
+
+			<code>chb</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Chinese</value>
+
+			<code>chi</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Chinook jargon</value>
+
+			<code>chn</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Chipewyan</value>
+
+			<code>chp</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Choctaw</value>
+
+			<code>cho</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Church Slavic</value>
+
+			<code>chu</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Chuvash</value>
+
+			<code>chv</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Coptic</value>
+
+			<code>cop</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Cornish</value>
+
+			<code>cor</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Corsican</value>
+
+			<code>cos</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Cree</value>
+
+			<code>cre</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Creek</value>
+
+			<code>mus</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Creoles and Pidgins(Other)</value>
+
+			<code>crp</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Creoles and Pidgins, English-based (Other)</value>
+
+			<code>cpe</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Creoles and Pidgins, French-based (Other)</value>
+
+			<code>cpf</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Creoles and Pidgins, Portuguese-based (Other)</value>
+
+			<code>cpp</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Crimean Tatar</value>
+
+			<code>crh</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Croatian</value>
+
+			<code>scr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Cushitic (Other)</value>
+
+			<code>cus</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Czech</value>
+
+			<code>cze</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Dakota</value>
+
+			<code>dak</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Danish</value>
+
+			<code>dan</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Dargwa</value>
+
+			<code>dar</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Dayak</value>
+
+			<code>day</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Delaware</value>
+
+			<code>del</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Dinka</value>
+
+			<code>din</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Divehi</value>
+
+			<code>div</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Dogri</value>
+
+			<code>doi</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Dogrib</value>
+
+			<code>dgr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Dravidian (Other)</value>
+
+			<code>dra</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Duala</value>
+
+			<code>dua</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Dutch</value>
+
+			<code>dut</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Dutch, Middle (ca. 1050-1350)</value>
+
+			<code>dum</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Dyula</value>
+
+			<code>dyu</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Dzongkha</value>
+
+			<code>dzo</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Edo</value>
+
+			<code>bin</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Efik</value>
+
+			<code>efi</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Egyptian (Ancient)</value>
+
+			<code>egy</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Ekajuk</value>
+
+			<code>eka</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Elamite</value>
+
+			<code>elx</code>
+
+		</pair>
+
+		<pair>
+
+			<value>English</value>
+
+			<code>eng</code>
+
+		</pair>
+
+		<pair>
+
+			<value>English, Middle (1100-1500)</value>
+
+			<code>enm</code>
+
+		</pair>
+
+		<pair>
+
+			<value>English, Old (ca.450-1100)</value>
+
+			<code>ang</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Esperanto</value>
+
+			<code>epo</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Estonian</value>
+
+			<code>est</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Ethiopic</value>
+
+			<code>gez</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Ewe</value>
+
+			<code>ewe</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Ewondo</value>
+
+			<code>ewo</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Fang</value>
+
+			<code>fan</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Fanti</value>
+
+			<code>fat</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Faroese</value>
+
+			<code>fao</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Fijian</value>
+
+			<code>fij</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Finnish</value>
+
+			<code>fin</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Finno-Ugrian (Other)</value>
+
+			<code>fiu</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Fon</value>
+
+			<code>fon</code>
+
+		</pair>
+
+		<pair>
+
+			<value>French</value>
+
+			<code>fre</code>
+
+		</pair>
+
+		<pair>
+
+			<value>French, Middle (ca.1400-1600)</value>
+
+			<code>frm</code>
+
+		</pair>
+
+		<pair>
+
+			<value>French, Old (ca.842-1400)</value>
+
+			<code>fro</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Frisian</value>
+
+			<code>fry</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Friulian</value>
+
+			<code>fur</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Fula</value>
+
+			<code>ful</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Gã</value>
+
+			<code>gaa</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Galician</value>
+
+			<code>glg</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Ganda</value>
+
+			<code>lug</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Gayo</value>
+
+			<code>gay</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Gbaya</value>
+
+			<code>gba</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Georgian</value>
+
+			<code>geo</code>
+
+		</pair>
+
+		<pair>
+
+			<value>German</value>
+
+			<code>ger</code>
+
+		</pair>
+
+		<pair>
+
+			<value>German, Middle High (ca.1050-1500)</value>
+
+			<code>gmh</code>
+
+		</pair>
+
+		<pair>
+
+			<value>German, Old High (ca.750-1050)</value>
+
+			<code>goh</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Germanic (Other)</value>
+
+			<code>gem</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Gilbertese</value>
+
+			<code>gil</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Gondi</value>
+
+			<code>gon</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Gorontalo</value>
+
+			<code>gor</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Gothic</value>
+
+			<code>got</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Grebo</value>
+
+			<code>grb</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Greek, Ancient (to 1453)</value>
+
+			<code>grc</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Greek, Modern (1453-)</value>
+
+			<code>gre</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Guarani</value>
+
+			<code>grn</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Gujarati</value>
+
+			<code>guj</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Gwich'in</value>
+
+			<code>gwi</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Haida</value>
+
+			<code>hai</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Haitian French Creole</value>
+
+			<code>hat</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Hausa</value>
+
+			<code>hau</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Hawaiian</value>
+
+			<code>haw</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Hebrew</value>
+
+			<code>heb</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Herero</value>
+
+			<code>her</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Hiligaynon</value>
+
+			<code>hil</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Himachali</value>
+
+			<code>him</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Hindi</value>
+
+			<code>hin</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Hiri Motu</value>
+
+			<code>hmo</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Hittite</value>
+
+			<code>hit</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Hmong</value>
+
+			<code>hmn</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Hungarian</value>
+
+			<code>hun</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Hupa</value>
+
+			<code>hup</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Iban</value>
+
+			<code>iba</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Icelandic</value>
+
+			<code>ice</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Ido</value>
+
+			<code>ido</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Igbo</value>
+
+			<code>ibo</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Ijo</value>
+
+			<code>ijo</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Iloko</value>
+
+			<code>ilo</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Inari Sami</value>
+
+			<code>smn</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Indic (Other)</value>
+
+			<code>inc</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Indo-European (Other)</value>
+
+			<code>ine</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Indonesian</value>
+
+			<code>ind</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Ingush</value>
+
+			<code>inh</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Interlingua (International Auxiliary Language Association)</value>
+
+			<code>ina</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Interlingue</value>
+
+			<code>ile</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Inuktitut</value>
+
+			<code>iku</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Inupiaq</value>
+
+			<code>ipk</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Iranian (Other)</value>
+
+			<code>ira</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Irish</value>
+
+			<code>gle</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Irish, Middle (ca.1110-1550)</value>
+
+			<code>mga</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Irish, Old (to 1100)</value>
+
+			<code>sga</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Iroquoian (Other)</value>
+
+			<code>iro</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Italian</value>
+
+			<code>ita</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Japanese</value>
+
+			<code>jpn</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Javanese</value>
+
+			<code>jav</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Judeo-Arabic</value>
+
+			<code>jrb</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Judeo-Persian</value>
+
+			<code>jpr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kabardian</value>
+
+			<code>kbd</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kabyle</value>
+
+			<code>kab</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kachin</value>
+
+			<code>kac</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kalâtdlisut</value>
+
+			<code>kal</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kalmyk</value>
+
+			<code>xal</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kamba</value>
+
+			<code>kam</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kannada</value>
+
+			<code>kan</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kanuri</value>
+
+			<code>kau</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kara-Kalpak</value>
+
+			<code>kaa</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Karen</value>
+
+			<code>kar</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kashmiri</value>
+
+			<code>kas</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kawi</value>
+
+			<code>kaw</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kazakh</value>
+
+			<code>kaz</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Khasi</value>
+
+			<code>kha</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Khmer</value>
+
+			<code>khm</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Khoisan (Other)</value>
+
+			<code>khi</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Khotanese</value>
+
+			<code>kho</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kikuyu</value>
+
+			<code>kik</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kimbundu</value>
+
+			<code>kmb</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kinyarwanda</value>
+
+			<code>kin</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Komi</value>
+
+			<code>kom</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kongo</value>
+
+			<code>kon</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Konkani</value>
+
+			<code>kok</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Korean</value>
+
+			<code>kor</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kpelle</value>
+
+			<code>kpe</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kru (Other)</value>
+
+			<code>kro</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kuanyama</value>
+
+			<code>kua</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kumyk</value>
+
+			<code>kum</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kurdish</value>
+
+			<code>kur</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kurukh</value>
+
+			<code>kru</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kusaie</value>
+
+			<code>kos</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Kutenai</value>
+
+			<code>kut</code>
+
+		</pair>
+		<pair>
+
+			<value>Kyrgyz</value>
+
+			<code>kir</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Ladino</value>
+
+			<code>lad</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Lahnda</value>
+
+			<code>lah</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Lamba</value>
+
+			<code>lam</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Lao</value>
+
+			<code>lao</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Latin</value>
+
+			<code>lat</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Latvian</value>
+
+			<code>lav</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Letzeburgesch</value>
+
+			<code>ltz</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Lezgian</value>
+
+			<code>lez</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Limburgish</value>
+
+			<code>lim</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Lingala</value>
+
+			<code>lin</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Lithuanian</value>
+
+			<code>lit</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Low German</value>
+
+			<code>nds</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Lozi</value>
+
+			<code>loz</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Luba-Katanga</value>
+
+			<code>lub</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Luba-Lulua</value>
+
+			<code>lua</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Luiseño</value>
+
+			<code>lui</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Lule Sami</value>
+
+			<code>smj</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Lunda</value>
+
+			<code>lun</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Luo (Kenya and Tanzania)</value>
+
+			<code>luo</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Lushai</value>
+
+			<code>lus</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Macedonian</value>
+
+			<code>mac</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Madurese</value>
+
+			<code>mad</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Magahi</value>
+
+			<code>mag</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Maithili</value>
+
+			<code>mai</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Makasar</value>
+
+			<code>mak</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Malagasy</value>
+
+			<code>mlg</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Malay</value>
+
+			<code>may</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Malayalam</value>
+
+			<code>mal</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Maltese</value>
+
+			<code>mlt</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Manchu</value>
+
+			<code>mnc</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Mandar</value>
+
+			<code>mdr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Mandingo</value>
+
+			<code>man</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Manipuri</value>
+
+			<code>mni</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Manobo languages</value>
+
+			<code>mno</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Manx</value>
+
+			<code>glv</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Maori</value>
+
+			<code>mao</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Mapuche</value>
+
+			<code>arn</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Marathi</value>
+
+			<code>mar</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Mari</value>
+
+			<code>chm</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Marshallese</value>
+
+			<code>mah</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Marwari</value>
+
+			<code>mwr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Masai</value>
+
+			<code>mas</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Mayan languages</value>
+
+			<code>myn</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Mende</value>
+
+			<code>men</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Micmac</value>
+
+			<code>mic</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Minangkabau</value>
+
+			<code>min</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Miscellaneous languages</value>
+
+			<code>mis</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Mohawk</value>
+
+			<code>moh</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Moldavian</value>
+
+			<code>mol</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Mon-Khmer (Other)</value>
+
+			<code>mkh</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Mongo-Nkundu</value>
+
+			<code>lol</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Mongolian</value>
+
+			<code>mon</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Mooré</value>
+
+			<code>mos</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Multiple languages</value>
+
+			<code>mul</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Munda (Other)</value>
+
+			<code>mun</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Nahuatl</value>
+
+			<code>nah</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Nauru</value>
+
+			<code>nau</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Navajo</value>
+
+			<code>nav</code>
+
+		</pair>
+
+		<pair>
+			<value>Ndebele (South Africa)</value>
+
+			<code>nbl</code>
+
+		</pair>
+
+		<pair>
+			<value>Ndebele (Zimbabwe)</value>
+
+			<code>nde</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Ndonga</value>
+
+			<code>ndo</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Neapolitan Italian</value>
+
+			<code>nap</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Nepali</value>
+
+			<code>nep</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Newari</value>
+
+			<code>new</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Nias</value>
+
+			<code>nia</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Niger-Kordofanian (Other)</value>
+
+			<code>nic</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Nilo-Saharan (Other)</value>
+
+			<code>ssa</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Niuean</value>
+
+			<code>niu</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Nogai</value>
+
+			<code>nog</code>
+
+		</pair>
+
+		<pair>
+
+			<value>North American Indian (Other)</value>
+
+			<code>nai</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Northern Sami</value>
+
+			<code>sme</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Northern Sotho</value>
+
+			<code>nso</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Norwegian</value>
+
+			<code>nor</code>
+
+		</pair>
+		<pair>
+
+			<value>Norwegian Bokmål</value>
+
+			<code>nob</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Norwegian Nynorsk</value>
+
+			<code>nno</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Nubian languages</value>
+
+			<code>nub</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Nyamwezi</value>
+
+			<code>nym</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Nyanja</value>
+
+			<code>nya</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Nyankole</value>
+
+			<code>nyn</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Nyoro</value>
+
+			<code>nyo</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Nzima</value>
+
+			<code>nzi</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Occitan (post-1500)</value>
+
+			<code>oci</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Ojibwa</value>
+
+			<code>oji</code>
+
+		</pair>
+		<pair>
+
+			<value>Old Norse</value>
+
+			<code>non</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Old Persian (ca.600-400 B.C.)</value>
+
+			<code>peo</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Oriya</value>
+
+			<code>ori</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Oromo</value>
+
+			<code>orm</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Osage</value>
+
+			<code>osa</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Ossetic</value>
+
+			<code>oss</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Otomian languages</value>
+
+			<code>oto</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Pahlavi</value>
+
+			<code>pal</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Palauan</value>
+
+			<code>pau</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Pali</value>
+
+			<code>pli</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Pampanga</value>
+
+			<code>pam</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Pangasinan</value>
+
+			<code>pag</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Panjabi</value>
+
+			<code>pan</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Papiamento</value>
+
+			<code>pap</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Papuan (Other)</value>
+
+			<code>paa</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Persian</value>
+
+			<code>per</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Philippine (Other)</value>
+
+			<code>phi</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Phoenician</value>
+
+			<code>phn</code>
+
+		</pair>
+		<pair>
+
+			<value>Polish</value>
+
+			<code>pol</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Ponape</value>
+
+			<code>pon</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Portuguese</value>
+
+			<code>por</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Prakrit languages</value>
+
+			<code>pra</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Provençal (to 1500)</value>
+
+			<code>pro</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Pushto</value>
+
+			<code>pus</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Quechua</value>
+
+			<code>que</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Raeto-Romance</value>
+
+			<code>roh</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Rajasthani</value>
+
+			<code>raj</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Rapanui</value>
+
+			<code>rap</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Rarotongan</value>
+
+			<code>rar</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Reserved for local user</value>
+
+			<code>qaa-qtz</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Romance (Other)</value>
+
+			<code>roa</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Romani</value>
+
+			<code>rom</code>
+
+		</pair>
+		<pair>
+
+			<value>Romanian</value>
+
+			<code>rum</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Rundi</value>
+
+			<code>run</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Russian</value>
+
+			<code>rus</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Salishan languages</value>
+
+			<code>sal</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Samaritan Aramaic</value>
+
+			<code>sam</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Sami</value>
+
+			<code>smi</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Samoan</value>
+
+			<code>smo</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Sandawe</value>
+
+			<code>sad</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Sango (Ubangi Creole)</value>
+
+			<code>sag</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Sanskrit</value>
+
+			<code>san</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Santali</value>
+
+			<code>sat</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Sardinian</value>
+
+			<code>srd</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Sasak</value>
+
+			<code>sas</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Scots</value>
+
+			<code>sco</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Scottish Gaelic</value>
+
+			<code>gla</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Selkup</value>
+
+			<code>sel</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Semitic (Other)</value>
+
+			<code>sem</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Serbian</value>
+
+			<code>scc</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Serer</value>
+
+			<code>srr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Shan</value>
+
+			<code>shn</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Shona</value>
+
+			<code>sna</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Sichuan Yi</value>
+
+			<code>iii</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Sidamo</value>
+
+			<code>sid</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Sign languages</value>
+
+			<code>sgn</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Siksika</value>
+
+			<code>bla</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Sindhi</value>
+
+			<code>snd</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Sinhalese</value>
+
+			<code>sin</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Sino-Tibetan (Other)</value>
+
+			<code>sit</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Siouan (Other)</value>
+
+			<code>sio</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Skolt Sami</value>
+
+			<code>sms</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Slave</value>
+
+			<code>den</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Slavic (Other)</value>
+
+			<code>sla</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Slovak</value>
+
+			<code>slo</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Slovenian</value>
+
+			<code>slv</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Sogdian</value>
+
+			<code>sog</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Somali</value>
+
+			<code>som</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Songhai</value>
+
+			<code>son</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Soninke</value>
+
+			<code>snk</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Sorbian languages</value>
+
+			<code>wen</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Sotho</value>
+
+			<code>sot</code>
+
+		</pair>
+
+		<pair>
+
+			<value>South American Indian (Other)</value>
+
+			<code>sai</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Southern Sami</value>
+
+			<code>sma</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Spanish</value>
+
+			<code>spa</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Sukuma</value>
+
+			<code>suk</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Sumerian</value>
+
+			<code>sux</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Sundanese</value>
+
+			<code>sun</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Susu</value>
+
+			<code>sus</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Swahili</value>
+
+			<code>swa</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Swazi</value>
+
+			<code>ssw</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Swedish</value>
+
+			<code>swe</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Syriac</value>
+
+			<code>syr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tagalog</value>
+
+			<code>tgl</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tahitian</value>
+
+			<code>tah</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tai (Other)</value>
+
+			<code>tai</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tajik</value>
+
+			<code>tgk</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tamashek</value>
+
+			<code>tmh</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tamil</value>
+
+			<code>tam</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tatar</value>
+
+			<code>tat</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Telugu</value>
+
+			<code>tel</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Temne</value>
+
+			<code>tem</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Terena</value>
+
+			<code>ter</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tetum</value>
+
+			<code>tet</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Thai</value>
+
+			<code>tha</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tibetan</value>
+
+			<code>tib</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tigré</value>
+
+			<code>tig</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tigrinya</value>
+
+			<code>tir</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tiv</value>
+
+			<code>tiv</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tlingit</value>
+
+			<code>tli</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tok Pisin</value>
+
+			<code>tpi</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tokelauan</value>
+
+			<code>tkl</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tonga (Nyasa)</value>
+
+			<code>tog</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tongan</value>
+
+			<code>ton</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Truk</value>
+
+			<code>chk</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tsimshian</value>
+
+			<code>tsi</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tsonga</value>
+
+			<code>tso</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tswana</value>
+
+			<code>tsn</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tumbuka</value>
+
+			<code>tum</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tupi languages</value>
+
+			<code>tup</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Turkish</value>
+
+			<code>tur</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Turkish, Ottoman</value>
+
+			<code>ota</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Turkmen</value>
+
+			<code>tuk</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tuvaluan</value>
+
+			<code>tvl</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Tuvinian</value>
+
+			<code>tyv</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Twi</value>
+
+			<code>twi</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Udmurt</value>
+
+			<code>udm</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Ugaritic</value>
+
+			<code>uga</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Uighur</value>
+
+			<code>uig</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Ukrainian</value>
+
+			<code>ukr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Umbundu</value>
+
+			<code>umb</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Undetermined</value>
+
+			<code>und</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Urdu</value>
+
+			<code>urd</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Uzbek</value>
+
+			<code>uzb</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Vai</value>
+
+			<code>vai</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Venda</value>
+
+			<code>ven</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Vietnamese</value>
+
+			<code>vie</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Volapük</value>
+
+			<code>vol</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Votic</value>
+
+			<code>vot</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Wakashan languages</value>
+
+			<code>wak</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Walamo</value>
+
+			<code>wal</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Walloon</value>
+
+			<code>wln</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Waray</value>
+
+			<code>war</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Washo</value>
+
+			<code>was</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Welsh</value>
+
+			<code>wel</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Wolof</value>
+
+			<code>wol</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Xhosa</value>
+
+			<code>xho</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Yakut</value>
+
+			<code>sah</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Yao (Africa)</value>
+
+			<code>yao</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Yapese</value>
+
+			<code>yap</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Yiddish</value>
+
+			<code>yid</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Yoruba</value>
+
+			<code>yor</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Yupik languages</value>
+
+			<code>ypk</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Zande</value>
+
+			<code>znd</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Zapotec</value>
+
+			<code>zap</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Zenaga</value>
+
+			<code>zen</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Zhuang</value>
+
+			<code>zha</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Zulu</value>
+
+			<code>zul</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Zuni</value>
+
+			<code>zun</code>
+
+		</pair>
+
+	</list>
+	
+	<list name="List numeration types" listType="2">
+		
+		<!-- Drawn from the values provided for the "numeration" attribute in the list of general  attributes in the EAD TAG Library: http://www.loc.gov/ead/tglib/att_gen.html.  -->
+		
+		<usage className="org.archiviststoolkit.model.ListOrdered" field="numeration"/>
+		
+		<value>arabic</value>
+			
+		<value>loweralpha</value>
+		
+		<value>upperalpha</value>
+		
+		<value>lowerroman</value>
+		
+		<value>upperroman</value>
+		
+	</list>
+		
+	<list name="Name link creator / subject role" listType="2" pairedValues="true">
+		
+		<!--Role values for creator and subjects are drawn from the MARC list of relator terms at: http://www.loc.gov/marc/relators/relaterm.html  -->
+
+		<pair>
+
+			<value>Actor</value>
+
+			<code>act</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Adapter</value>
+
+			<code>adp</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Animator</value>
+
+			<code>anm</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Annotator</value>
+
+			<code>ann</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Applicant</value>
+
+			<code>app</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Architect</value>
+
+			<code>arc</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Arranger</value>
+
+			<code>arr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Artist</value>
+
+			<code>art</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Assignee</value>
+
+			<code>asg</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Associated name</value>
+
+			<code>asn</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Attributed name</value>
+
+			<code>att</code>
+
+		</pair>
+		
+		<pair>
+			
+			<value>Auctioneer</value>
+			
+			<code>auc</code>
+			
+		</pair>
+		
+		<pair>
+
+			<value>Author</value>
+
+			<code>aut</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Author in quotations or text extracts</value>
+
+			<code>aqt</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Author of afterword, colophon, etc.</value>
+
+			<code>aft</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Author of dialog</value>
+
+			<code>aud</code>
+
+		</pair>
+		
+		<pair>
+			
+			<value>Author of introduction</value>
+			
+			<code>aui</code>
+			
+		</pair>
+				
+		<pair>
+
+			<value>Author of screenplay, etc.</value>
+
+			<code>aus</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Bibliographic antecedent</value>
+
+			<code>ant</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Binder</value>
+
+			<code>bnd</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Binding designer</value>
+
+			<code>bdd</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Book designer</value>
+
+			<code>bkd</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Book producer</value>
+
+			<code>bkp</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Bookjacket designer</value>
+
+			<code>bjd</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Bookplate designer</value>
+
+			<code>bpd</code>
+
+		</pair>
+		
+		<pair>
+			
+			<value>Bookseller</value>
+			
+			<code>bsl</code>
+			
+		</pair>
+		
+		<pair>
+
+			<value>Calligrapher</value>
+
+			<code>cll</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Cartographer</value>
+
+			<code>ctg</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Censor</value>
+
+			<code>cns</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Choreographer</value>
+
+			<code>chr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Cinematographer</value>
+
+			<code>cng</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Client</value>
+
+			<code>cli</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Collaborator</value>
+
+			<code>clb</code>
+
+		</pair>
+
+		<pair>
+			
+			<value>Collector</value>
+			
+			<code>col</code>
+			
+		</pair>
+		
+		<pair>
+
+			<value>Collotyper</value>
+
+			<code>clt</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Commentator</value>
+
+			<code>cmm</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Commentator for written text</value>
+
+			<code>cwt</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Compiler</value>
+
+			<code>com</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Complainant</value>
+
+			<code>cpl</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Complainant-appellant</value>
+
+			<code>cpt</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Complainant-appellee</value>
+
+			<code>cpe</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Composer</value>
+
+			<code>cmp</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Compositor</value>
+
+			<code>cmt</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Conceptor</value>
+
+			<code>ccp</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Conductor</value>
+
+			<code>cnd</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Consultant</value>
+
+			<code>csl</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Consultant to a project</value>
+
+			<code>csp</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Contestant</value>
+
+			<code>cos</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Contestant-appellant</value>
+
+			<code>cot</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Contestant-appellee</value>
+
+			<code>coe</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Contestee</value>
+
+			<code>cts</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Contestee-appellant</value>
+
+			<code>ctt</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Contestee-appellee</value>
+
+			<code>cte</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Contractor</value>
+
+			<code>ctr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Contributor</value>
+
+			<code>ctb</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Copyright claimant</value>
+
+			<code>cpc</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Copyright holder</value>
+
+			<code>cph</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Corrector</value>
+
+			<code>crr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Correspondent</value>
+
+			<code>crp</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Costume designer</value>
+
+			<code>cst</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Cover designer</value>
+
+			<code>cov</code>
+
+		</pair>
+		
+		<pair>
+			
+			<value>Creator</value>
+			
+			<code>cre</code>
+			
+		</pair>
+		
+		<pair>
+
+			<value>Curator of an exhibition</value>
+
+			<code>cur</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Dancer</value>
+
+			<code>dnc</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Dedicatee</value>
+
+			<code>dte</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Dedicator</value>
+
+			<code>dto</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Defendant</value>
+
+			<code>dfd</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Defendant-appellant</value>
+
+			<code>dft</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Defendant-appellee</value>
+
+			<code>dfe</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Degree grantor</value>
+
+			<code>dgg</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Delineator</value>
+
+			<code>dln</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Depicted</value>
+
+			<code>dpc</code>
+
+		</pair>
+		
+		<pair>
+			
+			<value>Depositor</value>
+			
+			<code>dpt</code>
+			
+		</pair>
+		
+		<pair>
+
+			<value>Designer</value>
+
+			<code>dsr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Director</value>
+
+			<code>drt</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Dissertant</value>
+
+			<code>dis</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Distributor</value>
+
+			<code>dst</code>
+
+		</pair>
+		
+		<pair>
+			
+			<value>Donor</value>
+			
+			<code>dnr</code>
+			
+		</pair>
+		
+		<pair>
+
+			<value>Draftsman</value>
+
+			<code>drm</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Dubious author</value>
+
+			<code>dub</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Editor</value>
+
+			<code>edt</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Electrotyper</value>
+
+			<code>elt</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Engineer</value>
+
+			<code>eng</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Engraver</value>
+
+			<code>egr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Etcher</value>
+
+			<code>etr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Expert</value>
+
+			<code>exp</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Facsimilist</value>
+
+			<code>fac</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Film editor</value>
+
+			<code>flm</code>
+
+		</pair>
+
+		<pair>
+
+			<value>First party</value>
+
+			<code>fpy</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Forger</value>
+
+			<code>frg</code>
+
+		</pair>
+		
+		<pair>
+			
+			<value>Former owner</value>
+			
+			<code>fmo</code>
+			
+		</pair>
+		
+		<pair>
+			
+			<value>Funder</value>
+			
+			<code>fnd</code>
+			
+		</pair>
+		
+		<pair>
+
+			<value>Honoree</value>
+
+			<code>hnr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Host</value>
+
+			<code>hst</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Illuminator</value>
+
+			<code>ilu</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Illustrator</value>
+
+			<code>ill</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Inscriber</value>
+
+			<code>ins</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Instrumentalist</value>
+
+			<code>itr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Interviewee</value>
+
+			<code>ive</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Interviewer</value>
+
+			<code>ivr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Inventor</value>
+
+			<code>inv</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Landscape architect</value>
+
+			<code>lsa</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Lender</value>
+
+			<code>len</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Libelant</value>
+
+			<code>lil</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Libelant-appellant</value>
+
+			<code>lit</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Libelant-appellee</value>
+
+			<code>lie</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Libelee</value>
+
+			<code>lel</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Libelee-appellant</value>
+
+			<code>let</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Libelee-appellee</value>
+
+			<code>lee</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Librettist</value>
+
+			<code>lbt</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Licensee</value>
+
+			<code>lse</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Licensor</value>
+
+			<code>lso</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Lighting designer</value>
+
+			<code>lgd</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Lithographer</value>
+
+			<code>ltg</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Lyricist</value>
+
+			<code>lyr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Manufacturer</value>
+
+			<code>mfr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Markup editor</value>
+
+			<code>mrk</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Metadata contact</value>
+
+			<code>mdc</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Metal-engraver</value>
+
+			<code>mte</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Moderator</value>
+
+			<code>mod</code>
+
+		</pair>
+		
+		<pair>
+			
+			<value>Monitor</value>
+			
+			<code>mon</code>
+			
+		</pair>
+		
+		<pair>
+
+			<value>Musician</value>
+
+			<code>mus</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Narrator</value>
+
+			<code>nrt</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Opponent</value>
+
+			<code>opn</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Organizer of meeting</value>
+
+			<code>orm</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Originator</value>
+
+			<code>org</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Other</value>
+
+			<code>oth</code>
+
+		</pair>
+		
+		<pair>
+			
+			<value>Owner</value>
+			
+			<code>own</code>
+			
+		</pair>
+		
+		<pair>
+
+			<value>Papermaker</value>
+
+			<code>ppm</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Patent applicant</value>
+
+			<code>pta</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Patent holder</value>
+
+			<code>pth</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Patron</value>
+
+			<code>pat</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Performer</value>
+
+			<code>prf</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Photographer</value>
+
+			<code>pht</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Plaintiff</value>
+
+			<code>ptf</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Plaintiff-appellant</value>
+
+			<code>ptt</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Plaintiff-appellee</value>
+
+			<code>pte</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Platemaker</value>
+
+			<code>plt</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Printer</value>
+
+			<code>prt</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Printer of plates</value>
+
+			<code>pop</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Printmaker</value>
+
+			<code>prm</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Process contact</value>
+
+			<code>prc</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Producer</value>
+
+			<code>pro</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Production personnel</value>
+
+			<code>prd</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Programmer</value>
+
+			<code>prd</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Proofreader</value>
+
+			<code>pfr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Publisher</value>
+
+			<code>pbl</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Publishing director</value>
+
+			<code>pbd</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Puppeteer</value>
+
+			<code>ppt</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Recipient</value>
+
+			<code>rcp</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Recording engineer</value>
+
+			<code>rce</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Redactor</value>
+
+			<code>red</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Renderer</value>
+
+			<code>ren</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Reporter</value>
+
+			<code>rpt</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Research team head</value>
+
+			<code>rth</code>
+
+		</pair>
+
+		<pair>
+				
+			<value>Research team member</value>
+				
+			<code>rtm</code>
+				
+		</pair>
+		
+		<pair>
+			
+			<value>Researcher</value>
+
+			<code>res</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Respondent</value>
+
+			<code>rsp</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Respondent-appellant</value>
+
+			<code>rst</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Respondent-appellee</value>
+
+			<code>rse</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Responsible party</value>
+
+			<code>rpy</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Restager</value>
+
+			<code>rsg</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Reviewer</value>
+
+			<code>rev</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Rubicator</value>
+
+			<code>rbr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Scenarist</value>
+
+			<code>sce</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Scientific advisor</value>
+
+			<code>sad</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Scribe</value>
+
+			<code>scr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Sculptor</value>
+
+			<code>scl</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Second party</value>
+
+			<code>spy</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Secretary</value>
+
+			<code>sec</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Set designer</value>
+
+			<code>std</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Signer</value>
+
+			<code>sgn</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Singer</value>
+
+			<code>sng</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Speaker</value>
+
+			<code>spk</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Sponsor</value>
+
+			<code>spn</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Standards body</value>
+
+			<code>stn</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Stereotyper</value>
+
+			<code>str</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Storyteller</value>
+
+			<code>stl</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Surveyor</value>
+
+			<code>srv</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Teacher</value>
+
+			<code>tch</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Thesis advisor</value>
+
+			<code>ths</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Transcriber</value>
+
+			<code>trc</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Translator</value>
+
+			<code>trl</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Type designer</value>
+
+			<code>tyd</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Typographer</value>
+
+			<code>tyg</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Videographer</value>
+
+			<code>vdg</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Vocalist</value>
+
+			<code>voc</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Witness</value>
+
+			<code>wit</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Wood-engraver</value>
+
+			<code>wde</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Woodcutter</value>
+
+			<code>wdc</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Writer of accompanying material</value>
+
+			<code>wam</code>
+
+		</pair>
+
+	</list>
+	
+	
+	<list name="Name link function" listType="2">
+		
+		<usage className="org.archiviststoolkit.model.ArchDescriptionNames" field="nameLinkFunction"/>
+		
+		<value>Creator</value>
+		
+		<value>Source</value>
+		
+		<value>Subject</value>
+		
+	</list>
+
+	<list name="Name link source role" listType="2" pairedValues="true">
+		
+		<!--Role values for source are drawn from the MARC list of relator terms at: http://www.loc.gov/marc/relators/relaterm.html  -->
+
+		<pair>
+
+			<value>Auctioneer</value>
+
+			<code>auc</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Bookseller</value>
+
+			<code>bsl</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Collector</value>
+
+			<code>col</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Depositor</value>
+
+			<code>dpt</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Donor</value>
+
+			<code>dnr</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Former owner</value>
+
+			<code>fmo</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Funder</value>
+
+			<code>fnd</code>
+
+		</pair>
+
+		<pair>
+
+			<value>Owner</value>
+
+			<code>own</code>
+
+		</pair>
+
+	</list>
+
+	<list name="Name type" listType="2">
+		
+		<usage className="org.archiviststoolkit.model.Names" field="nameType"/>
+		
+		<usage className="org.archiviststoolkit.model.NonPreferredNames" field="nameType"/>
+		
+		<value>Corporate body</value>
+		
+		<value>Family</value>
+		
+		<value>Person</value>
+		
+	</list>
+	
+	<list name="Render" listType="2">
+		
+		<!-- Drawn from the values provided for the "render" attribute in the list of general attributes in the EAD TAG Library: http://www.loc.gov/ead/tglib/att_gen.html.  -->
+		
+		<value>altrender</value>
+		
+		<value>bold</value>
+		
+		<value>bolddoublequote</value>
+		
+		<value>bolditalic</value>
+		
+		<value>boldsinglequote</value>
+		
+		<value>boldsmcaps</value>
+		
+		<value>boldunderline</value>
+		
+		<value>doublequote</value>
+		
+		<value>italic</value>
+		
+		<value>nonproport</value>
+		
+		<value>singlequote</value>
+		
+		<value>smcaps</value>
+		
+		<value>sub</value>
+		
+		<value>super</value>
+		
+		<value>underline</value>
+		
+	</list>
+	
+	<list name="Resource levels" listType="2">
+		
+		<!-- Values for the "level" attribute are taken from the EAD Tag Library (http://www.loc.gov/ead/tglib/att_gen.html).   -->
+		
+		<usage className="org.archiviststoolkit.model.Resources" field="level"/>
+		
+		<value>class</value>
+		
+		<value>collection</value>
+		
+		<value>file</value>
+		
+		<value>fonds</value>
+				
+		<value>item</value>
+		
+		<value>otherlevel</value>
+		
+		<value>recordgrp</value>
+		
+		<value>series</value>
+		
+		<value>subfonds</value>
+		
+		<value>subgrp</value>
+		
+		<value>subseries</value>
+		
+	</list>
+	
+	<list name="Resource component levels" listType="2">
+		
+		<!-- Values for the "level" attribute are taken from the EAD Tag Library (http://www.loc.gov/ead/tglib/att_gen.html).   -->
+		
+		<usage className="org.archiviststoolkit.model.ResourcesComponents" field="level"/>
+						
+		<value>class</value>
+		
+		<value>collection</value>
+		
+		<value>file</value>
+		
+		<value>fonds</value>
+				
+		<value>item</value>
+		
+		<value>otherlevel</value>
+		
+		<value>recordgrp</value>
+		
+		<value>series</value>
+		
+		<value>subfonds</value>
+		
+		<value>subgrp</value>
+		
+		<value>subseries</value>
+		
+	</list>
+	
+	<list name="Show" listType="2">
+		
+		<!-- Drawn from the values provided for the "show" attribute in the list of linking  attributes in the EAD TAG Library: http://www.loc.gov/ead/tglib/att_link.html.  -->
+		
+		<usage className="org.archiviststoolkit.model.ExternalReference" field="show"/>
+		
+		<usage className="org.archiviststoolkit.model.FileVersions" field="eadDaoShow"/>
+		
+		<usage className="org.archiviststoolkit.model.DigitalObjects" field="eadDaoShow"/>
+		
+				
+		<value>embed</value>
+		
+		<value>new</value>
+		
+		<value>replace</value>
+				
+		<value>none</value>
+		
+		<value>other</value>
+		
+	</list>
+	
+	<list name="Subject term type" listType="2">
+
+		<usage className="org.archiviststoolkit.model.Subjects" field="subjectTermType"/>
+
+		<value>Function (657)</value>
+
+		<value>Genre / Form (655)</value>
+
+		<value>Geographic Name (651)</value>
+
+		<value>Occupation (656)</value>
+
+		<value>Topical Term (650)</value>
+
+		<value>Uniform Title (630)</value>
+
+	</list>
+
+	<!-- Type 3 List.  Some values in the list may not be merged, modified, or deleted.  Some default values can be merged, modified, or deleted, and new values can be added to the list.-->
+	
+	<list name="Instance types" listType="3">
+		
+		<usage className="org.archiviststoolkit.model.ArchDescriptionInstances" field="instanceType"/>
+		
+		<value>Audio</value>
+		
+		<value>Books</value>
+		
+		<value>Computer disks / tapes</value>
+		
+		<value editable="false">Digital object</value>
+
+		<value>Graphic materials</value>
+		
+		<value>Maps</value>
+		
+		<value>Microform</value>
+		
+		<value>Mixed materials</value>
+		
+		<value>Moving Images</value>
+		
+		<value>Realia</value>
+		
+		<value>Text</value>
+		
+	</list>
+
+    <list name="Date type" listType="2">
+
+        <usage className="org.archiviststoolkit.model.ArchDescriptionDates" field="dateType"/>
+
+        <value>creation</value>
+
+        <value>recordkeeping</value>
+
+        <value>publication</value>
+
+        <value>broadcast</value>
+
+    </list>
+
+    <list listType="1" name="Era" restrictToNmtoken="true">
+
+       <usage className="org.archiviststoolkit.model.ArchDescriptionDates" field="era"/>
+
+		<value>ce</value>
+
+	</list>
+
+	<list listType="1" name="Calendar" restrictToNmtoken="true">
+
+       <usage className="org.archiviststoolkit.model.ArchDescriptionDates" field="calendar"/>
+		<value>gregorian</value>
+
+	</list>
+
+
+	<list name="Extent type" listType="1">
+
+		<usage className="org.archiviststoolkit.model.Accessions" field="extentType"/>
+
+		<usage className="org.archiviststoolkit.model.Resources" field="extentType"/>
+
+		<usage className="org.archiviststoolkit.model.ResourcesComponents" field="extentType"/>
+
+       <usage className="org.archiviststoolkit.model.Deaccessions" field="extentType"/>
+
+       <usage className="org.archiviststoolkit.model.ArchDescriptionPhysicalDescriptions" field="extentType"/>
+
+		<value>Cubic feet</value>
+
+		<value>Linear feet</value>
+
+	</list>
+
+</atLookupLists>

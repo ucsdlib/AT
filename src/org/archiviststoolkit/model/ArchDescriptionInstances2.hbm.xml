@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+
+	<class name="ArchDescriptionInstances" table="ArchDescriptionInstances">
+
+
+		<id name="archDescriptionInstancesId" type="long" column="archDescriptionInstancesId">
+            <!--<generator class="org.hibernate.id.enhanced.TableGenerator">-->
+                <!--<param name="optimizer">hilo</param>-->
+                <!--<param name="segment_value">instances</param>-->
+                <!--<param name="increment_size">10</param>-->
+            <!--</generator>-->
+            <generator class="org.hibernate.id.enhanced.SequenceStyleGenerator">
+                <param name="optimizer">hilo</param>
+                <param name="sequence_name">instance_sequence</param>
+                <param name="increment_size">1000</param>
+            </generator>
+            <!--<generator class="increment"/>-->
+
+        </id>
+
+		<discriminator
+			column="instanceDescriminator"
+			type="string"/>
+
+		<property name="instanceType"
+				  column="instanceType"
+				  type="string"
+				  not-null="true"
+				  length="30"/>
+
+		<many-to-one name="resourceComponent"
+					 class="ResourcesComponents"
+					 column="resourceComponentId"
+					 access="field"
+					 fetch="join"
+					 outer-join="true"/>
+
+		<many-to-one name="resource"
+					 class="Resources"
+					 column="resourceId"
+					 access="field"
+					 fetch="join"
+					 outer-join="true"/>
+
+		<subclass name="ArchDescriptionAnalogInstances"
+				discriminator-value="analog">
+
+			<property name="container1NumericIndicator"
+					  column="container1NumericIndicator"
+					  type="double"/>
+
+			<property name="container1AlphaNumericIndicator"
+					  column="container1AlphaNumIndicator"
+					  type="string"/>
+
+			<property name="container1Type"
+					  column="container1Type"
+					  type="string"
+					  length="20"/>
+
+			<property name="container2NumericIndicator"
+					  column="container2NumericIndicator"
+					  type="double"/>
+
+			<property name="container2AlphaNumericIndicator"
+					  column="container2AlphaNumIndicator"
+					  type="string"/>
+
+			<property name="container2Type"
+					  column="container2Type"
+					  type="string"
+					  length="20"/>
+
+			<property name="container3NumericIndicator"
+					  column="container3NumericIndicator"
+					  type="double"/>
+
+			<property name="container3AlphaNumericIndicator"
+					  column="container3AlphaNumIndicator"
+					  type="string"/>
+
+			<property name="container3Type"
+					  column="container3Type"
+					  type="string"
+					  length="20"/>
+
+			<property name="containerLabel"
+					  column="containerLabel"
+					  type="string"
+					  length="20"/>
+
+			<property name="barcode"
+					  column="barcode"
+					  type="string"
+					  length="80"/>
+
+            <many-to-one name="location"
+                         class="Locations"
+                         column="locationId"
+                         access="field"
+                         fetch="join"
+                         outer-join="true"/>
+
+            <property name="userDefinedString1"
+                      column="userDefinedString1"
+                      type="string"/>
+
+            <property name="userDefinedString2"
+                      column="userDefinedString2"
+                      type="string"/>
+
+            <property name="userDefinedBoolean1"
+                      column="userDefinedBoolean1"
+                      type="boolean"/>
+
+            <property name="userDefinedBoolean2"
+                      column="userDefinedBoolean2"
+                      type="boolean"/>
+
+        </subclass>
+
+		<subclass name="ArchDescriptionDigitalInstances"
+				discriminator-value="digital">
+
+			<one-to-one name="digitalObject"
+						class="DigitalObjects"
+						property-ref="digitalInstance"
+						cascade="merge,save-update,refresh"/>
+
+            <many-to-one name="parentResource"
+					 class="Resources"
+					 column="parentResourceId"
+					 access="field"
+					 fetch="join"
+					 outer-join="true"/>
+
+		</subclass>
+	</class>
+
+</hibernate-mapping>

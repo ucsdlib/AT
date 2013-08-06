@@ -1,0 +1,2160 @@
+<log4j:event logger="org.archiviststoolkit" timestamp="1362411087244" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.20 sec
+Accessing database...8.32 sec
+Loading repositories...0.40 sec
+Loading plugins...0.20 sec
+User logon...20.39 sec
+Loading Lookup Lists...0.57 sec
+Loading Notes Etc. Types...0.08 sec
+Loading Field Information...0.60 sec
+Loading Rapid Data Entry Screens...0.55 sec
+Loading Location Information...2.04 sec
+Loading Default Value Information...0.22 sec
+Loading In-line tags...0.12 sec
+Loading Reports...5.87 sec
+Total startup time...39.59 sec
+Loading Reports...0.29 sec
+Initializing Names...1.30 sec
+Initializing Subjects...0.24 sec
+Initializing Accessions...0.01 sec
+Initializing Resources...0.73 sec
+Initializing Digital Objects...0.01 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1362496970403" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.13 sec
+Accessing database...5.09 sec
+Loading repositories...0.13 sec
+Loading plugins...0.25 sec
+User logon...4.72 sec
+Loading Lookup Lists...0.37 sec
+Loading Notes Etc. Types...0.04 sec
+Loading Field Information...0.46 sec
+Loading Rapid Data Entry Screens...1.93 sec
+Loading Location Information...1.36 sec
+Loading Default Value Information...0.02 sec
+Loading In-line tags...0.06 sec
+Loading Reports...10.71 sec
+Total startup time...25.32 sec
+Loading Reports...1.52 sec
+Initializing Names...1.45 sec
+Initializing Subjects...0.23 sec
+Initializing Accessions...0.01 sec
+Initializing Resources...0.94 sec
+Initializing Digital Objects...0.05 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1362499960307" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.15 sec
+Accessing database...5.26 sec
+Loading repositories...0.13 sec
+Loading plugins...0.17 sec
+User logon...7.29 sec
+Loading Lookup Lists...0.37 sec
+Loading Notes Etc. Types...0.02 sec
+Loading Field Information...0.51 sec
+Loading Rapid Data Entry Screens...1.57 sec
+Loading Location Information...1.33 sec
+Loading Default Value Information...0.06 sec
+Loading In-line tags...0.08 sec
+Loading Reports...6.36 sec
+Total startup time...23.35 sec
+Loading Reports...0.26 sec
+Initializing Names...1.33 sec
+Initializing Subjects...0.19 sec
+Initializing Accessions...0.02 sec
+Initializing Resources...0.55 sec
+Initializing Digital Objects...0.08 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1362500349057" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.10 sec
+Accessing database...4.00 sec
+Loading repositories...0.18 sec
+Loading plugins...0.08 sec
+User logon...5.67 sec
+Loading Lookup Lists...0.35 sec
+Loading Notes Etc. Types...0.09 sec
+Loading Field Information...0.59 sec
+Loading Rapid Data Entry Screens...0.70 sec
+Loading Location Information...1.43 sec
+Loading Default Value Information...0.02 sec
+Loading In-line tags...0.04 sec
+Loading Reports...6.86 sec
+Total startup time...20.17 sec
+Loading Reports...0.64 sec
+Initializing Names...1.13 sec
+Initializing Subjects...0.23 sec
+Initializing Accessions...0.04 sec
+Initializing Resources...0.54 sec
+Initializing Digital Objects...0.14 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1362511679534" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.14 sec
+Accessing database...4.06 sec
+Loading repositories...0.54 sec
+Loading plugins...0.98 sec
+User logon...21.70 sec
+Loading Lookup Lists...0.47 sec
+Loading Notes Etc. Types...0.05 sec
+Loading Field Information...0.75 sec
+Loading Rapid Data Entry Screens...0.98 sec
+Loading Location Information...1.36 sec
+Loading Default Value Information...0.07 sec
+Loading In-line tags...0.05 sec
+Loading Reports...6.55 sec
+Total startup time...37.76 sec
+Loading Reports...0.26 sec
+Initializing Names...1.35 sec
+Initializing Subjects...0.19 sec
+Initializing Accessions...0.03 sec
+Initializing Resources...0.46 sec
+Initializing Digital Objects...0.03 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1362514888239" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.03 sec
+Accessing database...2.85 sec
+Loading repositories...0.05 sec
+Loading plugins...0.04 sec
+User logon...1 min 11.32 sec
+Loading Lookup Lists...0.26 sec
+Loading Notes Etc. Types...0.01 sec
+Loading Field Information...0.38 sec
+Loading Rapid Data Entry Screens...0.15 sec
+Loading Location Information...1.20 sec
+Loading Default Value Information...0.03 sec
+Loading In-line tags...0.01 sec
+Loading Reports...4.94 sec
+Total startup time...1 min 21.32 sec
+Loading Reports...0.08 sec
+Initializing Names...0.98 sec
+Initializing Subjects...0.16 sec
+Initializing Accessions...0.00 sec
+Initializing Resources...0.44 sec
+Initializing Digital Objects...0.07 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1362515557492" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.02 sec
+Accessing database...2.87 sec
+Loading repositories...0.06 sec
+Loading plugins...0.04 sec
+User logon...4.86 sec
+Loading Lookup Lists...0.27 sec
+Loading Notes Etc. Types...0.01 sec
+Loading Field Information...0.36 sec
+Loading Rapid Data Entry Screens...0.13 sec
+Loading Location Information...1.16 sec
+Loading Default Value Information...0.04 sec
+Loading In-line tags...0.01 sec
+Loading Reports...5.28 sec
+Total startup time...15.16 sec
+Loading Reports...0.05 sec
+Initializing Names...0.99 sec
+Initializing Subjects...0.21 sec
+Initializing Accessions...0.00 sec
+Initializing Resources...0.44 sec
+Initializing Digital Objects...0.00 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1362583932794" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.21 sec
+Accessing database...10.37 sec
+Loading repositories...0.39 sec
+Loading plugins...0.36 sec
+User logon...35.98 sec
+Loading Lookup Lists...0.52 sec
+Loading Notes Etc. Types...0.60 sec
+Loading Field Information...1.73 sec
+Loading Rapid Data Entry Screens...3.99 sec
+Loading Location Information...2.36 sec
+Loading Default Value Information...0.02 sec
+Loading In-line tags...1.17 sec
+Loading Reports...11.64 sec
+Total startup time...1 min 09.40 sec
+Loading Reports...0.38 sec
+Initializing Names...2.04 sec
+Initializing Subjects...3.17 sec
+Initializing Accessions...0.10 sec
+Initializing Resources...1.12 sec
+Initializing Digital Objects...0.18 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1362585382016" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.12 sec
+Accessing database...5.05 sec
+Loading repositories...0.15 sec
+Loading plugins...0.07 sec
+User logon...9.18 sec
+Loading Lookup Lists...0.32 sec
+Loading Notes Etc. Types...0.01 sec
+Loading Field Information...0.39 sec
+Loading Rapid Data Entry Screens...0.28 sec
+Loading Location Information...1.24 sec
+Loading Default Value Information...0.02 sec
+Loading In-line tags...0.04 sec
+Loading Reports...5.54 sec
+Total startup time...22.47 sec
+Loading Reports...0.48 sec
+Initializing Names...1.34 sec
+Initializing Subjects...0.21 sec
+Initializing Accessions...0.02 sec
+Initializing Resources...0.45 sec
+Initializing Digital Objects...0.02 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1362588099291" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.18 sec
+Accessing database...4.15 sec
+Loading repositories...0.21 sec
+Loading plugins...0.07 sec
+User logon...8.76 sec
+Loading Lookup Lists...0.32 sec
+Loading Notes Etc. Types...0.03 sec
+Loading Field Information...0.41 sec
+Loading Rapid Data Entry Screens...0.34 sec
+Loading Location Information...1.17 sec
+Loading Default Value Information...0.02 sec
+Loading In-line tags...0.05 sec
+Loading Reports...5.34 sec
+Total startup time...21.10 sec
+Loading Reports...0.12 sec
+Initializing Names...0.93 sec
+Initializing Subjects...0.23 sec
+Initializing Accessions...0.02 sec
+Initializing Resources...0.48 sec
+Initializing Digital Objects...0.10 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1362588181381" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.11 sec
+Accessing database...4.11 sec
+Loading repositories...0.21 sec
+Loading plugins...0.05 sec
+User logon...3.44 sec
+Loading Lookup Lists...0.30 sec
+Loading Notes Etc. Types...0.01 sec
+Loading Field Information...0.38 sec
+Loading Rapid Data Entry Screens...0.23 sec
+Loading Location Information...1.17 sec
+Loading Default Value Information...0.02 sec
+Loading In-line tags...0.08 sec
+Loading Reports...4.85 sec
+Total startup time...15.04 sec
+Loading Reports...0.14 sec
+Initializing Names...1.03 sec
+Initializing Subjects...0.23 sec
+Initializing Accessions...0.07 sec
+Initializing Resources...0.43 sec
+Initializing Digital Objects...0.19 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1362588474289" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.01 sec
+Accessing database...2.80 sec
+Loading repositories...0.05 sec
+Loading plugins...0.05 sec
+User logon...3.58 sec
+Loading Lookup Lists...0.25 sec
+Loading Notes Etc. Types...0.01 sec
+Loading Field Information...0.35 sec
+Loading Rapid Data Entry Screens...0.19 sec
+Loading Location Information...1.16 sec
+Loading Default Value Information...0.02 sec
+Loading In-line tags...0.01 sec
+Loading Reports...5.19 sec
+Total startup time...13.72 sec
+Loading Reports...0.14 sec
+Initializing Names...1.13 sec
+Initializing Subjects...0.25 sec
+Initializing Accessions...0.08 sec
+Initializing Resources...0.78 sec
+Initializing Digital Objects...0.10 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1362594393129" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.18 sec
+Accessing database...4.29 sec
+Loading repositories...0.33 sec
+Loading plugins...0.33 sec
+User logon...5.22 sec
+Loading Lookup Lists...0.42 sec
+Loading Notes Etc. Types...0.09 sec
+Loading Field Information...0.61 sec
+Loading Rapid Data Entry Screens...0.46 sec
+Loading Location Information...1.24 sec
+Loading Default Value Information...0.13 sec
+Loading In-line tags...0.03 sec
+Loading Reports...6.61 sec
+Total startup time...20.00 sec
+Loading Reports...0.29 sec
+Initializing Names...1.62 sec
+Initializing Subjects...0.43 sec
+Initializing Accessions...0.07 sec
+Initializing Resources...1.44 sec
+Initializing Digital Objects...0.03 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1362601107159" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.12 sec
+Accessing database...6.19 sec
+Loading repositories...0.19 sec
+Loading plugins...0.71 sec
+User logon...46.83 sec
+Loading Lookup Lists...1.24 sec
+Loading Notes Etc. Types...0.08 sec
+Loading Field Information...1.01 sec
+Loading Rapid Data Entry Screens...0.62 sec
+Loading Location Information...1.89 sec
+Loading Default Value Information...0.09 sec
+Loading In-line tags...0.15 sec
+Loading Reports...9.64 sec
+Total startup time...1 min 08.81 sec
+Loading Reports...0.32 sec
+Initializing Names...1.91 sec
+Initializing Subjects...0.35 sec
+Initializing Accessions...0.18 sec
+Initializing Resources...1.15 sec
+Initializing Digital Objects...0.09 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1362672102288" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.65 sec
+Accessing database...16.96 sec
+Loading repositories...0.35 sec
+Loading plugins...0.22 sec
+User logon...21.99 sec
+Loading Lookup Lists...0.74 sec
+Loading Notes Etc. Types...0.92 sec
+Loading Field Information...3.47 sec
+Loading Rapid Data Entry Screens...2.08 sec
+Loading Location Information...3.45 sec
+Loading Default Value Information...0.13 sec
+Loading In-line tags...0.09 sec
+Loading Reports...15.01 sec
+Total startup time...1 min 06.12 sec
+Loading Reports...0.77 sec
+Initializing Names...4.53 sec
+Initializing Subjects...1.59 sec
+Initializing Accessions...0.12 sec
+Initializing Resources...1.52 sec
+Initializing Digital Objects...0.02 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363105412538" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.03 sec
+Accessing database...4.13 sec
+Loading repositories...0.37 sec
+Loading plugins...0.27 sec
+User logon...15.16 sec
+Loading Lookup Lists...0.40 sec
+Loading Notes Etc. Types...0.03 sec
+Loading Field Information...0.57 sec
+Loading Rapid Data Entry Screens...0.26 sec
+Loading Location Information...0.07 sec
+Loading Default Value Information...0.12 sec
+Loading In-line tags...0.04 sec
+Loading Reports...5.82 sec
+Total startup time...27.32 sec
+Loading Reports...0.89 sec
+Initializing Names...2.85 sec
+Initializing Subjects...0.42 sec
+Initializing Accessions...0.13 sec
+Initializing Resources...0.29 sec
+Initializing Digital Objects...0.05 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363107724528" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.08 sec
+Accessing database...4.12 sec
+Loading repositories...0.19 sec
+Loading plugins...0.05 sec
+User logon...6.26 sec
+Loading Lookup Lists...0.30 sec
+Loading Notes Etc. Types...0.01 sec
+Loading Field Information...0.50 sec
+Loading Rapid Data Entry Screens...0.29 sec
+Loading Location Information...0.05 sec
+Loading Default Value Information...0.07 sec
+Loading In-line tags...0.02 sec
+Loading Reports...5.26 sec
+Total startup time...17.24 sec
+Loading Reports...0.11 sec
+Initializing Names...0.95 sec
+Initializing Subjects...0.19 sec
+Initializing Accessions...0.00 sec
+Initializing Resources...0.15 sec
+Initializing Digital Objects...0.07 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363225881239" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.11 sec
+Accessing database...2.94 sec
+Loading repositories...0.23 sec
+Loading plugins...0.23 sec
+User logon...31.86 sec
+Loading Lookup Lists...0.31 sec
+Loading Notes Etc. Types...0.04 sec
+Loading Field Information...0.58 sec
+Loading Rapid Data Entry Screens...2.41 sec
+Loading Location Information...1.77 sec
+Loading Default Value Information...3.38 sec
+Loading In-line tags...0.15 sec
+Loading Reports...5.70 sec
+Total startup time...49.75 sec
+Loading Reports...0.26 sec
+Initializing Names...0.76 sec
+Initializing Subjects...0.42 sec
+Initializing Accessions...0.17 sec
+Initializing Resources...0.99 sec
+Initializing Digital Objects...0.00 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363290234776" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.37 sec
+Accessing database...21.09 sec
+Loading repositories...1.29 sec
+Loading plugins...1.63 sec
+User logon...1 min 36.53 sec
+Loading Lookup Lists...1.73 sec
+Loading Notes Etc. Types...0.22 sec
+Loading Field Information...4.28 sec
+Loading Rapid Data Entry Screens...0.89 sec
+Loading Location Information...4.35 sec
+Loading Default Value Information...1.09 sec
+Loading In-line tags...0.52 sec
+Loading Reports...16.19 sec
+Total startup time...2 min 30.25 sec
+Loading Reports...0.39 sec
+Initializing Names...5.83 sec
+Initializing Subjects...1.43 sec
+Initializing Accessions...0.05 sec
+Initializing Resources...1.78 sec
+Initializing Digital Objects...0.17 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363291366816" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.10 sec
+Accessing database...3.86 sec
+Loading repositories...0.19 sec
+Loading plugins...0.19 sec
+User logon...4.52 sec
+Loading Lookup Lists...0.35 sec
+Loading Notes Etc. Types...0.07 sec
+Loading Field Information...0.54 sec
+Loading Rapid Data Entry Screens...0.48 sec
+Loading Location Information...1.37 sec
+Loading Default Value Information...0.10 sec
+Loading In-line tags...0.08 sec
+Loading Reports...6.08 sec
+Total startup time...17.98 sec
+Loading Reports...0.30 sec
+Initializing Names...1.46 sec
+Initializing Subjects...0.22 sec
+Initializing Accessions...0.04 sec
+Initializing Resources...0.51 sec
+Initializing Digital Objects...0.01 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363358699159" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.08 sec
+Accessing database...4.41 sec
+Loading repositories...0.12 sec
+Loading plugins...0.10 sec
+User logon...34.15 sec
+Loading Lookup Lists...0.58 sec
+Loading Notes Etc. Types...0.03 sec
+Loading Field Information...0.74 sec
+Loading Rapid Data Entry Screens...0.19 sec
+Loading Location Information...1.41 sec
+Loading Default Value Information...0.65 sec
+Loading In-line tags...0.05 sec
+Loading Reports...4.70 sec
+Total startup time...47.27 sec
+Loading Reports...0.12 sec
+Initializing Names...4.82 sec
+Initializing Subjects...0.93 sec
+Initializing Accessions...0.07 sec
+Initializing Resources...0.32 sec
+Initializing Digital Objects...0.19 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363358996903" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.01 sec
+Accessing database...2.91 sec
+Loading repositories...0.13 sec
+Loading plugins...0.04 sec
+User logon...15.25 sec
+Loading Lookup Lists...0.35 sec
+Loading Notes Etc. Types...0.02 sec
+Loading Field Information...0.65 sec
+Loading Rapid Data Entry Screens...0.20 sec
+Loading Location Information...0.17 sec
+Loading Default Value Information...0.16 sec
+Loading In-line tags...0.03 sec
+Loading Reports...4.29 sec
+Total startup time...24.26 sec
+Loading Reports...0.04 sec
+Initializing Names...2.24 sec
+Initializing Subjects...0.39 sec
+Initializing Accessions...0.00 sec
+Initializing Resources...0.27 sec
+Initializing Digital Objects...0.00 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363359087171" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.01 sec
+Accessing database...2.91 sec
+Loading repositories...0.09 sec
+Loading plugins...0.04 sec
+User logon...22.67 sec
+Loading Lookup Lists...0.38 sec
+Loading Notes Etc. Types...0.02 sec
+Loading Field Information...0.66 sec
+Loading Rapid Data Entry Screens...0.19 sec
+Loading Location Information...1.98 sec
+Loading Default Value Information...0.11 sec
+Loading In-line tags...0.03 sec
+Loading Reports...4.25 sec
+Total startup time...33.39 sec
+Loading Reports...0.04 sec
+Initializing Names...3.28 sec
+Initializing Subjects...0.64 sec
+Initializing Accessions...0.00 sec
+Initializing Resources...1.04 sec
+Initializing Digital Objects...0.00 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363359302693" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.01 sec
+Accessing database...2.91 sec
+Loading repositories...0.07 sec
+Loading plugins...0.04 sec
+User logon...23.16 sec
+Loading Lookup Lists...0.25 sec
+Loading Notes Etc. Types...0.01 sec
+Loading Field Information...0.34 sec
+Loading Rapid Data Entry Screens...0.09 sec
+Loading Location Information...1.25 sec
+Loading Default Value Information...0.02 sec
+Loading In-line tags...0.01 sec
+Loading Reports...4.53 sec
+Total startup time...32.75 sec
+Loading Reports...0.04 sec
+Initializing Names...1.06 sec
+Initializing Subjects...0.25 sec
+Initializing Accessions...0.00 sec
+Initializing Resources...0.45 sec
+Initializing Digital Objects...0.00 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363365662254" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.10 sec
+Accessing database...3.32 sec
+Loading repositories...0.08 sec
+Loading plugins...0.14 sec
+User logon...16.04 sec
+Loading Lookup Lists...0.46 sec
+Loading Notes Etc. Types...0.03 sec
+Loading Field Information...0.73 sec
+Loading Rapid Data Entry Screens...0.22 sec
+Loading Location Information...1.60 sec
+Loading Default Value Information...0.65 sec
+Loading In-line tags...0.88 sec
+Loading Reports...5.03 sec
+Total startup time...29.33 sec
+Loading Reports...0.08 sec
+Initializing Names...5.04 sec
+Initializing Subjects...0.92 sec
+Initializing Accessions...0.08 sec
+Initializing Resources...0.40 sec
+Initializing Digital Objects...0.00 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363365810590" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.07 sec
+Accessing database...4.21 sec
+Loading repositories...0.34 sec
+Loading plugins...0.17 sec
+User logon...9.62 sec
+Loading Lookup Lists...0.53 sec
+Loading Notes Etc. Types...0.02 sec
+Loading Field Information...0.84 sec
+Loading Rapid Data Entry Screens...0.27 sec
+Loading Location Information...0.07 sec
+Loading Default Value Information...0.14 sec
+Loading In-line tags...0.03 sec
+Loading Reports...4.82 sec
+Total startup time...21.19 sec
+Loading Reports...0.11 sec
+Initializing Names...2.26 sec
+Initializing Subjects...0.48 sec
+Initializing Accessions...0.00 sec
+Initializing Resources...0.27 sec
+Initializing Digital Objects...0.08 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363365963876" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.01 sec
+Accessing database...3.48 sec
+Loading repositories...0.09 sec
+Loading plugins...0.06 sec
+User logon...11.92 sec
+Loading Lookup Lists...0.44 sec
+Loading Notes Etc. Types...0.02 sec
+Loading Field Information...0.72 sec
+Loading Rapid Data Entry Screens...0.25 sec
+Loading Location Information...2.08 sec
+Loading Default Value Information...0.12 sec
+Loading In-line tags...0.20 sec
+Loading Reports...4.86 sec
+Total startup time...24.30 sec
+Loading Reports...0.04 sec
+Initializing Names...3.51 sec
+Initializing Subjects...0.68 sec
+Initializing Accessions...0.00 sec
+Initializing Resources...1.18 sec
+Initializing Digital Objects...0.01 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363366411251" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.13 sec
+Accessing database...3.86 sec
+Loading repositories...0.21 sec
+Loading plugins...0.08 sec
+User logon...16.06 sec
+Loading Lookup Lists...0.30 sec
+Loading Notes Etc. Types...0.05 sec
+Loading Field Information...0.35 sec
+Loading Rapid Data Entry Screens...0.17 sec
+Loading Location Information...1.21 sec
+Loading Default Value Information...0.02 sec
+Loading In-line tags...0.03 sec
+Loading Reports...4.95 sec
+Total startup time...27.47 sec
+Loading Reports...0.15 sec
+Initializing Names...1.19 sec
+Initializing Subjects...0.18 sec
+Initializing Accessions...0.02 sec
+Initializing Resources...0.42 sec
+Initializing Digital Objects...0.01 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363374562222" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.20 sec
+Accessing database...9.71 sec
+Loading repositories...0.15 sec
+Loading plugins...0.19 sec
+User logon...26.82 sec
+Loading Lookup Lists...0.56 sec
+Loading Notes Etc. Types...0.08 sec
+Loading Field Information...1.05 sec
+Loading Rapid Data Entry Screens...0.65 sec
+Loading Location Information...0.10 sec
+Loading Default Value Information...0.15 sec
+Loading In-line tags...0.08 sec
+Loading Reports...7.43 sec
+Total startup time...47.22 sec
+Loading Reports...0.21 sec
+Initializing Names...2.37 sec
+Initializing Subjects...0.45 sec
+Initializing Accessions...0.19 sec
+Initializing Resources...0.27 sec
+Initializing Digital Objects...0.01 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363374810251" level="ERROR" thread="Thread-20">
+<log4j:message><![CDATA[failed to findbyprimarykey: org.hibernate.exception.JDBCConnectionException: Cannot open connection]]></log4j:message>
+<log4j:throwable><![CDATA[org.archiviststoolkit.mydomain.LookupException: failed to findbyprimarykey: org.hibernate.exception.JDBCConnectionException: Cannot open connection
+	at org.archiviststoolkit.mydomain.DomainAccessObjectImpl.findByPrimaryKeyCommon(DomainAccessObjectImpl.java:547)
+	at org.archiviststoolkit.mydomain.DomainAccessObjectImpl.findByPrimaryKeyLongSession(DomainAccessObjectImpl.java:582)
+	at org.archiviststoolkit.mydomain.ResourceTableWorkSurface.getCurrentDomainObjectFromDatabase(ResourceTableWorkSurface.java:143)
+	at org.archiviststoolkit.mydomain.DomainTableWorkSurface$LookupWorkerRunnable.run(DomainTableWorkSurface.java:1565)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: org.hibernate.exception.JDBCConnectionException: Cannot open connection
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:74)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:43)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:29)
+	at org.hibernate.jdbc.ConnectionManager.openConnection(ConnectionManager.java:426)
+	at org.hibernate.jdbc.ConnectionManager.getConnection(ConnectionManager.java:144)
+	at org.hibernate.jdbc.AbstractBatcher.prepareQueryStatement(AbstractBatcher.java:139)
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:1547)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:673)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at org.archiviststoolkit.mydomain.DomainAccessObjectImpl.findByPrimaryKeyCommon(DomainAccessObjectImpl.java:505)
+	... 4 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 123,282 milliseconds ago.  The last packet sent successfully to the server was 0 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1118)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3055)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2941)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3489)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1959)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2113)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2562)
+	at com.mysql.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:4956)
+	at com.mchange.v2.c3p0.impl.NewProxyConnection.setAutoCommit(NewProxyConnection.java:756)
+	at org.hibernate.connection.C3P0ConnectionProvider.getConnection(C3P0ConnectionProvider.java:61)
+	at org.hibernate.jdbc.ConnectionManager.openConnection(ConnectionManager.java:423)
+	... 17 more
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:2502)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2952)
+	... 26 more
+]]></log4j:throwable>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363374814100" level="ERROR" thread="AWT-EventQueue-0">
+<log4j:message><![CDATA[]]></log4j:message>
+<log4j:throwable><![CDATA[java.lang.NullPointerException
+	at org.archiviststoolkit.mydomain.DomainAccessObjectImpl.add(DomainAccessObjectImpl.java:150)
+	at org.archiviststoolkit.util.RecordLockUtils.addRecordLock(RecordLockUtils.java:108)
+	at org.archiviststoolkit.mydomain.DomainTableWorkSurface.isRecordLocked(DomainTableWorkSurface.java:1626)
+	at org.archiviststoolkit.mydomain.DomainTableWorkSurface.isRecordLocked(DomainTableWorkSurface.java:1640)
+	at org.archiviststoolkit.mydomain.DomainTableWorkSurface.finishOnUpdate(DomainTableWorkSurface.java:754)
+	at org.archiviststoolkit.mydomain.DomainTableWorkSurface.access$700(DomainTableWorkSurface.java:69)
+	at org.archiviststoolkit.mydomain.DomainTableWorkSurface$LookupWorkerRunnable$1.run(DomainTableWorkSurface.java:1593)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:209)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:708)
+	at java.awt.EventQueue.access$400(EventQueue.java:82)
+	at java.awt.EventQueue$2.run(EventQueue.java:669)
+	at java.awt.EventQueue$2.run(EventQueue.java:667)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(AccessControlContext.java:87)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:678)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+]]></log4j:throwable>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363383509901" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.16 sec
+Accessing database...6.33 sec
+Loading repositories...0.18 sec
+Loading plugins...0.18 sec
+User logon...12.07 sec
+Loading Lookup Lists...0.28 sec
+Loading Notes Etc. Types...0.04 sec
+Loading Field Information...0.44 sec
+Loading Rapid Data Entry Screens...0.26 sec
+Loading Location Information...0.05 sec
+Loading Default Value Information...0.07 sec
+Loading In-line tags...0.05 sec
+Loading Reports...5.85 sec
+Total startup time...25.99 sec
+Loading Reports...0.13 sec
+Initializing Names...1.23 sec
+Initializing Subjects...0.24 sec
+Initializing Accessions...0.00 sec
+Initializing Resources...0.15 sec
+Initializing Digital Objects...0.02 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363383563343" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.01 sec
+Accessing database...2.88 sec
+Loading repositories...0.07 sec
+Loading plugins...0.04 sec
+User logon...14.57 sec
+Loading Lookup Lists...0.29 sec
+Loading Notes Etc. Types...0.01 sec
+Loading Field Information...0.38 sec
+Loading Rapid Data Entry Screens...0.10 sec
+Loading Location Information...1.02 sec
+Loading Default Value Information...0.16 sec
+Loading In-line tags...0.01 sec
+Loading Reports...4.31 sec
+Total startup time...23.89 sec
+Loading Reports...0.04 sec
+Initializing Names...1.86 sec
+Initializing Subjects...0.29 sec
+Initializing Accessions...0.00 sec
+Initializing Resources...0.18 sec
+Initializing Digital Objects...0.00 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363383622200" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.01 sec
+Accessing database...3.19 sec
+Loading repositories...0.09 sec
+Loading plugins...0.04 sec
+User logon...13.34 sec
+Loading Lookup Lists...0.27 sec
+Loading Notes Etc. Types...0.01 sec
+Loading Field Information...0.39 sec
+Loading Rapid Data Entry Screens...0.15 sec
+Loading Location Information...1.48 sec
+Loading Default Value Information...0.05 sec
+Loading In-line tags...0.02 sec
+Loading Reports...4.49 sec
+Total startup time...23.58 sec
+Loading Reports...0.04 sec
+Initializing Names...1.32 sec
+Initializing Subjects...0.24 sec
+Initializing Accessions...0.00 sec
+Initializing Resources...0.67 sec
+Initializing Digital Objects...0.00 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363383853493" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.09 sec
+Accessing database...5.39 sec
+Loading repositories...0.17 sec
+Loading plugins...0.11 sec
+User logon...12.91 sec
+Loading Lookup Lists...0.30 sec
+Loading Notes Etc. Types...0.01 sec
+Loading Field Information...0.44 sec
+Loading Rapid Data Entry Screens...0.20 sec
+Loading Location Information...1.23 sec
+Loading Default Value Information...0.02 sec
+Loading In-line tags...0.09 sec
+Loading Reports...6.01 sec
+Total startup time...27.05 sec
+Loading Reports...0.12 sec
+Initializing Names...1.17 sec
+Initializing Subjects...0.24 sec
+Initializing Accessions...0.01 sec
+Initializing Resources...0.48 sec
+Initializing Digital Objects...0.08 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363801021664" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.29 sec
+Accessing database...8.53 sec
+Loading repositories...0.36 sec
+Loading plugins...0.23 sec
+User logon...1 min 17.89 sec
+Loading Lookup Lists...0.37 sec
+Loading Notes Etc. Types...0.04 sec
+Loading Field Information...0.49 sec
+Loading Rapid Data Entry Screens...0.42 sec
+Loading Location Information...0.09 sec
+Loading Default Value Information...0.07 sec
+Loading In-line tags...0.08 sec
+Loading Reports...6.35 sec
+Total startup time...1 min 35.25 sec
+Loading Reports...0.35 sec
+Initializing Names...1.36 sec
+Initializing Subjects...0.27 sec
+Initializing Accessions...0.01 sec
+Initializing Resources...0.15 sec
+Initializing Digital Objects...0.01 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363899223621" level="ERROR" thread="main">
+<log4j:message><![CDATA[The database you are accessing does not exist. Please check the settings and try again.
+
+]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363899251410" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.10 sec
+Accessing database...5.44 sec
+Loading repositories...0.23 sec
+Loading plugins...0.17 sec
+User logon...33.40 sec
+Loading Lookup Lists...0.55 sec
+Loading Notes Etc. Types...0.11 sec
+Loading Field Information...0.64 sec
+Loading Rapid Data Entry Screens...0.32 sec
+Loading Location Information...0.12 sec
+Loading Default Value Information...0.14 sec
+Loading In-line tags...0.11 sec
+Loading Reports...5.84 sec
+Total startup time...47.20 sec
+Loading Reports...0.21 sec
+Initializing Names...0.38 sec
+Initializing Subjects...0.09 sec
+Initializing Accessions...0.01 sec
+Initializing Resources...0.07 sec
+Initializing Digital Objects...0.00 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1363899616204" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.11 sec
+Accessing database...4.31 sec
+Loading repositories...0.17 sec
+Loading plugins...0.05 sec
+User logon...16.64 sec
+Loading Lookup Lists...0.71 sec
+Loading Notes Etc. Types...0.24 sec
+Loading Field Information...0.87 sec
+Loading Rapid Data Entry Screens...0.67 sec
+Loading Location Information...2.56 sec
+Loading Default Value Information...0.22 sec
+Loading In-line tags...0.16 sec
+Loading Reports...5.80 sec
+Total startup time...32.58 sec
+Loading Reports...0.18 sec
+Initializing Names...1.44 sec
+Initializing Subjects...0.47 sec
+Initializing Accessions...0.02 sec
+Initializing Resources...1.73 sec
+Initializing Digital Objects...0.03 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1364219876052" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.14 sec
+Accessing database...5.00 sec
+Loading repositories...0.16 sec
+Loading plugins...0.19 sec
+User logon...1 min 40.42 sec
+Loading Lookup Lists...0.38 sec
+Loading Notes Etc. Types...0.12 sec
+Loading Field Information...0.49 sec
+Loading Rapid Data Entry Screens...0.32 sec
+Loading Location Information...0.09 sec
+Loading Default Value Information...0.14 sec
+Loading In-line tags...0.08 sec
+Loading Reports...5.23 sec
+Total startup time...1 min 52.79 sec
+Loading Reports...0.31 sec
+Initializing Names...0.27 sec
+Initializing Subjects...0.09 sec
+Initializing Accessions...0.01 sec
+Initializing Resources...0.07 sec
+Initializing Digital Objects...0.01 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1364220328147" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.01 sec
+Accessing database...3.24 sec
+Loading repositories...0.12 sec
+Loading plugins...0.04 sec
+User logon...6 min 51.90 sec
+Loading Lookup Lists...0.24 sec
+Loading Notes Etc. Types...0.01 sec
+Loading Field Information...0.33 sec
+Loading Rapid Data Entry Screens...0.09 sec
+Loading Location Information...1.21 sec
+Loading Default Value Information...0.02 sec
+Loading In-line tags...0.01 sec
+Loading Reports...4.59 sec
+Total startup time...7 min 01.85 sec
+Loading Reports...0.05 sec
+Initializing Names...0.96 sec
+Initializing Subjects...0.24 sec
+Initializing Accessions...0.00 sec
+Initializing Resources...0.45 sec
+Initializing Digital Objects...0.01 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1364503581795" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.12 sec
+Accessing database...5.20 sec
+Loading repositories...0.67 sec
+Loading plugins...0.19 sec
+User logon...9.17 sec
+Loading Lookup Lists...1.34 sec
+Loading Notes Etc. Types...0.07 sec
+Loading Field Information...6.19 sec
+Loading Rapid Data Entry Screens...0.73 sec
+Loading Location Information...2.88 sec
+Loading Default Value Information...0.17 sec
+Loading In-line tags...0.18 sec
+Loading Reports...7.93 sec
+Total startup time...34.90 sec
+Loading Reports...0.28 sec
+Initializing Names...2.33 sec
+Initializing Subjects...0.55 sec
+Initializing Accessions...0.13 sec
+Initializing Resources...1.73 sec
+Initializing Digital Objects...0.25 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1364504595881" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.11 sec
+Accessing database...4.86 sec
+Loading repositories...0.07 sec
+Loading plugins...0.07 sec
+User logon...19.90 sec
+Loading Lookup Lists...0.38 sec
+Loading Notes Etc. Types...0.12 sec
+Loading Field Information...0.64 sec
+Loading Rapid Data Entry Screens...0.32 sec
+Loading Location Information...0.16 sec
+Loading Default Value Information...0.54 sec
+Loading In-line tags...0.14 sec
+Loading Reports...5.29 sec
+Total startup time...32.65 sec
+Loading Reports...0.14 sec
+Initializing Names...0.23 sec
+Initializing Subjects...0.10 sec
+Initializing Accessions...0.00 sec
+Initializing Resources...0.11 sec
+Initializing Digital Objects...0.02 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1364583353728" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.55 sec
+Accessing database...17.26 sec
+Loading repositories...0.43 sec
+Loading plugins...0.36 sec
+User logon...30.87 sec
+Loading Lookup Lists...0.40 sec
+Loading Notes Etc. Types...0.14 sec
+Loading Field Information...1.01 sec
+Loading Rapid Data Entry Screens...0.60 sec
+Loading Location Information...0.14 sec
+Loading Default Value Information...0.33 sec
+Loading In-line tags...0.22 sec
+Loading Reports...9.78 sec
+Total startup time...1 min 02.13 sec
+Loading Reports...0.38 sec
+Initializing Names...0.44 sec
+Initializing Subjects...0.10 sec
+Initializing Accessions...0.01 sec
+Initializing Resources...0.10 sec
+Initializing Digital Objects...0.02 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1364584114279" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.13 sec
+Accessing database...4.70 sec
+Loading repositories...0.18 sec
+Loading plugins...0.16 sec
+User logon...16.57 sec
+Loading Lookup Lists...0.59 sec
+Loading Notes Etc. Types...0.08 sec
+Loading Field Information...0.85 sec
+Loading Rapid Data Entry Screens...0.38 sec
+Loading Location Information...0.10 sec
+Loading Default Value Information...0.25 sec
+Loading In-line tags...0.11 sec
+Loading Reports...8.03 sec
+Total startup time...32.18 sec
+Loading Reports...0.14 sec
+Initializing Names...0.17 sec
+Initializing Subjects...0.06 sec
+Initializing Accessions...0.02 sec
+Initializing Resources...0.06 sec
+Initializing Digital Objects...0.02 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1364585554479" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.12 sec
+Accessing database...4.91 sec
+Loading repositories...0.17 sec
+Loading plugins...0.08 sec
+User logon...34.17 sec
+Loading Lookup Lists...0.33 sec
+Loading Notes Etc. Types...0.05 sec
+Loading Field Information...0.54 sec
+Loading Rapid Data Entry Screens...0.62 sec
+Loading Location Information...0.08 sec
+Loading Default Value Information...0.11 sec
+Loading In-line tags...0.07 sec
+Loading Reports...8.35 sec
+Total startup time...49.65 sec
+Loading Reports...0.22 sec
+Initializing Names...0.26 sec
+Initializing Subjects...0.07 sec
+Initializing Accessions...0.02 sec
+Initializing Resources...0.04 sec
+Initializing Digital Objects...0.02 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1364585663884" level="ERROR" thread="AWT-EventQueue-0">
+<log4j:message><![CDATA[Error compiling report: /Users/nathan/temp/JasperReport/Locations/locationsResourcesAccessionsList.jrxml
+Please make sure the file is a valid Jasper Reports definition file and try again.
+]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1364585682839" level="ERROR" thread="AWT-EventQueue-0">
+<log4j:message><![CDATA[Error compiling report: /Users/nathan/temp/JasperReport/Locations/locationsResourcesAccessionsList.jasper
+Please make sure the file is a valid Jasper Reports definition file and try again.
+]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1364585708928" level="ERROR" thread="AWT-EventQueue-0">
+<log4j:message><![CDATA[Error compiling report: /Users/nathan/temp/JasperReport/Locations/locationsResourcesAccessionsList.jrxml
+Please make sure the file is a valid Jasper Reports definition file and try again.
+]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1364919420849" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.07 sec
+Accessing database...7.63 sec
+Loading repositories...0.45 sec
+Loading plugins...0.16 sec
+User logon...9.95 sec
+Loading Lookup Lists...0.49 sec
+Loading Notes Etc. Types...0.18 sec
+Loading Field Information...0.42 sec
+Loading Rapid Data Entry Screens...0.46 sec
+Loading Location Information...0.49 sec
+Loading Default Value Information...0.92 sec
+Loading In-line tags...0.06 sec
+Loading Reports...5.92 sec
+Total startup time...27.27 sec
+Loading Reports...0.04 sec
+Initializing Names...0.51 sec
+Initializing Subjects...0.18 sec
+Initializing Accessions...0.00 sec
+Initializing Resources...0.12 sec
+Initializing Digital Objects...0.01 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1365606279775" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.18 sec
+Accessing database...5.45 sec
+Loading repositories...0.64 sec
+Loading plugins...0.37 sec
+User logon...20.73 sec
+Loading Lookup Lists...0.59 sec
+Loading Notes Etc. Types...0.12 sec
+Loading Field Information...0.92 sec
+Loading Rapid Data Entry Screens...0.40 sec
+Loading Location Information...0.14 sec
+Loading Default Value Information...0.25 sec
+Loading In-line tags...0.12 sec
+Loading Reports...6.06 sec
+Total startup time...36.02 sec
+Loading Reports...0.30 sec
+Initializing Names...0.34 sec
+Initializing Subjects...0.11 sec
+Initializing Accessions...0.02 sec
+Initializing Resources...0.10 sec
+Initializing Digital Objects...0.00 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1365698960858" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.20 sec
+Accessing database...7.27 sec
+Loading repositories...0.30 sec
+Loading plugins...0.21 sec
+User logon...11.92 sec
+Loading Lookup Lists...0.38 sec
+Loading Notes Etc. Types...0.12 sec
+Loading Field Information...0.53 sec
+Loading Rapid Data Entry Screens...0.38 sec
+Loading Location Information...0.14 sec
+Loading Default Value Information...0.28 sec
+Loading In-line tags...0.10 sec
+Loading Reports...6.86 sec
+Total startup time...28.74 sec
+Loading Reports...0.33 sec
+Initializing Names...0.45 sec
+Initializing Subjects...0.15 sec
+Initializing Accessions...0.03 sec
+Initializing Resources...0.10 sec
+Initializing Digital Objects...0.03 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1365700647227" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.11 sec
+Accessing database...13.00 sec
+Loading repositories...0.39 sec
+Loading plugins...0.29 sec
+User logon...11.77 sec
+Loading Lookup Lists...0.53 sec
+Loading Notes Etc. Types...0.15 sec
+Loading Field Information...1.49 sec
+Loading Rapid Data Entry Screens...3.70 sec
+Loading Location Information...0.15 sec
+Loading Default Value Information...0.26 sec
+Loading In-line tags...0.10 sec
+Loading Reports...7.61 sec
+Total startup time...39.60 sec
+Loading Reports...0.22 sec
+Initializing Names...0.25 sec
+Initializing Subjects...0.10 sec
+Initializing Accessions...0.01 sec
+Initializing Resources...0.09 sec
+Initializing Digital Objects...0.00 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1366037949254" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.16 sec
+Accessing database...4.13 sec
+Loading repositories...0.19 sec
+Loading plugins...0.20 sec
+User logon...1 min 04.27 sec
+Loading Lookup Lists...0.36 sec
+Loading Notes Etc. Types...0.21 sec
+Loading Field Information...0.72 sec
+Loading Rapid Data Entry Screens...0.35 sec
+Loading Location Information...0.13 sec
+Loading Default Value Information...0.32 sec
+Loading In-line tags...0.13 sec
+Loading Reports...5.85 sec
+Total startup time...1 min 17.07 sec
+Loading Reports...0.19 sec
+Initializing Names...0.25 sec
+Initializing Subjects...0.10 sec
+Initializing Accessions...0.01 sec
+Initializing Resources...0.09 sec
+Initializing Digital Objects...0.01 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1366054241258" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.10 sec
+Accessing database...3.60 sec
+Loading repositories...0.31 sec
+Loading plugins...0.20 sec
+User logon...7.05 sec
+Loading Lookup Lists...0.40 sec
+Loading Notes Etc. Types...0.12 sec
+Loading Field Information...0.64 sec
+Loading Rapid Data Entry Screens...0.41 sec
+Loading Location Information...0.15 sec
+Loading Default Value Information...0.26 sec
+Loading In-line tags...0.10 sec
+Loading Reports...5.63 sec
+Total startup time...19.03 sec
+Loading Reports...0.22 sec
+Initializing Names...0.34 sec
+Initializing Subjects...0.09 sec
+Initializing Accessions...0.01 sec
+Initializing Resources...0.17 sec
+Initializing Digital Objects...0.02 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1366122653043" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.45 sec
+Accessing database...22.81 sec
+Loading repositories...0.46 sec
+Loading plugins...0.49 sec
+User logon...10.22 sec
+Loading Lookup Lists...1.04 sec
+Loading Notes Etc. Types...0.38 sec
+Loading Field Information...3.08 sec
+Loading Rapid Data Entry Screens...1.15 sec
+Loading Location Information...0.14 sec
+Loading Default Value Information...0.45 sec
+Loading In-line tags...0.34 sec
+Loading Reports...12.07 sec
+Total startup time...53.14 sec
+Loading Reports...0.52 sec
+Initializing Names...0.34 sec
+Initializing Subjects...0.18 sec
+Initializing Accessions...0.03 sec
+Initializing Resources...0.10 sec
+Initializing Digital Objects...0.01 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1367333108000" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.17 sec
+Accessing database...4.29 sec
+Loading repositories...0.24 sec
+Loading plugins...0.24 sec
+User logon...36.32 sec
+Loading Lookup Lists...0.34 sec
+Loading Notes Etc. Types...0.05 sec
+Loading Field Information...0.48 sec
+Loading Rapid Data Entry Screens...0.28 sec
+Loading Location Information...0.99 sec
+Loading Default Value Information...0.07 sec
+Loading In-line tags...0.06 sec
+Loading Reports...5.63 sec
+Total startup time...49.20 sec
+Loading Reports...0.21 sec
+Initializing Names...1.53 sec
+Initializing Subjects...0.42 sec
+Initializing Accessions...0.02 sec
+Initializing Resources...0.15 sec
+Initializing Digital Objects...0.00 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1367333302971" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.06 sec
+Accessing database...3.66 sec
+Loading repositories...0.16 sec
+Loading plugins...0.05 sec
+User logon...14.52 sec
+Loading Lookup Lists...0.27 sec
+Loading Notes Etc. Types...0.01 sec
+Loading Field Information...0.39 sec
+Loading Rapid Data Entry Screens...0.24 sec
+Loading Location Information...0.04 sec
+Loading Default Value Information...0.05 sec
+Loading In-line tags...0.02 sec
+Loading Reports...5.00 sec
+Total startup time...24.54 sec
+Loading Reports...0.13 sec
+Initializing Names...0.93 sec
+Initializing Subjects...0.19 sec
+Initializing Accessions...0.01 sec
+Initializing Resources...0.15 sec
+Initializing Digital Objects...0.02 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1367333496944" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.10 sec
+Accessing database...3.12 sec
+Loading repositories...0.22 sec
+Loading plugins...0.07 sec
+User logon...12.56 sec
+Loading Lookup Lists...0.29 sec
+Loading Notes Etc. Types...0.01 sec
+Loading Field Information...0.41 sec
+Loading Rapid Data Entry Screens...0.28 sec
+Loading Location Information...1.29 sec
+Loading Default Value Information...0.04 sec
+Loading In-line tags...0.11 sec
+Loading Reports...4.67 sec
+Total startup time...23.23 sec
+Loading Reports...0.17 sec
+Initializing Names...0.98 sec
+Initializing Subjects...0.19 sec
+Initializing Accessions...0.01 sec
+Initializing Resources...0.44 sec
+Initializing Digital Objects...0.00 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1367420193614" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.17 sec
+Accessing database...5.70 sec
+Loading repositories...0.14 sec
+Loading plugins...0.20 sec
+User logon...34.16 sec
+Loading Lookup Lists...0.69 sec
+Loading Notes Etc. Types...0.15 sec
+Loading Field Information...1.06 sec
+Loading Rapid Data Entry Screens...0.60 sec
+Loading Location Information...0.15 sec
+Loading Default Value Information...0.25 sec
+Loading In-line tags...0.12 sec
+Loading Reports...17.13 sec
+Total startup time...1 min 00.58 sec
+Loading Reports...0.40 sec
+Initializing Names...0.40 sec
+Initializing Subjects...0.10 sec
+Initializing Accessions...0.02 sec
+Initializing Resources...0.12 sec
+Initializing Digital Objects...2.66 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1367952899935" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.17 sec
+Accessing database...5.84 sec
+Loading repositories...0.25 sec
+Loading plugins...0.20 sec
+User logon...18.06 sec
+Loading Lookup Lists...0.33 sec
+Loading Notes Etc. Types...0.12 sec
+Loading Field Information...0.63 sec
+Loading Rapid Data Entry Screens...0.26 sec
+Loading Location Information...0.11 sec
+Loading Default Value Information...0.22 sec
+Loading In-line tags...0.09 sec
+Loading Reports...5.80 sec
+Total startup time...32.13 sec
+Loading Reports...0.25 sec
+Initializing Names...0.23 sec
+Initializing Subjects...0.07 sec
+Initializing Accessions...0.00 sec
+Initializing Resources...0.09 sec
+Initializing Digital Objects...0.00 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1368023833570" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.57 sec
+Accessing database...8.03 sec
+Loading repositories...0.28 sec
+Loading plugins...0.19 sec
+User logon...10.29 sec
+Loading Lookup Lists...0.37 sec
+Loading Notes Etc. Types...0.12 sec
+Loading Field Information...0.84 sec
+Loading Rapid Data Entry Screens...0.97 sec
+Loading Location Information...0.17 sec
+Loading Default Value Information...0.24 sec
+Loading In-line tags...0.09 sec
+Loading Reports...8.57 sec
+Total startup time...30.78 sec
+Loading Reports...0.29 sec
+Initializing Names...0.52 sec
+Initializing Subjects...0.11 sec
+Initializing Accessions...0.03 sec
+Initializing Resources...0.09 sec
+Initializing Digital Objects...0.01 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1369337688320" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.24 sec
+Accessing database...15.34 sec
+Loading repositories...0.23 sec
+Loading plugins...0.29 sec
+User logon...16.13 sec
+Loading Lookup Lists...0.59 sec
+Loading Notes Etc. Types...0.14 sec
+Loading Field Information...0.53 sec
+Loading Rapid Data Entry Screens...2.47 sec
+Loading Location Information...0.18 sec
+Loading Default Value Information...0.23 sec
+Loading In-line tags...0.10 sec
+Loading Reports...8.18 sec
+Total startup time...44.69 sec
+Loading Reports...0.55 sec
+Initializing Names...0.42 sec
+Initializing Subjects...0.09 sec
+Initializing Accessions...0.01 sec
+Initializing Resources...0.10 sec
+Initializing Digital Objects...0.00 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1369419422687" level="ERROR" thread="main">
+<log4j:message><![CDATA[The database you are accessing is not a MySQL database. Please check the settings and try again.
+
+]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1369419494742" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.01 sec
+Accessing database...3.29 sec
+Loading repositories...0.14 sec
+Loading plugins...0.04 sec
+User logon...1 min 53.91 sec
+Loading Lookup Lists...0.60 sec
+Loading Notes Etc. Types...0.16 sec
+Loading Field Information...0.69 sec
+Loading Rapid Data Entry Screens...0.34 sec
+Loading Location Information...1.20 sec
+Loading Default Value Information...0.16 sec
+Loading In-line tags...0.17 sec
+Loading Reports...5.49 sec
+Total startup time...2 min 06.24 sec
+Loading Reports...0.22 sec
+Initializing Names...2.35 sec
+Initializing Subjects...0.46 sec
+Initializing Accessions...0.00 sec
+Initializing Resources...0.87 sec
+Initializing Digital Objects...0.00 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1369929500938" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.42 sec
+Accessing database...7.84 sec
+Loading repositories...0.25 sec
+Loading plugins...0.22 sec
+User logon...51.25 sec
+Loading Lookup Lists...0.68 sec
+Loading Notes Etc. Types...0.35 sec
+Loading Field Information...1.71 sec
+Loading Rapid Data Entry Screens...3.70 sec
+Loading Location Information...0.49 sec
+Loading Default Value Information...0.24 sec
+Loading In-line tags...0.54 sec
+Loading Reports...19.73 sec
+Total startup time...1 min 27.46 sec
+Loading Reports...2.23 sec
+Initializing Names...3.07 sec
+Initializing Subjects...0.30 sec
+Initializing Accessions...0.03 sec
+Initializing Resources...0.20 sec
+Initializing Digital Objects...0.13 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1369931090476" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.06 sec
+Accessing database...3.70 sec
+Loading repositories...0.24 sec
+Loading plugins...0.10 sec
+User logon...20.48 sec
+Loading Lookup Lists...0.42 sec
+Loading Notes Etc. Types...0.12 sec
+Loading Field Information...0.56 sec
+Loading Rapid Data Entry Screens...0.30 sec
+Loading Location Information...0.11 sec
+Loading Default Value Information...0.25 sec
+Loading In-line tags...0.11 sec
+Loading Reports...5.65 sec
+Total startup time...32.15 sec
+Loading Reports...0.12 sec
+Initializing Names...0.22 sec
+Initializing Subjects...0.09 sec
+Initializing Accessions...0.00 sec
+Initializing Resources...0.10 sec
+Initializing Digital Objects...0.00 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1369931574436" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.12 sec
+Accessing database...3.67 sec
+Loading repositories...0.20 sec
+Loading plugins...0.08 sec
+User logon...4.51 sec
+Loading Lookup Lists...0.35 sec
+Loading Notes Etc. Types...0.10 sec
+Loading Field Information...0.59 sec
+Loading Rapid Data Entry Screens...0.25 sec
+Loading Location Information...0.10 sec
+Loading Default Value Information...0.22 sec
+Loading In-line tags...0.21 sec
+Loading Reports...5.25 sec
+Total startup time...15.71 sec
+Loading Reports...0.13 sec
+Initializing Names...0.19 sec
+Initializing Subjects...0.08 sec
+Initializing Accessions...0.00 sec
+Initializing Resources...0.10 sec
+Initializing Digital Objects...0.01 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1369931974182" level="ERROR" thread="AWT-EventQueue-0">
+<log4j:message><![CDATA[null identifier]]></log4j:message>
+<log4j:throwable><![CDATA[org.hibernate.AssertionFailure: null identifier
+	at org.hibernate.engine.EntityKey.<init>(EntityKey.java:39)
+	at org.hibernate.event.def.DefaultRefreshEventListener.onRefresh(DefaultRefreshEventListener.java:74)
+	at org.hibernate.event.def.DefaultRefreshEventListener.onRefresh(DefaultRefreshEventListener.java:39)
+	at org.hibernate.impl.SessionImpl.fireRefresh(SessionImpl.java:902)
+	at org.hibernate.impl.SessionImpl.refresh(SessionImpl.java:886)
+	at org.archiviststoolkit.mydomain.DomainEditor.saveRecord(DomainEditor.java:745)
+	at org.archiviststoolkit.mydomain.DomainEditor.actionPerformed(DomainEditor.java:502)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2028)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2351)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:387)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:242)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:236)
+	at java.awt.Component.processMouseEvent(Component.java:6382)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3275)
+	at java.awt.Component.processEvent(Component.java:6147)
+	at java.awt.Container.processEvent(Container.java:2083)
+	at java.awt.Component.dispatchEventImpl(Component.java:4744)
+	at java.awt.Container.dispatchEventImpl(Container.java:2141)
+	at java.awt.Component.dispatchEvent(Component.java:4572)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4619)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4280)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4210)
+	at java.awt.Container.dispatchEventImpl(Container.java:2127)
+	at java.awt.Window.dispatchEventImpl(Window.java:2489)
+	at java.awt.Component.dispatchEvent(Component.java:4572)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:710)
+	at java.awt.EventQueue.access$400(EventQueue.java:82)
+	at java.awt.EventQueue$2.run(EventQueue.java:669)
+	at java.awt.EventQueue$2.run(EventQueue.java:667)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(AccessControlContext.java:87)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(AccessControlContext.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:683)
+	at java.awt.EventQueue$3.run(EventQueue.java:681)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(AccessControlContext.java:87)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:680)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:205)
+	at java.awt.Dialog$1.run(Dialog.java:1049)
+	at java.awt.Dialog$3.run(Dialog.java:1101)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.awt.Dialog.show(Dialog.java:1099)
+	at java.awt.Component.show(Component.java:1591)
+	at java.awt.Component.setVisible(Component.java:1543)
+	at java.awt.Window.setVisible(Window.java:843)
+	at java.awt.Dialog.setVisible(Dialog.java:984)
+	at org.archiviststoolkit.swing.StandardEditor.showDialog(StandardEditor.java:708)
+	at org.archiviststoolkit.mydomain.DomainEditor.showDialog(DomainEditor.java:191)
+	at org.archiviststoolkit.editor.AccessionEditor.showDialog(AccessionEditor.java:49)
+	at org.archiviststoolkit.mydomain.DomainTableWorkSurface.onInsert(DomainTableWorkSurface.java:1000)
+	at org.archiviststoolkit.swing.WorkSurfaceContainer.actionPerformed(WorkSurfaceContainer.java:368)
+	at org.archiviststoolkit.swing.ConcreteAction.actionPerformed(ConcreteAction.java:105)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2028)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2351)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:387)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:242)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:236)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:272)
+	at java.awt.Component.processMouseEvent(Component.java:6382)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3275)
+	at java.awt.Component.processEvent(Component.java:6147)
+	at java.awt.Container.processEvent(Container.java:2083)
+	at java.awt.Component.dispatchEventImpl(Component.java:4744)
+	at java.awt.Container.dispatchEventImpl(Container.java:2141)
+	at java.awt.Component.dispatchEvent(Component.java:4572)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4619)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4280)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4210)
+	at java.awt.Container.dispatchEventImpl(Container.java:2127)
+	at java.awt.Window.dispatchEventImpl(Window.java:2489)
+	at java.awt.Component.dispatchEvent(Component.java:4572)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:710)
+	at java.awt.EventQueue.access$400(EventQueue.java:82)
+	at java.awt.EventQueue$2.run(EventQueue.java:669)
+	at java.awt.EventQueue$2.run(EventQueue.java:667)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(AccessControlContext.java:87)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(AccessControlContext.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:683)
+	at java.awt.EventQueue$3.run(EventQueue.java:681)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(AccessControlContext.java:87)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:680)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+]]></log4j:throwable>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1370272395244" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.10 sec
+Accessing database...3.73 sec
+Loading repositories...0.20 sec
+Loading plugins...0.20 sec
+User logon...2 min 38.77 sec
+Loading Lookup Lists...0.57 sec
+Loading Notes Etc. Types...0.13 sec
+Loading Field Information...0.75 sec
+Loading Rapid Data Entry Screens...0.49 sec
+Loading Location Information...0.16 sec
+Loading Default Value Information...0.25 sec
+Loading In-line tags...0.10 sec
+Loading Reports...5.69 sec
+Total startup time...2 min 51.19 sec
+Loading Reports...0.24 sec
+Initializing Names...0.24 sec
+Initializing Subjects...0.08 sec
+Initializing Accessions...0.00 sec
+Initializing Resources...0.10 sec
+Initializing Digital Objects...0.00 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1370284395965" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.12 sec
+Accessing database...5.67 sec
+Loading repositories...0.25 sec
+Loading plugins...0.18 sec
+User logon...53.83 sec
+Loading Lookup Lists...0.46 sec
+Loading Notes Etc. Types...0.05 sec
+Loading Field Information...0.67 sec
+Loading Rapid Data Entry Screens...0.42 sec
+Loading Location Information...2.58 sec
+Loading Default Value Information...0.37 sec
+Loading In-line tags...0.30 sec
+Loading Reports...7.07 sec
+Total startup time...1 min 12.03 sec
+Loading Reports...0.21 sec
+Initializing Names...1.58 sec
+Initializing Subjects...0.71 sec
+Initializing Accessions...0.15 sec
+Initializing Resources...0.72 sec
+Initializing Digital Objects...0.04 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1370287906128" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.01 sec
+Accessing database...3.03 sec
+Loading repositories...0.10 sec
+Loading plugins...0.18 sec
+User logon...16.41 sec
+Loading Lookup Lists...0.21 sec
+Loading Notes Etc. Types...0.01 sec
+Loading Field Information...0.38 sec
+Loading Rapid Data Entry Screens...0.11 sec
+Loading Location Information...0.02 sec
+Loading Default Value Information...0.01 sec
+Loading In-line tags...0.01 sec
+Loading Reports...5.34 sec
+Total startup time...25.86 sec
+Loading Reports...0.20 sec
+Initializing Names...0.20 sec
+Initializing Subjects...0.00 sec
+Initializing Accessions...0.00 sec
+Initializing Resources...0.02 sec
+Initializing Digital Objects...0.01 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1370889816426" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.21 sec
+Accessing database...6.87 sec
+Loading repositories...0.86 sec
+Loading plugins...0.23 sec
+User logon...30.54 sec
+Loading Lookup Lists...0.35 sec
+Loading Notes Etc. Types...0.03 sec
+Loading Field Information...0.84 sec
+Loading Rapid Data Entry Screens...3.65 sec
+Loading Location Information...2.83 sec
+Loading Default Value Information...3.53 sec
+Loading In-line tags...0.10 sec
+Loading Reports...9.18 sec
+Total startup time...59.29 sec
+Loading Reports...0.34 sec
+Initializing Names...0.86 sec
+Initializing Subjects...0.42 sec
+Initializing Accessions...0.14 sec
+Initializing Resources...1.09 sec
+Initializing Digital Objects...0.04 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1370890150975" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.04 sec
+Accessing database...4.32 sec
+Loading repositories...1.25 sec
+Loading plugins...0.07 sec
+User logon...10.13 sec
+Loading Lookup Lists...0.29 sec
+Loading Notes Etc. Types...0.02 sec
+Loading Field Information...0.64 sec
+Loading Rapid Data Entry Screens...2.47 sec
+Loading Location Information...1.86 sec
+Loading Default Value Information...3.55 sec
+Loading In-line tags...0.09 sec
+Loading Reports...5.73 sec
+Total startup time...30.52 sec
+Loading Reports...0.16 sec
+Initializing Names...0.79 sec
+Initializing Subjects...0.45 sec
+Initializing Accessions...0.12 sec
+Initializing Resources...1.05 sec
+Initializing Digital Objects...0.08 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1371152243599" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.46 sec
+Accessing database...6.18 sec
+Loading repositories...1.56 sec
+Loading plugins...0.26 sec
+User logon...19.53 sec
+Loading Lookup Lists...0.25 sec
+Loading Notes Etc. Types...0.03 sec
+Loading Field Information...0.66 sec
+Loading Rapid Data Entry Screens...3.18 sec
+Loading Location Information...1.74 sec
+Loading Default Value Information...3.46 sec
+Loading In-line tags...0.12 sec
+Loading Reports...6.26 sec
+Total startup time...43.75 sec
+Loading Reports...0.21 sec
+Initializing Names...0.85 sec
+Initializing Subjects...0.47 sec
+Initializing Accessions...0.13 sec
+Initializing Resources...1.05 sec
+Initializing Digital Objects...0.07 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1371564596398" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.55 sec
+Accessing database...7.85 sec
+Loading repositories...1.56 sec
+Loading plugins...0.27 sec
+User logon...38.56 sec
+Loading Lookup Lists...0.32 sec
+Loading Notes Etc. Types...0.13 sec
+Loading Field Information...0.81 sec
+Loading Rapid Data Entry Screens...0.44 sec
+Loading Location Information...0.17 sec
+Loading Default Value Information...0.26 sec
+Loading In-line tags...0.12 sec
+Loading Reports...6.18 sec
+Total startup time...57.27 sec
+Loading Reports...0.30 sec
+Initializing Names...0.44 sec
+Initializing Subjects...0.10 sec
+Initializing Accessions...0.01 sec
+Initializing Resources...0.12 sec
+Initializing Digital Objects...0.01 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1371582060317" level="ERROR" thread="Record Lock Updater Thread">
+<log4j:message><![CDATA[]]></log4j:message>
+<log4j:throwable><![CDATA[java.lang.NullPointerException
+	at org.archiviststoolkit.mydomain.DomainAccessObjectImpl.update(DomainAccessObjectImpl.java:228)
+	at org.archiviststoolkit.util.RecordLockUtils.updateRecordLocksTime(RecordLockUtils.java:170)
+	at org.archiviststoolkit.Main$1.run(Main.java:511)
+	at java.lang.Thread.run(Thread.java:680)
+]]></log4j:throwable>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1371582090160" level="ERROR" thread="AWT-EventQueue-0">
+<log4j:message><![CDATA[Communications link failure during rollback(). Transaction resolution unknown.]]></log4j:message>
+<log4j:throwable><![CDATA[com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Communications link failure during rollback(). Transaction resolution unknown.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.Util.getInstance(Util.java:384)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1015)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:989)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:984)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:929)
+	at com.mysql.jdbc.ConnectionImpl.rollback(ConnectionImpl.java:4685)
+	at com.mchange.v2.c3p0.impl.NewProxyConnection.rollback(NewProxyConnection.java:730)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.hibernate.jdbc.BorrowedConnectionProxy.invoke(BorrowedConnectionProxy.java:50)
+	at com.sun.proxy.$Proxy0.rollback(Unknown Source)
+	at org.archiviststoolkit.mydomain.DomainAccessObjectImpl.closeLongSessionRollback(DomainAccessObjectImpl.java:620)
+	at org.archiviststoolkit.mydomain.DomainTableWorkSurface.finishOnUpdate(DomainTableWorkSurface.java:796)
+	at org.archiviststoolkit.mydomain.DomainTableWorkSurface.access$700(DomainTableWorkSurface.java:69)
+	at org.archiviststoolkit.mydomain.DomainTableWorkSurface$LookupWorkerRunnable$1.run(DomainTableWorkSurface.java:1593)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:209)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:708)
+	at java.awt.EventQueue.access$400(EventQueue.java:82)
+	at java.awt.EventQueue$2.run(EventQueue.java:669)
+	at java.awt.EventQueue$2.run(EventQueue.java:667)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(AccessControlContext.java:87)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:678)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:296)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:196)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:188)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+]]></log4j:throwable>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1371826456845" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.17 sec
+Accessing database...6.23 sec
+Loading repositories...0.32 sec
+Loading plugins...0.23 sec
+User logon...24.56 sec
+Loading Lookup Lists...0.37 sec
+Loading Notes Etc. Types...0.12 sec
+Loading Field Information...0.47 sec
+Loading Rapid Data Entry Screens...0.31 sec
+Loading Location Information...0.16 sec
+Loading Default Value Information...0.24 sec
+Loading In-line tags...0.11 sec
+Loading Reports...5.71 sec
+Total startup time...39.05 sec
+Loading Reports...0.27 sec
+Initializing Names...0.33 sec
+Initializing Subjects...0.09 sec
+Initializing Accessions...0.03 sec
+Initializing Resources...0.11 sec
+Initializing Digital Objects...0.00 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1372268549768" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.20 sec
+Accessing database...6.59 sec
+Loading repositories...0.30 sec
+Loading plugins...0.21 sec
+User logon...11.68 sec
+Loading Lookup Lists...0.41 sec
+Loading Notes Etc. Types...0.13 sec
+Loading Field Information...0.59 sec
+Loading Rapid Data Entry Screens...0.31 sec
+Loading Location Information...0.14 sec
+Loading Default Value Information...0.25 sec
+Loading In-line tags...0.10 sec
+Loading Reports...8.42 sec
+Total startup time...29.39 sec
+Loading Reports...0.27 sec
+Initializing Names...0.30 sec
+Initializing Subjects...0.10 sec
+Initializing Accessions...0.01 sec
+Initializing Resources...0.09 sec
+Initializing Digital Objects...0.01 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1373296539313" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.44 sec
+Accessing database...10.77 sec
+Loading repositories...0.29 sec
+Loading plugins...0.20 sec
+User logon...26.28 sec
+Loading Lookup Lists...5.07 sec
+Loading Notes Etc. Types...0.13 sec
+Loading Field Information...0.74 sec
+Loading Rapid Data Entry Screens...0.64 sec
+Loading Location Information...1.84 sec
+Loading Default Value Information...0.25 sec
+Loading In-line tags...0.13 sec
+Loading Reports...9.94 sec
+Total startup time...56.78 sec
+Loading Reports...0.34 sec
+Initializing Names...0.70 sec
+Initializing Subjects...0.25 sec
+Initializing Accessions...0.02 sec
+Initializing Resources...0.12 sec
+Initializing Digital Objects...0.01 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1373384890491" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.11 sec
+Accessing database...3.87 sec
+Loading repositories...0.23 sec
+Loading plugins...0.20 sec
+User logon...33.14 sec
+Loading Lookup Lists...0.56 sec
+Loading Notes Etc. Types...0.13 sec
+Loading Field Information...0.73 sec
+Loading Rapid Data Entry Screens...0.34 sec
+Loading Location Information...0.15 sec
+Loading Default Value Information...0.24 sec
+Loading In-line tags...0.13 sec
+Loading Reports...6.24 sec
+Total startup time...46.13 sec
+Loading Reports...0.23 sec
+Initializing Names...0.43 sec
+Initializing Subjects...0.10 sec
+Initializing Accessions...0.01 sec
+Initializing Resources...0.11 sec
+Initializing Digital Objects...0.01 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1373385310684" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.26 sec
+Accessing database...4.10 sec
+Loading repositories...0.15 sec
+Loading plugins...0.30 sec
+User logon...24.64 sec
+Loading Lookup Lists...0.62 sec
+Loading Notes Etc. Types...0.11 sec
+Loading Field Information...0.48 sec
+Loading Rapid Data Entry Screens...0.23 sec
+Loading Location Information...3.93 sec
+Loading Default Value Information...0.20 sec
+Loading In-line tags...0.15 sec
+Loading Reports...5.91 sec
+Total startup time...41.15 sec
+Loading Reports...0.13 sec
+Initializing Names...2.88 sec
+Initializing Subjects...1.28 sec
+Initializing Accessions...0.08 sec
+Initializing Resources...2.95 sec
+Initializing Digital Objects...0.09 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1373554572562" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.30 sec
+Accessing database...14.79 sec
+Loading repositories...1.09 sec
+Loading plugins...0.25 sec
+User logon...34.98 sec
+Loading Lookup Lists...0.68 sec
+Loading Notes Etc. Types...0.25 sec
+Loading Field Information...0.68 sec
+Loading Rapid Data Entry Screens...0.72 sec
+Loading Location Information...26.18 sec
+Loading Default Value Information...0.33 sec
+Loading In-line tags...0.58 sec
+Loading Reports...11.65 sec
+Total startup time...1 min 32.55 sec
+Loading Reports...0.81 sec
+Initializing Names...6.89 sec
+Initializing Subjects...2.59 sec
+Initializing Accessions...0.02 sec
+Initializing Resources...9.64 sec
+Initializing Digital Objects...0.13 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1373555039890" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.06 sec
+Accessing database...5.32 sec
+Loading repositories...0.29 sec
+Loading plugins...0.08 sec
+User logon...5.92 sec
+Loading Lookup Lists...1.16 sec
+Loading Notes Etc. Types...0.12 sec
+Loading Field Information...0.73 sec
+Loading Rapid Data Entry Screens...0.45 sec
+Loading Location Information...4.59 sec
+Loading Default Value Information...0.38 sec
+Loading In-line tags...0.22 sec
+Loading Reports...8.98 sec
+Total startup time...28.36 sec
+Loading Reports...0.23 sec
+Initializing Names...5.23 sec
+Initializing Subjects...1.79 sec
+Initializing Accessions...0.03 sec
+Initializing Resources...8.43 sec
+Initializing Digital Objects...0.02 sec]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="org.archiviststoolkit" timestamp="1373564154984" level="INFO" thread="main">
+<log4j:message><![CDATA[
+Application Startup times
+Initializing...0.52 sec
+Accessing database...7.84 sec
+Loading repositories...0.43 sec
+Loading plugins...0.23 sec
+User logon...4.83 sec
+Loading Lookup Lists...0.84 sec
+Loading Notes Etc. Types...0.26 sec
+Loading Field Information...0.65 sec
+Loading Rapid Data Entry Screens...0.40 sec
+Loading Location Information...4.63 sec
+Loading Default Value Information...0.21 sec
+Loading In-line tags...0.35 sec
+Loading Reports...10.79 sec
+Total startup time...32.03 sec
+Loading Reports...1.32 sec
+Initializing Names...4.10 sec
+Initializing Subjects...2.25 sec
+Initializing Accessions...0.22 sec
+Initializing Resources...6.10 sec
+Initializing Digital Objects...0.05 sec]]></log4j:message>
+</log4j:event>
+

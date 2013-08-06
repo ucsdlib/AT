@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+ <xs:element name="atLookupLists">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="list"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="list">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="usage"/>
+        <xs:choice>
+          <xs:element maxOccurs="unbounded" ref="pair"/>
+          <xs:element maxOccurs="unbounded" ref="value"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="listType" use="required" type="xs:integer"/>
+      <xs:attribute name="name" use="required"/>
+		<xs:attribute name="pairedValues" type="xs:boolean"/>
+		<xs:attribute name="restrictToNmtoken" type="xs:boolean"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="usage">
+    <xs:complexType>
+      <xs:attribute name="className" use="required"/>
+      <xs:attribute name="field" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pair">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="value"/>
+        <xs:element ref="code"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="code" type="xs:string"/>
+  <xs:element name="value">
+    <xs:complexType mixed="true">
+      <xs:attribute name="editable" type="xs:boolean"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

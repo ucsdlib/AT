@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+	<class name="org.archiviststoolkit.model.Subjects" table="Subjects" lazy="false">
+        
+        <id name="subjectId" column="subjectId">
+			<generator class="native"/>
+		</id>
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+			<column name="lastUpdated"/>
+			<column name="created"/>
+			<column name="lastUpdatedBy"/>
+			<column name="createdBy"/>
+		</property>
+
+		<property name="subjectTerm"
+				  column="subjectTerm"
+				  not-null="true"
+				  index="subjectTerm"
+				  length="150"/>
+
+		<property name="subjectTermType"
+				  column="subjectTermType"
+				  type="string"
+				  not-null="true"
+                  length="50"/>
+
+		<property name="subjectSource"
+				  column="subjectSource"
+				  type="string"
+				  not-null="true"
+                  length="100"/>
+
+        <!-- TODO 9/8/2009 Uncomment before pre-release -->
+
+        <property name="subjectTerm1"
+				  column="subjectTerm1"
+                  type="string"
+				  length="150"/>
+
+        <property name="subjectTermType1"
+				  column="subjectTermType1"
+				  type="string"
+                  length="50"/>
+
+        <property name="subjectTerm2"
+				  column="subjectTerm2"
+                  type="string"
+				  length="150"/>
+
+        <property name="subjectTermType2"
+				  column="subjectTermType2"
+				  type="string"
+                  length="50"/>
+
+        <property name="subjectTerm3"
+				  column="subjectTerm3"
+                  type="string"
+				  length="150"/>
+
+        <property name="subjectTermType3"
+				  column="subjectTermType3"
+				  type="string"
+                  length="50"/>
+
+        <property name="subjectTerm4"
+				  column="subjectTerm4"
+                  type="string"
+				  length="150"/>
+
+        <property name="subjectTermType4"
+				  column="subjectTermType4"
+				  type="string"
+                  length="50"/>
+
+        <property name="subjectTerm5"
+				  column="subjectTerm5"
+                  type="string"
+				  length="150"/>
+
+        <property name="subjectTermType5"
+				  column="subjectTermType5"
+				  type="string"
+                  length="50"/>
+
+        <property name="subjectTerm6"
+				  column="subjectTerm6"
+                  type="string"
+				  length="150"/>
+
+        <property name="subjectTermType6"
+				  column="subjectTermType6"
+				  type="string"
+                  length="50"/>
+
+        <property name="displayForm"
+				  column="displayForm"
+                  type="string"
+				  length="1000"/>
+
+        <property name="stringSubjectId"
+				  column="stringSubjectId"
+                  type="string"
+				  length="50"/>
+
+		<property name="subjectScopeNote"
+				  column="subjectScopeNote"
+				  type="text"/>
+
+		<set name="archDescriptionSubjects"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="subjectId" not-null="true"/>
+			</key>
+			<one-to-many class="ArchDescriptionSubjects"/>
+		</set>
+
+	</class>
+
+	<query name="findAllSubjectsSorted"><![CDATA[
+		from Subjects s
+			order by s.subjectTerm
+	]]></query>
+ </hibernate-mapping>

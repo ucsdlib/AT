@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+
+	<class name="AssessmentsAccessions"
+		   table="AssessmentsAccessions">
+
+		<id name="assessmentsAccessionsId" column="assessmentsAccessionsId" type="java.lang.Long">
+			<generator class="native"></generator>
+		</id>
+
+
+		<many-to-one name="assessment"
+					 class="Assessments"
+					 column="assessmentId"/>
+
+        <many-to-one name="accession"
+                     class="Accessions"
+                     column="accessionId"/>
+
+	</class>
+
+</hibernate-mapping>

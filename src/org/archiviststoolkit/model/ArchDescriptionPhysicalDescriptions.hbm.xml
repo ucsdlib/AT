@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+
+	<class name="org.archiviststoolkit.model.ArchDescriptionPhysicalDescriptions"
+		   table="ArchDescPhysicalDescriptions">
+
+		<id name="archDescriptionPhysicalDescriptionsId" column="archDescPhysicalDescId" type="java.lang.Long">
+			<generator class="native"></generator>
+		</id>
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+			<column name="lastUpdated" not-null="true"/>
+			<column name="created" not-null="true"/>
+			<column name="lastUpdatedBy" not-null="true"/>
+			<column name="createdBy" not-null="true"/>
+		</property>
+
+        <property name="extentType"
+                  column="extentType"
+                  type="string"/>
+
+        <property name="extentNumber"
+                  column="extentNumber"
+                  type="double"/>
+
+        <property name="containerSummary"
+                  column="containerSummary"
+                  type="text"/>
+
+        <property name="physicalDetail"
+                  column="physicalDetail"
+                  type="text"/>
+
+        <property name="dimensions"
+                   column="dimensions"
+                   type="text"/>
+
+
+        <!-- relationships -->
+		<many-to-one name="resource"
+					 class="Resources"
+					 column="resourceId"/>
+
+		<many-to-one name="accession"
+					 class="Accessions"
+					 column="accessionId"/>
+
+        <many-to-one name="resourceComponent"
+                     class="ResourcesComponents"
+                     column="resourceComponentId"/>
+
+    </class>
+
+</hibernate-mapping>

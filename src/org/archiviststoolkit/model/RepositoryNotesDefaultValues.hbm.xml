@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+
+	<class name="RepositoryNotesDefaultValues"
+		   table="RepositoryNotesDefaultValues">
+
+		<id name="repositoryNotesDefaultValueId" column="repositoryNotesDefaultValueId" type="java.lang.Long">
+			<generator class="native"></generator>
+		</id>
+
+
+		<property name="defaultTitle"
+				  column="defaultTitle"
+				  type="string"/>
+
+		<property name="defaultContent"
+				  column="defaultContent"
+				  type="text"/>
+
+		<many-to-one name="repository"
+					 class="Repositories"
+					 column="repositoryId"
+					 lazy="false"/>
+
+		<many-to-one name="noteType"
+					 class="org.archiviststoolkit.structure.NotesEtcTypes"
+					 column="notesEtcTypeId"/>
+
+	</class>
+
+</hibernate-mapping>

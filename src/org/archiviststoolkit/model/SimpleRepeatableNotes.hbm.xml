@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+
+	<class name="SimpleRepeatableNotes"
+		   table="SimpleRepeatableNotes"
+		   lazy="false">
+
+		<id name="simpleRepeatableNoteId" column="simpleRepeatableNoteId" type="java.lang.Long">
+			<generator class="native"></generator>
+		</id>
+
+		<discriminator
+				column="descriminator"
+				type="string"/>
+
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+			<column name="lastUpdated" not-null="true"/>
+			<column name="created" not-null="true"/>
+			<column name="lastUpdatedBy" not-null="true"/>
+			<column name="createdBy" not-null="true"/>
+		</property>
+
+		<!-- Simple property. -->
+		<property name="label"
+				  column="label"
+				  type="string"
+				  not-null="true"/>
+
+		<!-- Simple property. -->
+		<property name="sequenceNumber"
+				  column="sequenceNumber"
+				  type="int"
+				  not-null="true"/>
+
+		<!-- Simple property. -->
+		<property name="noteText"
+				  column="noteText"
+				  type="text"
+				  not-null="true"/>
+
+
+		<subclass name="NameContactNotes" discriminator-value="name">
+
+			<many-to-one name="name"
+						 class="Names"
+						 column="nameId"
+						 access="field"
+						 fetch="join"
+						 outer-join="true"/>
+		</subclass>
+
+		<subclass name="RepositoryNotes" discriminator-value="repository">
+
+			<many-to-one name="repository"
+						 class="Repositories"
+						 column="repositoryId"
+						 access="field"
+						 fetch="join"
+						 outer-join="true"/>
+		</subclass>
+
+	</class>
+
+</hibernate-mapping>

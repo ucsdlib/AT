@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+	<class name="org.archiviststoolkit.model.RecordLocks" table="RecordLocks" lazy="false">
+
+        <id name="recordLockId" column="recordLockId">
+			<generator class="native"/>
+		</id>
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+			<column name="lastUpdated"/>
+			<column name="created"/>
+			<column name="lastUpdatedBy"/>
+			<column name="createdBy"/>
+		</property>
+
+		<property name="className"
+				  column="className"
+                  type="string"
+                  not-null="true"
+				  length="200"/>
+
+		<property name="recordId"
+				  column="recordId"
+				  type="java.lang.Long"
+				  not-null="true"/>
+
+		<property name="userName"
+				  column="userName"
+				  type="string"
+				  not-null="true"
+                  length="100"/>
+
+        <property name="hostIP"
+				  column="hostIP"
+                  type="string"
+                  not-null="true"/>
+
+        <property name="previousUpdateTime"
+				  column="previousUpdateTime"
+				  type="java.lang.Long"
+                  not-null="true"/>
+    </class>
+ </hibernate-mapping>

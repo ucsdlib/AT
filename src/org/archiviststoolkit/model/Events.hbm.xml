@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+
+	<class name="Events"
+		   table="Events"
+		   lazy="false">
+
+		<id name="eventId" column="eventId" type="java.lang.Long">
+			<generator class="native"></generator>
+		</id>
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+			<column name="lastUpdated" not-null="true"/>
+			<column name="created" not-null="true"/>
+			<column name="lastUpdatedBy" not-null="true"/>
+			<column name="createdBy" not-null="true"/>
+		</property>
+
+		<!-- Simple property. -->
+		<property name="sequenceNumber"
+				  column="sequenceNumber"
+				  type="int"
+				  not-null="true"/>
+
+		<!-- Simple property. -->
+		<property name="eventDescription"
+				  column="eventDescription"
+				  type="text"/>
+
+
+		<many-to-one name="chronologyItem"
+					 class="ChronologyItems"
+					 column="archDescStructDataItemId"
+					 access="field"
+					 fetch="join"
+					 not-null="true"
+					 outer-join="true"/>
+
+	</class>
+
+</hibernate-mapping>

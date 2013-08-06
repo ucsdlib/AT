@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<noteEtcTypes>
+    <note>
+        <name>Abstract</name>
+        <label>Abstract</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>false</allowsMultiPart>
+        <includeInDigitalObjects>true</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Accruals note</name>
+        <label>Accruals note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>true</allowsMultiPart>
+        <includeInDigitalObjects>false</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Appraisal note</name>
+        <label>Appraisal note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>true</allowsMultiPart>
+        <includeInDigitalObjects>false</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Arrangement note</name>
+        <label>Arrangement note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>true</allowsMultiPart>
+        <includeInDigitalObjects>false</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Bibliography</name>
+        <label>Bibliography</label>
+        <className>org.archiviststoolkit.model.Bibliography</className>
+        <type>Bibliography</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>false</allowsMultiPart>
+        <includeInDigitalObjects>false</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Biographical/Historical note</name>
+        <label>Biographical/Historical note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>true</allowsMultiPart>
+        <includeInDigitalObjects>true</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Chronology</name>
+        <label>Chronology</label>
+        <className>org.archiviststoolkit.model.ChronologyList</className>
+        <type>Chronology</type>
+        <embeded>true</embeded>
+        <allowsMultiPart>false</allowsMultiPart>
+        <includeInDigitalObjects>false</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Conditions Governing Access note</name>
+        <label>Conditions Governing Access note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>true</allowsMultiPart>
+        <includeInDigitalObjects>true</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Conditions Governing Use note</name>
+        <label>Conditions Governing Use note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>true</allowsMultiPart>
+        <includeInDigitalObjects>true</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Custodial History note</name>
+        <label>Custodial History note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>true</allowsMultiPart>
+        <includeInDigitalObjects>true</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Dimensions note</name>
+        <label>Dimensions note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>true</allowsMultiPart>
+        <includeInDigitalObjects>true</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Existence and Location of Copies note</name>
+        <label>Existence and Location of Copies note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>true</allowsMultiPart>
+        <includeInDigitalObjects>true</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Existence and Location of Originals note</name>
+        <label>Existence and Location of Originals note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>true</allowsMultiPart>
+        <includeInDigitalObjects>true</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>File Plan note</name>
+        <label>File Plan note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>true</allowsMultiPart>
+        <includeInDigitalObjects>false</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>General note</name>
+        <label>General note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>true</allowsMultiPart>
+        <includeInDigitalObjects>true</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>General Physical Description note</name>
+        <label>General Physical Description note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>false</allowsMultiPart>
+        <includeInDigitalObjects>true</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Immediate Source of Acquisition note</name>
+        <label>Immediate Source of Acquisition note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>true</allowsMultiPart>
+        <includeInDigitalObjects>true</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Index</name>
+        <label>Index</label>
+        <className>org.archiviststoolkit.model.Index</className>
+        <type>Index</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>false</allowsMultiPart>
+        <includeInDigitalObjects>false</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Language of Materials note</name>
+        <label>Language of Materials note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>false</allowsMultiPart>
+        <includeInDigitalObjects>true</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Legal Status note</name>
+        <label>Legal Status note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>true</allowsMultiPart>
+        <includeInDigitalObjects>true</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>List: definition</name>
+        <label>List: definition</label>
+        <className>org.archiviststoolkit.model.ListDefinition</className>
+        <type>List: definition</type>
+        <embeded>true</embeded>
+        <allowsMultiPart>false</allowsMultiPart>
+        <includeInDigitalObjects>false</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>List: ordered</name>
+        <label>List: ordered</label>
+        <className>org.archiviststoolkit.model.ListOrdered</className>
+        <type>List: ordered</type>
+        <embeded>true</embeded>
+        <allowsMultiPart>false</allowsMultiPart>
+        <includeInDigitalObjects>false</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Location note</name>
+        <label>Location note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>false</allowsMultiPart>
+        <includeInDigitalObjects>false</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Material Specific Details note</name>
+        <label>Material Specific Details note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>false</allowsMultiPart>
+        <includeInDigitalObjects>true</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Other Finding Aids note</name>
+        <label>Other Finding Aids note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>true</allowsMultiPart>
+        <includeInDigitalObjects>false</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Physical Characteristics and Technical Requirements note</name>
+        <label>Physical Characteristics and Technical Requirements note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>true</allowsMultiPart>
+        <includeInDigitalObjects>true</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Physical Facet note</name>
+        <label>Physical Facet note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>false</allowsMultiPart>
+        <includeInDigitalObjects>true</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Preferred Citation note</name>
+        <label>Preferred Citation note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>true</allowsMultiPart>
+        <includeInDigitalObjects>true</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Processing Information note</name>
+        <label>Processing Information note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>true</allowsMultiPart>
+        <includeInDigitalObjects>true</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Related Archival Materials note</name>
+        <label>Related Archival Materials note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>true</allowsMultiPart>
+        <includeInDigitalObjects>true</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Scope and Contents note</name>
+        <label>Scope and Contents note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>true</allowsMultiPart>
+        <includeInDigitalObjects>true</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Separated Materials note</name>
+        <label>Separated Materials note</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>false</embeded>
+        <allowsMultiPart>true</allowsMultiPart>
+        <includeInDigitalObjects>false</includeInDigitalObjects>
+    </note>
+    <note>
+        <name>Text</name>
+        <label>Text</label>
+        <className>org.archiviststoolkit.model.ArchDescriptionNotes</className>
+        <type>Note</type>
+        <embeded>true</embeded>
+        <allowsMultiPart>false</allowsMultiPart>
+        <includeInDigitalObjects>false</includeInDigitalObjects>                    .
+    </note>
+</noteEtcTypes>

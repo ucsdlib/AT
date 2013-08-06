@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.archiviststoolkit.structure.DefaultValues" table="DefaultValues" lazy="false">
+
+		<!--<cache usage="read-write"/>-->
+
+		<id name="defaultValueId" column="defaultValueId" type="java.lang.Long">
+			<generator class="native"></generator>
+		</id>
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+			<column name="lastUpdated"/>
+			<column name="created"/>
+			<column name="lastUpdatedBy"/>
+			<column name="createdBy"/>
+		</property>
+
+
+		<property name="tableName"
+				  column="tableName"
+				  type="string"/>
+
+		<property name="stringValue"
+				  column="stringValue"
+				  type="string"/>
+
+		<property name="textValue"
+				  column="textValue"
+				  type="text"/>
+
+		<property name="longValue"
+				  column="longValue"
+				  type="long"/>
+
+		<property name="doubleValue"
+				  column="doubleVlaue"
+				  type="double"/>
+
+		<property name="intValue"
+				  column="intValue"
+				  type="int"/>
+
+		<property name="booleanValue"
+				  column="booleanValue"
+				  type="boolean"/>
+
+		<property name="dateValue"
+				  column="dateValue"
+				  type="date"/>
+
+		<many-to-one name="atField"
+					 class="org.archiviststoolkit.structure.DatabaseFields"
+					 column="fieldId"
+					 access="field"
+					 fetch="join"
+					 outer-join="true"/>
+
+		<many-to-one name="repository"
+					 class="org.archiviststoolkit.model.Repositories"
+					 column="repositoryId"
+					 lazy="false"/>
+
+		<filter name="repository" condition=":repositoryId = repositoryId"/>
+	</class>
+	<filter-def name="repository">
+		<filter-param name="repositoryId" type="java.lang.Long"/>
+	</filter-def>
+</hibernate-mapping>

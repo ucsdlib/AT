@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commands>
+    <command>
+        <![CDATA[ALTER TABLE Accessions
+  ADD UNIQUE (repositoryId,accessionNumber1,accessionNumber2,accessionNumber3,accessionNumber4);]]>
+    </command>
+    <command>
+        <![CDATA[ALTER TABLE AccessionsResources ADD UNIQUE (resourceId, accessionId);]]>
+    </command>
+    <command>
+        <![CDATA[ALTER TABLE Resources
+  ADD UNIQUE (repositoryId,resourceIdentifier1,resourceIdentifier2,resourceIdentifier3,resourceIdentifier4);]]>
+    </command>
+    <command>
+        <![CDATA[ALTER TABLE LocationsTable
+  ADD UNIQUE (building,floor,room,area,coordinate1Label,coordinate1NumericIndicator,coordinate1AlphaNumIndicator,
+  coordinate2Label,coordinate2NumericIndicator,coordinate2AlphaNumIndicator,
+  coordinate3Label,coordinate3NumericIndicator,coordinate3AlphaNumIndicator,classificationNumber,barcode);]]>
+    </command>
+    <command>
+        <![CDATA[ALTER TABLE Subjects
+  ADD UNIQUE (subjectTerm,subjectTermType,subjectSource);]]>
+    </command>
+    <command>
+        <![CDATA[ALTER TABLE DefaultValues ADD UNIQUE (repositoryId, fieldId);]]>
+    </command>
+    <command>
+        <![CDATA[CREATE INDEX resources_lang_idx ON Resources (languageCode);]]>
+    </command>
+    <command>
+        <![CDATA[CREATE INDEX components_lang_idx ON ResourcesComponents (languageCode);]]>
+    </command>
+    <command>
+        <![CDATA[CREATE INDEX digitalobjects_lang_idx ON DigitalObjects (languageCode);]]>
+    </command>
+    <command>
+        <![CDATA[CREATE INDEX repositories_lang_idx ON Repositories (descriptiveLanguage);]]>
+    </command>
+</commands>

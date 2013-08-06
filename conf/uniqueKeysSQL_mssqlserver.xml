@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commands>
+    <command>
+        <![CDATA[ALTER TABLE accessions ADD CONSTRAINT AccessionNumber UNIQUE (repositoryID, accessionNumber1, accessionNumber2,accessionNumber3,accessionNumber4);]]>
+    </command>
+    <command>
+        <![CDATA[ALTER TABLE AccessionsResources ADD CONSTRAINT uniqueResourceAccessionLink UNIQUE (resourceId, accessionId);]]>
+    </command>
+    <command>
+        <![CDATA[ALTER TABLE Resources ADD CONSTRAINT ResourceId UNIQUE (repositoryId,resourceIdentifier1,resourceIdentifier2,resourceIdentifier3,resourceIdentifier4);]]>
+    </command>
+    <command>
+        <![CDATA[ALTER TABLE LocationsTable ADD CONSTRAINT UniqueLocation UNIQUE (building,floor,room,area,coordinate1Label,coordinate1NumericIndicator,coordinate1AlphaNumIndicator,coordinate2Label,
+coordinate2NumericIndicator,coordinate2AlphaNumIndicator,coordinate3Label,coordinate3NumericIndicator,coordinate3AlphaNumIndicator,classificationNumber,barcode);]]>
+    </command>
+    <command>
+        <![CDATA[ALTER TABLE Subjects ADD CONSTRAINT UniqueSubjects UNIQUE (subjectTerm,subjectTermType,subjectSource);]]>
+    </command>
+    <!--<command>
+        <![CDATA[ALTER TABLE Names ADD CONSTRAINT UniqueNames UNIQUE (corporatePrimaryName,corporateSubordinate1,corporateSubordinate2,personalPrimaryName,personalRestOfName,personalDates,
+personalFullerForm,personalTitle,familyName,familyNamePrefix);]]>
+    </command>-->
+	<command>
+		<![CDATA[ALTER TABLE DefaultValues ADD CONSTRAINT uniqueDefaultValue UNIQUE (repositoryId, fieldId);]]>
+	</command>
+	<command>
+		<![CDATA[CREATE INDEX IX_languageCode ON Resources (languageCode);]]>
+	</command>
+	<command>
+		<![CDATA[CREATE INDEX IX_languageCode ON ResourcesComponents (languageCode);]]>
+	</command>
+	<command>
+		<![CDATA[CREATE INDEX IX_languageCode ON DigitalObjects (languageCode);]]>
+	</command>
+	<command>
+		<![CDATA[CREATE INDEX IX_descriptiveLanguage ON Repositories (descriptiveLanguage);]]>
+	</command>
+</commands>

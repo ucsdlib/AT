@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+
+	<class name="ArchDescriptionRepeatingData"
+		   table="ArchDescriptionRepeatingData">
+
+		<id name="archDescriptionRepeatingDataId" type="long" column="archDescriptionRepeatingDataId">
+            <!--<generator class="org.hibernate.id.enhanced.TableGenerator">-->
+                <!--<param name="optimizer">hilo</param>-->
+                <!--<param name="segment_value">repeatingData</param>-->
+                <!--<param name="increment_size">10</param>-->
+            <!--</generator>-->
+            <generator class="org.hibernate.id.enhanced.SequenceStyleGenerator">
+                <param name="optimizer">hilo</param>
+                <param name="sequence_name">repeating_data_sequence</param>
+                <param name="increment_size">10000</param>
+            </generator>
+            <!--<generator class="increment"/>-->
+
+		</id>
+
+		<discriminator
+			column="descriminator"
+			type="string"/>
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+        <property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+            <column name="lastUpdated"/>
+            <column name="created"/>
+            <column name="lastUpdatedBy"/>
+            <column name="createdBy"/>
+        </property>
+
+		<!-- Simple property. -->
+		<property name="repeatingDataType"
+				  column="repeatingDataType"
+				  type="string"
+				  not-null="true"/>
+
+		<!-- Simple property. -->
+		<property name="title"
+				  column="title"
+				  type="string"/>
+
+		<!-- Simple property. -->
+		<property name="sequenceNumber"
+				  column="sequenceNumber"
+				  type="int"
+				  not-null="true"/>
+
+		<!-- Simple property. -->
+		<property name="eadIngestProblem"
+				  column="eadIngestProblem"
+				  type="text"/>
+
+        <many-to-one name="resourceComponent"
+                     class="ResourcesComponents"
+                     column="resourceComponentId"/>
+
+		<many-to-one name="resource"
+					 class="Resources"
+					 column="resourceId"/>
+
+		<many-to-one name="digitalObject"
+					 class="DigitalObjects"
+					 column="digitalObjectId"/>
+
+		<many-to-one name="accession"
+					 class="Accessions"
+					 column="accessionId"/>
+
+		<subclass name="ArchDescriptionNotes" discriminator-value="note">
+
+			<!-- Simple property. -->
+			<!--<property name="noteType"-->
+					  <!--column="noteType"-->
+					  <!--type="string"/>-->
+
+			<!-- Simple property. -->
+			<property name="noteContent"
+					  column="noteContent"
+					  type="text"/>
+
+			<property name="internalOnly"
+					  column="internalOnly"
+					  type="boolean"/>
+
+			<property name="multiPart"
+					  column="multiPart"
+					  type="boolean"/>
+
+			<property name="basic"
+					  column="basic"
+					  type="boolean"/>
+
+			<property name="persistentId"
+					  column="persistentId"
+					  length="10"
+					  type="string"/>
+
+			<set name="children"
+				 cascade="all-delete-orphan"
+				 inverse="true"
+				 lazy="true"
+				 order-by="sequenceNumber asc"
+				 access="field">
+				<key>
+					<column name="parentNotetId" not-null="false"/>
+				</key>
+				<one-to-many class="ArchDescriptionRepeatingData"/>
+			</set>
+
+			<many-to-one name="parentNote"
+						 column="parentNotetId"/>
+
+			<many-to-one name="notesEtcType"
+						 class="org.archiviststoolkit.structure.NotesEtcTypes"
+						 column="notesEtcTypeId"/>
+		</subclass>
+
+		<subclass name="org.archiviststoolkit.model.Bibliography" discriminator-value="bibliography">
+
+			<property name="note"
+						column="note"
+						type="text"
+						not-null="false"/>
+
+			<property name="persistentId"
+					  column="persistentId"
+					  length="10"
+					  type="string"/>
+
+      <property name="internalOnly"
+					  column="internalOnly"
+					  type="boolean"/>
+
+      <set name="bibItems"
+				 cascade="all-delete-orphan"
+				 inverse="true"
+				 lazy="true"
+				 sort="natural"
+				 access="field">
+				<key>
+					<column name="parentId"/>
+				</key>
+				<one-to-many class="BibItems"/>
+			</set>
+
+		</subclass>
+
+		<subclass name="ChronologyList" discriminator-value="chronologyList">
+
+			<set name="chronologyItems"
+				 cascade="all-delete-orphan"
+				 inverse="true"
+				 lazy="true"
+				 sort="natural"
+				 access="field">
+				<key>
+					<column name="parentId"/>
+				</key>
+				<one-to-many class="ChronologyItems"/>
+			</set>
+
+			<many-to-one name="parentNote"
+						 column="parentNotetId"/>
+						 <!--access="field"-->
+						 <!--outer-join="true"/>-->
+			
+
+		</subclass>
+
+		<subclass name="Index" discriminator-value="index">
+
+			<property name="note"
+						column="note"
+						type="text"
+						not-null="false"/>
+
+			<property name="persistentId"
+					  column="persistentId"
+					  length="10"
+					  type="string"/>
+
+      <property name="internalOnly"
+					  column="internalOnly"
+					  type="boolean"/>
+
+      <set name="indexItems"
+				 cascade="all-delete-orphan"
+				 inverse="true"
+				 lazy="true"
+				 sort="natural"
+				 access="field">
+				<key>
+					<column name="parentId"/>
+				</key>
+				<one-to-many class="IndexItems"/>
+			</set>
+
+		</subclass>
+
+		<subclass name="ListOrdered" discriminator-value="listOrdered">
+
+			<property name="numeration"
+						column="numeration"
+						type="string"
+						not-null="false"/>
+
+			<set name="listItems"
+				 cascade="all-delete-orphan"
+				 inverse="true"
+				 lazy="true"
+				 sort="natural"
+				 access="field">
+				<key>
+					<column name="parentId"/>
+				</key>
+				<one-to-many class="ListOrderedItems"/>
+			</set>
+
+			<many-to-one name="parentNote"
+						 column="parentNotetId"
+						 access="field"
+						 outer-join="true"/>
+		</subclass>
+
+		<subclass name="ListDefinition" discriminator-value="listDefinition">
+
+			<property name="note"
+						column="note"
+						type="text"
+						not-null="false"/>
+
+			<set name="listItems"
+				 cascade="all-delete-orphan"
+				 inverse="true"
+				 lazy="true"
+				 sort="natural"
+				 access="field">
+				<key>
+					<column name="parentId"/>
+				</key>
+				<one-to-many class="ListDefinitionItems"/>
+			</set>
+
+			<many-to-one name="parentNote"
+						 column="parentNotetId"/>
+						 <!--access="field"-->
+						 <!--outer-join="true"/>-->
+		</subclass>
+
+		<subclass name="ExternalReference" discriminator-value="externalReference">
+
+			<property name="href"
+						column="href"
+						type="text"/>
+
+			<property name="actuate"
+						column="actuate"
+						type="string"/>
+
+			<property name="show"
+						column="showz"
+						type="string"/>
+
+		</subclass>
+
+	</class>
+
+	<sql-query name="gatherPersitentIds">
+		<return-scalar column="repeatingDataType" type="string"/>
+		<return-scalar column="note" type="string"/>
+		<return-scalar column="noteContent" type="string"/>
+		<return-scalar column="noteType" type="string"/>
+		<return-scalar column="persistentId" type="string"/>
+		SELECT r.repeatingDataType as repeatingDataType,
+		r.note as note,
+		r.noteContent as noteContent,
+		r.noteType as noteType,
+		r.persistentId as persistentId
+		FROM ArchDescriptionRepeatingData r
+		WHERE r.resourceComponentId = :resourceComponentId
+		order by r.sequenceNumber asc
+	</sql-query>
+
+
+</hibernate-mapping>

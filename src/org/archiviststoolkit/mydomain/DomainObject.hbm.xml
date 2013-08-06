@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="org.archiviststoolkit.mydomain.DomainObject" table="DOMAINOBJECT">
+		<id name="identifier" column="identifier" type="java.lang.Long">
+			<generator class="identity"></generator>
+		</id>
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="creationdate" type="java.util.Calendar" column="creationdate"/>
+		<property name="modifieddate" type="java.util.Calendar" column="modifieddate"/>
+		<property name="createdBy" type="string" column="createdBy"/>
+		<property name="modifiedBy" type="string" column="modifiedBy"/>
+	</class>
+
+
+</hibernate-mapping>

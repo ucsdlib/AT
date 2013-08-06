@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Assessment List" pageWidth="612" pageHeight="792" columnWidth="532" leftMargin="40" rightMargin="40" topMargin="50" bottomMargin="18" isTitleNewPage="true">
+	<property name="reportTitle" value="Assessment list"/>
+	<property name="reportDescription" value="Displays all assessment data."/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<parameter name="ReportHeader" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Program Files\\Archivists' Toolkit 1.7 (update 3)\\reports\\DigitalObjects\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="basePath" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT  * FROM   assessments]]>
+	</queryString>
+	<field name="assessmentId" class="java.lang.Long"/>
+	<field name="conservationNote" class="java.lang.String"/>
+	<field name="exhibitionValueNote" class="java.lang.String"/>
+	<field name="generalNote" class="java.lang.String"/>
+	<field name="monetaryValueNote" class="java.lang.String"/>
+	<field name="reviewNote" class="java.lang.String"/>
+	<field name="specialFormatNote" class="java.lang.String"/>
+	<field name="reviewNeeded" class="java.lang.Boolean"/>
+	<field name="potentialMoldOrMoldDamage" class="java.lang.Boolean"/>
+	<field name="recentPestDamage" class="java.lang.Boolean"/>
+	<field name="deterioratingFilmBase" class="java.lang.Boolean"/>
+	<field name="specialConservationIssue1" class="java.lang.Boolean"/>
+	<field name="specialConservationIssue2" class="java.lang.Boolean"/>
+	<field name="specialConservationIssue3" class="java.lang.Boolean"/>
+	<field name="digitalObjects" class="java.util.Set"/>
+	<field name="resources" class="java.util.Set"/>
+	<field name="accessions" class="java.util.Set"/>
+	<field name="brittlePaper" class="java.lang.Boolean"/>
+	<field name="metalFasteners" class="java.lang.Boolean"/>
+	<field name="newspaper" class="java.lang.Boolean"/>
+	<field name="tape" class="java.lang.Boolean"/>
+	<field name="thermofaxPaper" class="java.lang.Boolean"/>
+	<field name="otherConservationIssue1" class="java.lang.Boolean"/>
+	<field name="otherConservationIssue2" class="java.lang.Boolean"/>
+	<field name="otherConservationIssue3" class="java.lang.Boolean"/>
+	<field name="researchValue" class="java.lang.Integer"/>
+	<field name="totalEstimatedProcessingTime" class="java.lang.Double"/>
+	<field name="architecturalMaterials" class="java.lang.Boolean"/>
+	<field name="artOriginals" class="java.lang.Boolean"/>
+	<field name="artifacts" class="java.lang.Boolean"/>
+	<field name="audioMaterials" class="java.lang.Boolean"/>
+	<field name="biologicalSpecimens" class="java.lang.Boolean"/>
+	<field name="botanicalSpecimens" class="java.lang.Boolean"/>
+	<field name="computerStorageUnits" class="java.lang.Boolean"/>
+	<field name="film" class="java.lang.Boolean"/>
+	<field name="glass" class="java.lang.Boolean"/>
+	<field name="photographs" class="java.lang.Boolean"/>
+	<field name="scrapbooks" class="java.lang.Boolean"/>
+	<field name="technicalDrawingsAndSchematics" class="java.lang.Boolean"/>
+	<field name="textiles" class="java.lang.Boolean"/>
+	<field name="vellumAndParchment" class="java.lang.Boolean"/>
+	<field name="videoMaterials" class="java.lang.Boolean"/>
+	<field name="other" class="java.lang.Boolean"/>
+	<field name="specialFormat1" class="java.lang.Boolean"/>
+	<field name="specialFormat2" class="java.lang.Boolean"/>
+	<field name="monetaryValue" class="java.lang.Double"/>
+	<field name="conditionOfMaterial" class="java.lang.Integer"/>
+	<field name="physicalAccess" class="java.lang.Integer"/>
+	<field name="documentationQuality" class="java.lang.Integer"/>
+	<field name="qualityOfHousing" class="java.lang.Integer"/>
+	<field name="intellectualAccess" class="java.lang.Integer"/>
+	<field name="interest" class="java.lang.Integer"/>
+	<field name="estimatedProcessingTimePerFoot" class="java.lang.Double"/>
+	<field name="totalExtent" class="java.lang.Double"/>
+	<field name="whoDidSurvey" class="java.lang.String"/>
+	<field name="whoNeedsToReview" class="java.lang.String"/>
+	<field name="amountOfTimeSurveyTook" class="java.lang.Double"/>
+	<field name="userNumericalRating1" class="java.lang.Integer"/>
+	<field name="userNumericalRating2" class="java.lang.Integer"/>
+	<variable name="digitalObjectsDataSource" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource">
+		<variableExpression><![CDATA[new JRBeanCollectionDataSource(new ArrayList($F{digitalObjects}))]]></variableExpression>
+	</variable>
+	<variable name="resourcesDataSource" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource">
+		<variableExpression><![CDATA[new JRBeanCollectionDataSource(new ArrayList($F{resources}))]]></variableExpression>
+	</variable>
+	<variable name="accessionsDataSource" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource">
+		<variableExpression><![CDATA[new JRBeanCollectionDataSource(new ArrayList($F{accessions}))]]></variableExpression>
+	</variable>
+	<variable name="TEST_REVIEW_NEEDED" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{reviewNeeded}]]></variableExpression>
+	</variable>
+	<variable name="TEST_MOLD" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{potentialMoldOrMoldDamage}]]></variableExpression>
+	</variable>
+	<variable name="TEST_PEST" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{recentPestDamage}]]></variableExpression>
+	</variable>
+	<variable name="TEST_DETERIORATING" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{deterioratingFilmBase}]]></variableExpression>
+	</variable>
+	<variable name="TEST_SPECIAL_ISSUE_1" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{specialConservationIssue1}]]></variableExpression>
+	</variable>
+	<variable name="TEST_SPECIAL_ISSUE_2" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{specialConservationIssue2}]]></variableExpression>
+	</variable>
+	<variable name="TEST_SPECIAL_ISSUE_3" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{specialConservationIssue3}]]></variableExpression>
+	</variable>
+	<variable name="TEST_OTHER_ISSUE_1" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{otherConservationIssue1}]]></variableExpression>
+	</variable>
+	<variable name="TEST_OTHER_ISSUE_2" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{otherConservationIssue2}]]></variableExpression>
+	</variable>
+	<variable name="TEST_OTHER_ISSUE_3" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{otherConservationIssue3}]]></variableExpression>
+	</variable>
+	<variable name="TEST_BRITTLE" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{brittlePaper}]]></variableExpression>
+	</variable>
+	<variable name="TEST_METAL" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{metalFasteners}]]></variableExpression>
+	</variable>
+	<variable name="TEST_NEWSPAPER" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{newspaper}]]></variableExpression>
+	</variable>
+	<variable name="TEST_TAPE" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{brittlePaper}]]></variableExpression>
+	</variable>
+	<variable name="TEST_THERMOFAX" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{thermofaxPaper}]]></variableExpression>
+	</variable>
+	<variable name="TEST_ARCHITECTURAL_MATERIALS" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{architecturalMaterials}]]></variableExpression>
+	</variable>
+	<variable name="TEST_ART_ORIGINALS" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{artOriginals}]]></variableExpression>
+	</variable>
+	<variable name="TEST_ARTIFACTS" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{artifacts}]]></variableExpression>
+	</variable>
+	<variable name="TEST_AUDIO_MATERIALS" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{audioMaterials}]]></variableExpression>
+	</variable>
+	<variable name="TEST_BIOLOGICAL_SPECIMENS" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{biologicalSpecimens}]]></variableExpression>
+	</variable>
+	<variable name="TEST_BOTANICAL_SPECIMENS" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{botanicalSpecimens}]]></variableExpression>
+	</variable>
+	<variable name="TEST_COMPUTER_STORAGE_UNITS" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{computerStorageUnits}]]></variableExpression>
+	</variable>
+	<variable name="TEST_FILM" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{film}]]></variableExpression>
+	</variable>
+	<variable name="TEST_GLASS" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{glass}]]></variableExpression>
+	</variable>
+	<variable name="TEST_PHOTOGRAPHS" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{photographs}]]></variableExpression>
+	</variable>
+	<variable name="TEST_SCRAPBOOKS" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{scrapbooks}]]></variableExpression>
+	</variable>
+	<variable name="TEST_TECH_DRAWINGS" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{technicalDrawingsAndSchematics}]]></variableExpression>
+	</variable>
+	<variable name="TEST_TEXTILES" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{textiles}]]></variableExpression>
+	</variable>
+	<variable name="TEST_VELLUM_PARCHMENT" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{vellumAndParchment}]]></variableExpression>
+	</variable>
+	<variable name="TEST_VIDEO" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{videoMaterials}]]></variableExpression>
+	</variable>
+	<variable name="TEST_OTHER" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{other}]]></variableExpression>
+	</variable>
+	<variable name="TEST_SPECIAL_FORMAT_1" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{specialFormat1}]]></variableExpression>
+	</variable>
+	<variable name="TEST_SPECIAL_FORMAT_2" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$F{specialFormat2}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="250" splitType="Stretch">
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement key="textField-12" x="10" y="150" width="512" height="76" isPrintWhenDetailOverflows="true" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+					<font fontName="Arial" size="20" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica-Bold" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{ReportHeader}.equals("") ? "Assessment List" : $P{ReportHeader}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="" isBlankWhenNull="false">
+				<reportElement key="textField-14" positionType="Float" x="355" y="236" width="31" height="13" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+					<font fontName="Arial" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="staticText-12" positionType="Float" x="266" y="236" width="89" height="13" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+					<font fontName="Arial" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[Number of Results: ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="486" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="152" y="20" width="81" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="14"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Long"><![CDATA[$F{assessmentId}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="10" y="92" width="512" height="5" isRemoveLineWhenBlank="true"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{reviewNote}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="300" width="512" height="5" isRemoveLineWhenBlank="true"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{conservationNote}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="430" width="512" height="5" isRemoveLineWhenBlank="true"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{exhibitionValueNote}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="477" width="512" height="5" isRemoveLineWhenBlank="true"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{monetaryValueNote}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="403" width="512" height="5" isRemoveLineWhenBlank="true"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{specialFormatNote}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="87" width="448" height="5" isRemoveLineWhenBlank="true" forecolor="#C9243F">
+					<printWhenExpression><![CDATA[$F{whoNeedsToReview}.equals("") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_REVIEW_NEEDED})+"").equals("true") ? "**Review needed**" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="87" width="448" height="5" isRemoveLineWhenBlank="true" forecolor="#C9243F">
+					<printWhenExpression><![CDATA[$F{whoNeedsToReview}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_REVIEW_NEEDED})+"").equals("true") ? "**Review needed by "+($F{whoNeedsToReview})+" **" :""]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="20" width="152" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Assessment Identifier:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="74" width="108" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{reviewNote}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Review Note:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="281" width="95" height="20" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{conservationNote}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Conservation Note:]]></text>
+			</staticText>
+			<subreport runToBottom="false">
+				<reportElement positionType="Float" x="20" y="56" width="502" height="5" isRemoveLineWhenBlank="true"/>
+				<dataSourceExpression><![CDATA[$V{digitalObjectsDataSource}]]></dataSourceExpression>
+				<subreportExpression class="java.lang.String"><![CDATA[$P{basePath} + "/sub_assessmentDigitalObjects.jasper"]]></subreportExpression>
+			</subreport>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="218" width="108" height="20" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[(
+    ((($V{TEST_MOLD})+"").equals("false"))
+    &((($V{TEST_PEST})+"").equals("false"))
+    &((($V{TEST_DETERIORATING})+"").equals("false"))
+    &((($V{TEST_SPECIAL_ISSUE_1})+"").equals("false"))
+    &((($V{TEST_SPECIAL_ISSUE_2})+"").equals("false"))
+    &((($V{TEST_SPECIAL_ISSUE_3})+"").equals("false"))
+    &((($V{TEST_OTHER_ISSUE_1})+"").equals("false"))
+    &((($V{TEST_OTHER_ISSUE_2})+"").equals("false"))
+    &((($V{TEST_OTHER_ISSUE_3})+"").equals("false"))
+    &((($V{TEST_BRITTLE})+"").equals("false"))
+    &((($V{TEST_METAL})+"").equals("false"))
+    &((($V{TEST_NEWSPAPER})+"").equals("false"))
+    &((($V{TEST_TAPE})+"").equals("false"))
+    &((($V{TEST_THERMOFAX})+"").equals("false"))
+
+)
+
+
+? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Conservation Issues:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="237" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_MOLD})+"").equals("true") ? "- Potential Mold or Mold Damage" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="240" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_PEST})+"").equals("true") ? "- Recent Pest Damage" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="243" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_DETERIORATING})+"").equals("true") ? "- Deteriorating Film Base" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="246" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_SPECIAL_ISSUE_1})+"").equals("true") ? "- Special Conservation Issue 1" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="252" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_SPECIAL_ISSUE_3})+"").equals("true") ? "- Special Conservation Issue 3" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="249" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_SPECIAL_ISSUE_2})+"").equals("true") ? "- Special Conservation Issue 2" :""]]></textFieldExpression>
+			</textField>
+			<subreport runToBottom="false">
+				<reportElement positionType="Float" x="20" y="61" width="502" height="5" isRemoveLineWhenBlank="true"/>
+				<dataSourceExpression><![CDATA[$V{resourcesDataSource}]]></dataSourceExpression>
+				<subreportExpression class="java.lang.String"><![CDATA[$P{basePath} + "/sub_assessmentResources.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport runToBottom="false">
+				<reportElement positionType="Float" x="20" y="66" width="502" height="5" isRemoveLineWhenBlank="true"/>
+				<dataSourceExpression><![CDATA[$V{accessionsDataSource}]]></dataSourceExpression>
+				<subreportExpression class="java.lang.String"><![CDATA[$P{basePath} + "/sub_assessmentAccessions.jasper"]]></subreportExpression>
+			</subreport>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="40" width="100" height="16"/>
+				<textElement>
+					<font fontName="Arial" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Material Surveyed]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="318" y="146" width="23" height="13" isRemoveLineWhenBlank="true"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$F{researchValue}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="270" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_OTHER_ISSUE_1})+"").equals("true") ? "- Other Conservation Issue 1" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="273" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_OTHER_ISSUE_2})+"").equals("true") ? "- Other Conservation Issue 2" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="276" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_OTHER_ISSUE_3})+"").equals("true") ? "- Other Conservation Issue 3" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="255" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_BRITTLE})+"").equals("true") ? "- Brittle Paper" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="258" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_METAL})+"").equals("true") ? "- Metal Fasteners" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="261" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_NEWSPAPER})+"").equals("true") ? "- Newspaper" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="264" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_TAPE})+"").equals("true") ? "- Tape" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="267" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_THERMOFAX})+"").equals("true") ? "- Thermofax Paper" :""]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="236" y="146" width="79" height="13">
+					<printWhenExpression><![CDATA[$F{researchValue}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Research Value:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="307" width="108" height="20" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[(
+    ((($V{TEST_ARCHITECTURAL_MATERIALS})+"").equals("false"))
+    &((($V{TEST_ART_ORIGINALS})+"").equals("false"))
+    &((($V{TEST_ARTIFACTS})+"").equals("false"))
+    &((($V{TEST_AUDIO_MATERIALS})+"").equals("false"))
+    &((($V{TEST_BIOLOGICAL_SPECIMENS})+"").equals("false"))
+    &((($V{TEST_BOTANICAL_SPECIMENS})+"").equals("false"))
+    &((($V{TEST_COMPUTER_STORAGE_UNITS})+"").equals("false"))
+    &((($V{TEST_FILM})+"").equals("false"))
+    &((($V{TEST_GLASS})+"").equals("false"))
+    &((($V{TEST_PHOTOGRAPHS})+"").equals("false"))
+    &((($V{TEST_SCRAPBOOKS})+"").equals("false"))
+    &((($V{TEST_TECH_DRAWINGS})+"").equals("false"))
+    &((($V{TEST_TEXTILES})+"").equals("false"))
+    &((($V{TEST_VELLUM_PARCHMENT})+"").equals("false"))
+    &((($V{TEST_VIDEO})+"").equals("false"))
+    &((($V{TEST_OTHER})+"").equals("false"))
+    &((($V{TEST_SPECIAL_FORMAT_1})+"").equals("false"))
+    &((($V{TEST_SPECIAL_FORMAT_2})+"").equals("false"))
+
+)
+
+
+? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Special Formats:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="453" y="116" width="23" height="13" isRemoveLineWhenBlank="true"/>
+				<textElement>
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$F{userNumericalRating1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="362" y="116" width="91" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{userNumericalRating1}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Numerical Rating 1:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="362" y="130" width="91" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{userNumericalRating2}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Numerical Rating 2:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="453" y="130" width="23" height="13" isRemoveLineWhenBlank="true"/>
+				<textElement>
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$F{userNumericalRating2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="109" y="116" width="23" height="13" isRemoveLineWhenBlank="true"/>
+				<textElement>
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$F{conditionOfMaterial}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="263" y="203" width="135" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{totalEstimatedProcessingTime}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Estimated Processing Time:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="383" width="108" height="20" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{specialFormatNote}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Special Format Note:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="327" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_ARCHITECTURAL_MATERIALS})+"").equals("true") ? "- Architectural Materials" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="330" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_ART_ORIGINALS})+"").equals("true") ? "- Art Originals" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="333" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_ARTIFACTS})+"").equals("true") ? "- Artifacts" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="336" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_AUDIO_MATERIALS})+"").equals("true") ? "- Audio Materials" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="339" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_BIOLOGICAL_SPECIMENS})+"").equals("true") ? "- Biological Specimens" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="342" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_BOTANICAL_SPECIMENS})+"").equals("true") ? "- Botanical Specimens" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="345" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_COMPUTER_STORAGE_UNITS})+"").equals("true") ? "- Computer Storage Units" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="348" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_FILM})+"").equals("true") ? "- Film (negative, slide, or motion picture)" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="351" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_GLASS})+"").equals("true") ? "- Glass" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="354" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_PHOTOGRAPHS})+"").equals("true") ? "- Photographs" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="357" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_SCRAPBOOKS})+"").equals("true") ? "- Scrapbooks" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="360" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_TECH_DRAWINGS})+"").equals("true") ? "- Technical Drawings and Schematics" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="363" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_TEXTILES})+"").equals("true") ? "- Textiles" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="366" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_VELLUM_PARCHMENT})+"").equals("true") ? "- Vellum & Parchment" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="369" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_VIDEO})+"").equals("true") ? "- Video Materials" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="372" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_OTHER})+"").equals("true") ? "- Other" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="375" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_SPECIAL_FORMAT_1})+"").equals("true") ? "- Special Format 1" :""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="378" width="245" height="3" isRemoveLineWhenBlank="true" forecolor="#000000"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[(($V{TEST_SPECIAL_FORMAT_2})+"").equals("true") ? "- Special Format 2" :""]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="146" width="106" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{documentationQuality}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Documentation Quality:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="410" width="108" height="20" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{exhibitionValueNote}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Exhibition Value Note:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="457" width="108" height="20" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{monetaryValueNote}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Monetary Value Note:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="436" width="79" height="20" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{monetaryValue}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Monetary Value:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="92" y="436" width="169" height="20" isRemoveLineWhenBlank="true"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{monetaryValue}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="116" width="97" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{conditionOfMaterial}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Condition of Material:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="156" y="146" width="38" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{interest}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Interest:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="130" width="76" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{physicalAccess}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Physical Access:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="189" y="116" width="87" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{qualityOfHousing}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Quality of Housing:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="119" y="146" width="20" height="13" isRemoveLineWhenBlank="true"/>
+				<textElement>
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$F{documentationQuality}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="189" y="130" width="88" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{intellectualAccess}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Intellectual Access:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="88" y="130" width="23" height="13" isRemoveLineWhenBlank="true"/>
+				<textElement>
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$F{physicalAccess}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="196" y="146" width="23" height="13" isRemoveLineWhenBlank="true"/>
+				<textElement>
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$F{interest}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="278" y="116" width="23" height="13" isRemoveLineWhenBlank="true"/>
+				<textElement>
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$F{qualityOfHousing}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="277" y="130" width="23" height="13" isRemoveLineWhenBlank="true"/>
+				<textElement>
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$F{intellectualAccess}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="103" width="512" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[(
+    ($F{conditionOfMaterial}.equals(""))
+    &&($F{physicalAccess}.equals(""))
+    &&($F{qualityOfHousing}.equals(""))
+    &&($F{documentationQuality}.equals(""))
+    &&($F{intellectualAccess}.equals(""))
+    &&($F{interest}.equals(""))
+    &&($F{userNumericalRating1}.equals(""))   
+    &&($F{userNumericalRating2}.equals(""))
+)
+? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Survey:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="400" y="203" width="23" height="13" isRemoveLineWhenBlank="true"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{totalEstimatedProcessingTime}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="79" y="203" width="28" height="13" isRemoveLineWhenBlank="true"/>
+				<textElement>
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{estimatedProcessingTimePerFoot}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="203" width="67" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{estimatedProcessingTimePerFoot}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Hours per foot:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="133" y="203" width="59" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{totalExtent}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Total Extent:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="195" y="203" width="33" height="13" isRemoveLineWhenBlank="true"/>
+				<textElement>
+					<font fontName="Arial" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{totalExtent}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="237" y="203" width="12" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{totalEstimatedProcessingTime}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="115" y="203" width="12" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{totalEstimatedProcessingTime}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[x]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="183" width="153" height="20" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[(
+    ($F{estimatedProcessingTimePerFoot}.equals(""))
+    &($F{totalExtent}.equals(""))
+)
+
+
+? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Estimated Processing Time:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="177" width="512" height="5" isRemoveLineWhenBlank="true"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{generalNote}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="162" width="108" height="15" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{generalNote}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[General Note:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="414" y="27" width="108" height="10" isRemoveLineWhenBlank="true"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{whoDidSurvey}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="355" y="27" width="52" height="10" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{whoDidSurvey}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Surveyed By:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="463" y="38" width="59" height="10" isRemoveLineWhenBlank="true"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{amountOfTimeSurveyTook}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="355" y="38" width="103" height="10">
+					<printWhenExpression><![CDATA[$F{amountOfTimeSurveyTook}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hours to complete Survey:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="139" y="146" width="12" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{researchValue}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="221" y="146" width="12" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[$F{researchValue}.equals("") ? Boolean.FALSE : Boolean.TRUE]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[=]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="0" y="10" width="532" height="2"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="55" splitType="Stretch">
+			<textField evaluationTime="Report" pattern="" isBlankWhenNull="true">
+				<reportElement key="textField-3" positionType="Float" x="503" y="30" width="26" height="15" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+					<font fontName="Arial" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[String.valueOf($V{PAGE_NUMBER})]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement key="textField-4" x="0" y="12" width="529" height="15" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+					<font fontName="Arial" size="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica-Bold" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{ReportHeader}.equals("") ? "Assessment List"  : $P{ReportHeader}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="MMMMM dd, yyyy" isBlankWhenNull="false">
+				<reportElement key="textField-6" positionType="Float" x="0" y="30" width="199" height="15" forecolor="#000000"/>
+				<textElement>
+					<font fontName="Arial" isItalic="false"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement key="textField-2" positionType="Float" x="420" y="30" width="69" height="15" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+					<font fontName="Arial" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page " + String.valueOf($V{PAGE_NUMBER})]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="489" y="30" width="14" height="15"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[of]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="6" width="533" height="1"/>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

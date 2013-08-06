@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+	<class name="RepositoryStatistics" table="RepositoryStatistics" lazy="false">
+
+		<id name="RepositoryStatisticsId" column="RepositoryStatisticsId" type="java.lang.Long">
+			<generator class="native">
+                <!--<param name="sequence">HIBERNATE_SEQUENCE</param>-->
+            </generator>
+		</id>
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+			<column name="lastUpdated"/>
+			<column name="created"/>
+			<column name="lastUpdatedBy"/>
+			<column name="createdBy"/>
+		</property>
+
+        <property name="yearOfReport"
+                column="yearOfReport"
+                type="int"/>
+
+        <property name="digitization"
+                column="digitization"
+                type="boolean"/>
+
+        <property name="exhibitLoans"
+                column="exhibitLoans"
+                type="boolean"/>
+
+        <property name="foodBeverage"
+                column="foodBeverage"
+                type="boolean"/>
+
+        <property name="photographicReproduction"
+                column="photographicReproduction"
+                type="boolean"/>
+
+        <property name="retailGiftSales"
+                column="retailGiftSales"
+                type="boolean"/>
+
+        <property name="professionalFTE"
+                column="professionalFTE"
+                type="double"/>
+
+        <property name="nonProfessionalFTE"
+                column="nonProfessionalFTE"
+                type="double"/>
+
+        <property name="studentFTE"
+                column="studentFTE"
+                type="double"/>
+
+        <property name="volunteerFTE"
+                column="volunteerFTE"
+                type="double"/>
+
+        <property name="functDistAdmin"
+                column="functDistAdmin"
+                type="double"/>
+
+        <property name="functDistProcessing"
+                column="functDistProcessing"
+                type="double"/>
+
+        <property name="functDistPreservation"
+                column="functDistPreservation"
+                type="double"/>
+
+        <property name="functDistReference"
+                column="functDistReference"
+                type="double"/>
+
+        <property name="collFociHistorical"
+                column="collFociHistorical"
+                type="boolean"/>
+
+        <property name="collFociInstitutional"
+                column="collFociInstitutional"
+                type="boolean"/>
+
+        <property name="collFociManuscript"
+                column="collFociManuscript"
+                type="boolean"/>
+
+        <property name="collFociPersonalPapers"
+                column="collFociPersonalPapers"
+                type="boolean"/>
+
+        <property name="collFociOther"
+                column="collFociOther"
+                type="boolean"/>
+
+        <property name="majorSubjectAreas"
+                column="majorSubjectAreas"
+                type="text"/>
+
+        <property name="percentageOffSite"
+                column="percentageOffSite"
+                type="double"/>
+
+        <property name="netUsableArea"
+                column="netUsableArea"
+                type="int"/>
+
+        <property name="administrationOffices"
+                column="administrationOffices"
+                type="int"/>
+
+        <property name="classrooms"
+                column="classrooms"
+                type="int"/>
+
+        <property name="collectionsStorage"
+                column="collectionsStorage"
+                type="int"/>
+
+        <property name="readingRoom"
+                column="readingRoom"
+                type="int"/>
+
+        <many-to-one name="repository"
+                     class="Repositories"
+                     column="repositoryId"
+                     lazy="false"/>        
+
+    </class>
+
+</hibernate-mapping>

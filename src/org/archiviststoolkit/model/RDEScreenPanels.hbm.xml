@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+
+	<class name="RDEScreenPanels"
+		   table="RDEScreenPanels"
+		   lazy="false">
+
+		<!-- Common id property. -->
+		<id name="rdeScreenPanelId" column="rdeScreenPanelId" type="java.lang.Long">
+			<generator class="native"></generator>
+		</id>
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+        <property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+            <column name="lastUpdated"/>
+            <column name="created"/>
+            <column name="lastUpdatedBy"/>
+            <column name="createdBy"/>
+        </property>
+
+		<property name="propertyName"
+				  column="propertyName"
+				  type="string"/>
+
+		<property name="panelType"
+				  column="panelType"
+				  type="string"/>
+
+		<property name="sequenceNumber"
+				  column="sequenceNumber"
+				  type="integer"
+				  not-null="true"/>
+
+		<many-to-one name="rdeScreen"
+					 class="org.archiviststoolkit.model.RDEScreen"
+					 column="rdeScreenId"
+					 access="field"
+					 fetch="join"
+					 outer-join="true"/>
+
+		<set name="screenPanelItems"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="false"
+			 fetch="subselect">
+			<key>
+				<column name="rdeScreenPanelId" not-null="true"/>
+			</key>
+			<one-to-many class="org.archiviststoolkit.model.RDEScreenPanelItems"/>
+		</set>
+
+	</class>
+
+</hibernate-mapping>

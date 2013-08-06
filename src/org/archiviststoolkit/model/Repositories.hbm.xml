@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.archiviststoolkit.model.Repositories" table="Repositories" lazy="false">
+
+		<!--<cache usage="read-write"/>-->
+
+		<id name="repositoryId" column="repositoryId" type="java.lang.Long">
+			<generator class="native">
+				<!--<param name="sequence">HIBERNATE_SEQUENCE</param>-->
+			</generator>
+		</id>
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+			<column name="lastUpdated"/>
+			<column name="created"/>
+			<column name="lastUpdatedBy"/>
+			<column name="createdBy"/>
+		</property>
+
+		<property name="repositoryName"
+				  type="string"
+				  unique="true"
+				  index="repositoryName"
+				  not-null="true"
+				  column="repositoryName"/>
+
+		<property name="shortName"
+				  column="shortName"
+				  unique="true"
+				  index="shortName"
+				  not-null="true"
+				  type="string"/>
+
+		<property name="address1"
+				  column="address1"
+				  type="string"/>
+
+		<property name="address2"
+				  column="address2"
+				  type="string"/>
+
+		<property name="address3"
+				  column="address3"
+				  type="string"/>
+
+		<property name="city"
+				  column="city"
+				  type="string"/>
+
+		<property name="region"
+				  column="region"
+				  type="string"/>
+
+		<property name="country"
+				  column="country"
+				  type="string"/>
+
+		<property name="mailCode"
+				  column="mailCode"
+				  type="string"/>
+
+		<property name="telephone"
+				  column="telephone"
+				  type="string"/>
+
+		<property name="fax"
+				  column="fax"
+				  type="string"/>
+
+		<property name="email"
+				  column="email"
+				  type="string"/>
+
+		<property name="url"
+				  column="url"
+				  type="string"/>
+
+		<property name="countryCode"
+				  column="countryCode"
+				  type="string"/>
+
+		<property name="agencyCode"
+				  column="agencyCode"
+				  type="string"/>
+
+		<property name="brandingDevice"
+				  column="brandingDevice"
+				  type="string"/>
+
+		<property name="descriptiveLanguage"
+				  column="descriptiveLanguage"
+				  type="string"/>
+
+		<property name="ncesId"
+				  column="ncesId"
+				  length="20"
+				  type="string"/>
+
+		<property name="institutionName"
+				  column="institutionName"
+				  type="string"/>
+
+		<set name="accessions"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="repositoryId" not-null="true"/>
+			</key>
+			<one-to-many class="org.archiviststoolkit.model.Accessions"/>
+		</set>
+
+		<set name="resources"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="repositoryId" not-null="true"/>
+			</key>
+			<one-to-many class="org.archiviststoolkit.model.Resources"/>
+		</set>
+
+		<set name="users"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="repositoryId" not-null="true"/>
+			</key>
+			<one-to-many class="org.archiviststoolkit.model.Users"/>
+		</set>
+
+		<set name="defaultValues"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="repositoryId" not-null="true"/>
+			</key>
+			<one-to-many class="org.archiviststoolkit.structure.DefaultValues"/>
+		</set>
+
+		<set name="noteDefaultValues"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="false"
+			 fetch="subselect"
+			 access="field">
+			<key>
+				<column name="repositoryId" not-null="true"/>
+			</key>
+			<one-to-many class="org.archiviststoolkit.model.RepositoryNotesDefaultValues"/>
+		</set>
+
+		<set name="notes"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="repositoryId" not-null="true"/>
+			</key>
+			<one-to-many class="org.archiviststoolkit.model.SimpleRepeatableNotes"/>
+		</set>
+
+		<set name="statistics"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="repositoryId" not-null="true"/>
+			</key>
+			<one-to-many class="org.archiviststoolkit.model.RepositoryStatistics"/>
+		</set>
+
+		<filter name="repository" condition=":repositoryId = repositoryId"/>
+	</class>
+
+	<filter-def name="repository">
+		<filter-param name="repositoryId" type="java.lang.Long"/>
+	</filter-def>
+
+</hibernate-mapping>

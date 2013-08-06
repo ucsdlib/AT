@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping> 
+	<class name="org.archiviststoolkit.structure.DatabaseFields" table="DatabaseFields" lazy="false">
+
+		<!--<cache usage="read-write"/>-->
+
+		<id name="fieldId" column="fieldId" type="java.lang.Long">
+			<generator class="native"></generator>
+		</id>
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+			<column name="lastUpdated"/>
+			<column name="created"/>
+			<column name="lastUpdatedBy"/>
+			<column name="createdBy"/>
+		</property>
+
+		<property name="fieldName"
+				  column="fieldName"
+				  type="string"
+				  not-null="true"
+				  length="80"/>
+
+		<property name="fieldLabel"
+				  column="fieldLabel"
+				  type="string"
+				  length="80"/>
+
+		<property name="definition"
+				  column="definition"
+				  type="text"/>
+
+		<property name="examples"
+				  column="examples"
+				  type="text"/>
+
+		<property name="lookupList"
+				  column="lookupList"
+				  type="string"/>
+
+		<property name="includeInSearchEditor"
+				  column="includeInSearchEditor"
+				  type="boolean"
+				  not-null="true"/>
+
+		<property name="excludeFromDefaultValues"
+				  column="excludeFromDefaultValues"
+				  type="boolean"
+				  not-null="true"/>
+
+		<property name="includeInRDE"
+				  column="includeInRDE"
+				  type="boolean"
+				  not-null="true"/>
+
+		<property name="dataType"
+				  column="dataType"
+				  type="string"
+				  length="80"/>
+
+		<property name="stringLengthLimit"
+				  column="stringLengthLimit"
+				  type="int"/>
+
+		<property name="returnScreenOrder"
+				  column="returnScreenOrder"
+				  type="integer"
+				  not-null="true"/>
+
+		<many-to-one name="databaseTable"
+					 class="org.archiviststoolkit.structure.DatabaseTables"
+					 column="tableId"/>
+
+        <set name="defaultValues"
+                 cascade="all-delete-orphan"
+                 inverse="true"
+                 lazy="true"
+                 access="field">
+                <key>
+                    <column name="fieldId" not-null="true"/>
+                </key>
+                <one-to-many class="org.archiviststoolkit.structure.DefaultValues"/>
+            </set>
+
+
+
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+	<class name="org.archiviststoolkit.model.ResourcesComponents"
+		   table="ResourcesComponents">
+
+		<id name="resourceComponentId" column="resourceComponentId" type="java.lang.Long">
+			<generator class="native"></generator>
+		</id>
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+			<column name="lastUpdated" not-null="true"/>
+			<column name="created" not-null="true"/>
+			<column name="lastUpdatedBy" not-null="true"/>
+			<column name="createdBy" not-null="true"/>
+		</property>
+
+		<!-- start common archDescription fields -->
+		<property name="title"
+				  column="title"
+				  type="text"/>
+
+		<property name="dateExpression"
+				  column="dateExpression"
+				  type="string"
+				  length="255"/>
+
+		<property name="dateBegin"
+				  column="dateBegin"
+				  type="integer"/>
+
+		<property name="dateEnd"
+				  column="dateEnd"
+				  type="integer"/>
+
+		<property name="bulkDateBegin"
+				  column="bulkDateBegin"
+				  type="integer"/>
+
+		<property name="bulkDateEnd"
+				  column="bulkDateEnd"
+				  type="integer"/>
+
+		<property name="extentNumber"
+				  column="extentNumber"
+				  type="double"/>
+
+		<property name="containerSummary"
+				  column="containerSummary"
+				  type="text"/>
+
+		<property name="extentType"
+				  column="extentType"
+				  type="string"/>
+
+		<property name="languageCode"
+				  column="languageCode"
+				  type="string"/>
+
+		<property name="repositoryProcessingNote"
+				  column="repositoryProcessingNote"
+				  type="text"/>
+
+		<property name="restrictionsApply"
+				  column="restrictionsApply"
+				  type="boolean"/>
+
+		<property name="internalOnly"
+				  column="internalOnly"
+				  type="boolean"/>
+
+		<property name="eadIngestProblem"
+				  column="eadIngestProblem"
+				  type="text"/>
+
+
+		<set name="names"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="resourceComponentId"/>
+			</key>
+			<one-to-many class="ArchDescriptionNames"/>
+		</set>
+
+		<set name="subjects"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="resourceComponentId"/>
+			</key>
+			<one-to-many class="ArchDescriptionSubjects"/>
+		</set>
+
+		<set name="repeatingData"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 order-by="sequenceNumber asc"
+			 access="field">
+			<key>
+				<column name="resourceComponentId"/>
+			</key>
+			<one-to-many class="ArchDescriptionRepeatingData"/>
+		</set>
+
+		<set name="instances"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="resourceComponentId"/>
+			</key>
+			<one-to-many class="ArchDescriptionInstances"/>
+		</set>
+
+        <set name="archDescriptionDates"
+              cascade="all-delete-orphan"
+              inverse="true"
+              lazy="true"
+              access="field">
+             <key>
+                 <column name="resourceComponentId" not-null="true"/>
+             </key>
+             <one-to-many class="org.archiviststoolkit.model.ArchDescriptionDates"/>
+         </set>
+
+        <set name="physicalDesctiptions"
+              cascade="all-delete-orphan"
+              inverse="true"
+              lazy="true"
+              access="field">
+             <key>
+                 <column name="resourceComponentId" not-null="true"/>
+             </key>
+             <one-to-many class="org.archiviststoolkit.model.ArchDescriptionPhysicalDescriptions"/>
+        </set>
+
+		<!-- end common archDescription fields -->
+
+		<property name="level"
+				  column="resourceLevel"
+				  type="string"
+				  length="30"/>
+
+		<property name="otherLevel"
+				  column="otherLevel"
+				  type="string"
+				  length="30"/>
+		
+		<property name="sequenceNumber"
+				  column="sequenceNumber"
+				  type="integer"/>
+
+		<property name="hasChild"
+				  column="hasChild"
+				  not-null="true"
+				  type="boolean"/>
+
+		<property name="hasNotes"
+				  column="hasNotes"
+				  not-null="true"
+				  type="boolean"/>
+
+		<property name="componentUniqueIdentifier"
+				  column="subdivisionIdentifier"
+				  type="string"/>
+
+		<property name="persistentId"
+				  column="persistentId"
+				  length="10"
+				  type="string"/>
+
+		<set name="resourcesComponents"
+			 cascade="all"
+			 inverse="true"
+			 lazy="true"
+			 sort="natural"
+			 fetch="subselect"
+			 access="field">
+			<key>
+				<column name="parentResourceComponentId" not-null="false"/>
+			</key>
+			<one-to-many class="ResourcesComponents"/>
+		</set>
+
+		<many-to-one name="resourceComponentParent"
+					 column="parentResourceComponentId"/>
+		<!--access="field"-->
+		<!--outer-join="true"/>-->
+
+		<many-to-one name="resource"
+					 class="Resources"
+					 column="resourceId"/>
+		<!--access="field"-->
+		<!--outer-join="true"/>-->
+
+	</class>
+
+
+	<sql-query name="mySqlQuery">
+		<return-scalar column="title" type="string"/>
+		<return-scalar column="dateExpression" type="string"/>
+		<return-scalar column="resourceComponentId" type="long"/>
+		<return-scalar column="hasChild" type="boolean"/>
+		<return-scalar column="resourcesOrder" type="double"/>
+		SELECT r.title as title,
+		r.dateExpression as dateExpression,
+		r.resourceComponentId as resourceComponentId,
+		r.hasChild as hasChild,
+		r.resourcesOrder as resourcesOrder
+		FROM ResourcesComponents r
+		WHERE r.parentResourceComponentId = :resourceComponentId
+		order by r.resourcesOrder asc
+	</sql-query>
+
+	<sql-query name="updateFromDrop">
+		UPDATE r.resourceId = :resourceId,
+		r.resourcesOrder = :resourcesOrder
+		r.parentResourceComponentId = :parentResourceComponentId
+		FROM ResourcesComponents r
+		WHERE r.parentResourceComponentId = :resourceComponentId
+	</sql-query>
+</hibernate-mapping>

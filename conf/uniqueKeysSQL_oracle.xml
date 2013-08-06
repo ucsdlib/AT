@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commands>
+    <command>
+        <![CDATA[create UNIQUE index AccessionNumber on Accessions (repositoryId,accessionNumber1,accessionNumber2,accessionNumber3,accessionNumber4)]]>
+    </command>
+    <command>
+        <![CDATA[create unique index uniqueResourceAccessionLink on AccessionsResources
+     (resourceId, accessionId)]]>
+    </command>
+    <command>
+        <![CDATA[create unique index ResourceId on Resources (repositoryId,resourceIdentifier1,resourceIdentifier2,resourceIdentifier3,resourceIdentifier4)]]>
+    </command>
+    <command>
+        <![CDATA[create unique index UniqueLocations on LocationsTable
+     (building,floor,room,area,coordinate1Label,coordinate1NumericIndicator,coordinate1AlphaNumIndicator,
+  coordinate2Label,coordinate2NumericIndicator,coordinate2AlphaNumIndicator,
+  coordinate3Label,coordinate3NumericIndicator,coordinate3AlphaNumIndicator,classificationNumber,barcode)]]>
+    </command>
+    <command>
+        <![CDATA[create unique index UniqueSubjects on Subjects
+   (subjectTerm,subjectTermType,subjectSource)]]>
+    </command>
+    <!--<command>
+        <![CDATA[create unique index UniqueNames on Names (corporatePrimaryName, corporateSubordinate1, corporateSubordinate2,
+        personalPrimaryName, personalRestOfName,
+        personalDates, personalFullerForm, personalTitle, familyName, familyNamePrefix)]]>
+    </command>-->
+	<command>
+		<![CDATA[create unique index uniqueDefaultValue on DefaultValues
+     (repositoryId, fieldId)]]>
+	</command>
+	<command>
+		<![CDATA[create index ResourcesIndex on Resources(languageCode)]]>
+	</command>
+	<command>
+		<![CDATA[create index ResourcesComponentsIndex on ResourcesComponents (languageCode)]]>
+	</command>
+	<command>
+		<![CDATA[create index DigitalObjectsIndex on DigitalObjects (languageCode)]]>
+	</command>
+	<command>
+		<![CDATA[create index RepositoriesIndex on Repositories (descriptiveLanguage)]]>
+	</command>
+</commands>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+	<class name="org.archiviststoolkit.model.Assessments" table="Assessments" lazy="false">
+
+        <id name="assessmentId" column="assessmentId">
+			<generator class="native"/>
+		</id>
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+			<column name="lastUpdated"/>
+			<column name="created"/>
+			<column name="lastUpdatedBy"/>
+			<column name="createdBy"/>
+		</property>
+
+		<property name="conditionOfMaterial"
+				  column="conditionOfMaterial"
+				  type="integer"/>
+
+        <property name="physicalAccess"
+				  column="physicalAccess"
+				  type="integer"/>
+
+        <property name="qualityOfHousing"
+				  column="qualityOfHousing"
+				  type="integer"/>
+
+        <property name="intellectualAccess"
+				  column="intellectualAccess"
+				  type="integer"/>
+
+        <property name="interest"
+				  column="interest"
+				  type="integer"/>
+
+        <property name="documentationQuality"
+				  column="documentationQuality"
+				  type="integer"/>
+
+        <property name="researchValue"
+				  column="researchValue"
+				  type="integer"/>
+
+        <property name="userNumericalRating1"
+				  column="userNumericalRating1"
+				  type="integer"/>
+
+        <property name="userNumericalRating2"
+				  column="userNumericalRating2"
+				  type="integer"/>
+
+        <property name="generalNote"
+				  column="generalNote"
+                  type="text"/>
+
+        <property name="conservationNote"
+				  column="conservationNote"
+                  type="text"/>
+
+        <!-- Special format fields -->
+        <property name="specialFormatNote"
+				  column="specialFormatNote"
+                  type="text"/>
+
+        <property name="architecturalMaterials"
+				  column="architecturalMaterials"
+				  type="boolean"/>
+
+        <property name="artOriginals"
+				  column="artOriginals"
+				  type="boolean"/>
+
+        <property name="artifacts"
+				  column="artifacts"
+				  type="boolean"/>
+
+        <property name="audioMaterials"
+				  column="audioMaterials"
+				  type="boolean"/>
+
+        <property name="biologicalSpecimens"
+				  column="biologicalSpecimens"
+				  type="boolean"/>
+
+        <property name="botanicalSpecimens"
+				  column="botanicalSpecimens"
+				  type="boolean"/>
+
+        <property name="computerStorageUnits"
+				  column="computerStorageUnits"
+				  type="boolean"/>
+
+        <property name="film"
+				  column="film"
+				  type="boolean"/>
+
+        <property name="glass"
+				  column="glass"
+				  type="boolean"/>
+
+        <property name="photographs"
+				  column="photographs"
+				  type="boolean"/>
+
+        <property name="scrapbooks"
+				  column="scrapbooks"
+				  type="boolean"/>
+
+        <property name="technicalDrawingsAndSchematics"
+				  column="technicalDrawingsAndSchematics"
+				  type="boolean"/>
+
+        <property name="textiles"
+				  column="textiles"
+				  type="boolean"/>
+
+        <property name="vellumAndParchment"
+				  column="vellumAndParchment"
+				  type="boolean"/>
+
+        <property name="videoMaterials"
+				  column="videoMaterials"
+				  type="boolean"/>
+
+        <property name="other"
+				  column="other"
+				  type="boolean"/>
+        
+        <property name="specialFormat1"
+				  column="specialFormat1"
+				  type="boolean"/>
+
+        <property name="specialFormat2"
+				  column="specialFormat2"
+				  type="boolean"/>
+
+        <!-- End special format fields -->
+
+        <!-- Conservation issue fields -->
+        <property name="potentialMoldOrMoldDamage"
+				  column="potentialMoldOrMoldDamage"
+				  type="boolean"/>
+
+        <property name="recentPestDamage"
+				  column="recentPestDamage"
+				  type="boolean"/>
+
+        <property name="deterioratingFilmBase"
+				  column="deterioratingFilmBase"
+				  type="boolean"/>
+
+        <property name="specialConservationIssue1"
+				  column="specialConservationIssue1"
+				  type="boolean"/>
+
+        <property name="specialConservationIssue2"
+				  column="specialConservationIssue2"
+				  type="boolean"/>
+
+        <property name="specialConservationIssue3"
+				  column="specialConservationIssue3"
+				  type="boolean"/>
+
+        <!-- End Conservation issue fields -->
+
+        <!-- Other Conservation issue fields -->
+        <property name="brittlePaper"
+				  column="brittlePaper"
+				  type="boolean"/>
+
+        <property name="metalFasteners"
+				  column="metalFasteners"
+				  type="boolean"/>
+
+        <property name="newspaper"
+				  column="newspaper"
+				  type="boolean"/>
+
+        <property name="tape"
+				  column="tape"
+				  type="boolean"/>
+
+        <property name="thermofaxPaper"
+				  column="thermofaxPaper"
+				  type="boolean"/>
+
+        <property name="otherConservationIssue1"
+				  column="otherConservationIssue1"
+				  type="boolean"/>
+
+        <property name="otherConservationIssue2"
+				  column="otherConservationIssue2"
+				  type="boolean"/>
+
+        <property name="otherConservationIssue3"
+				  column="otherConservationIssue3"
+				  type="boolean"/>
+
+        <!-- End of Other Conservation issue fields -->
+
+        <property name="exhibitionValueNote"
+				  column="exhibitionValueNote"
+                  type="text"/>
+
+        <property name="monetaryValue"
+				  column="monetaryValue"
+				  type="double"/>
+
+        <property name="monetaryValueNote"
+				  column="monetaryValueNote"
+                  type="text"/>
+
+        <property name="estimatedProcessingTimePerFoot"
+				  column="estimatedProcessingTimePerFoot"
+				  type="double"/>
+
+        <property name="totalExtent"
+				  column="totalExtent"
+				  type="double"/>
+
+        <property name="totalEstimatedProcessingTime"
+				  column="totalEstimatedProcessingTime"
+				  type="double"/>
+
+        <property name="whoDidSurvey"
+				  column="whoDidSurvey"
+                  type="text"/>
+
+        <property name="amountOfTimeSurveyTook"
+				  column="amountOfTimeSurveyTook"
+				  type="double"/>
+
+        <property name="userWhoCreatedRecord"
+				  column="userWhoCreatedRecord"
+				  type="string"
+                  length="255"/>
+
+        <property name="dateOfSurvey"
+				  column="dateOfSurvey"
+				  type="date"/>
+
+        <property name="reviewNeeded"
+				  column="reviewNeeded"
+				  type="boolean"/>
+
+        <property name="whoNeedsToReview"
+				  column="whoNeedsToReview"
+                  type="text"/>
+
+        <property name="reviewNote"
+				  column="reviewNote"
+                  type="text"/>
+
+        <property name="inactive"
+				  column="inactive"
+				  type="boolean"/>
+
+        <!-- Mapping for linking resources, accessions, and digital objects -->
+        <set name="resources"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="assessmentId" not-null="true"/>
+			</key>
+			<one-to-many class="AssessmentsResources"/>
+		</set>
+
+        <set name="accessions"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="assessmentId" not-null="true"/>
+			</key>
+			<one-to-many class="AssessmentsAccessions"/>
+		</set>
+
+        <set name="digitalObjects"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="assessmentId" not-null="true"/>
+			</key>
+			<one-to-many class="AssessmentsDigitalObjects"/>
+		</set>
+
+        <!-- Map to a Repository Link -->
+        <many-to-one name="repository"
+					 class="org.archiviststoolkit.model.Repositories"
+					 column="repositoryId"
+					 access="field"
+					 fetch="join"
+					 not-null="true"
+					 outer-join="true"/>
+        <filter name="repository" condition=":repositoryId = repositoryId"/>
+    </class>
+    <filter-def name="repository">
+		<filter-param name="repositoryId" type="java.lang.Long"/>
+	</filter-def>
+ </hibernate-mapping>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commands>
+    <command>
+        <![CDATA[ALTER TABLE Accessions
+  ADD UNIQUE AccessionNumber (repositoryId,accessionNumber1,accessionNumber2,accessionNumber3,accessionNumber4);]]>
+    </command>
+    <command>
+        <![CDATA[ALTER TABLE AccessionsResources ADD UNIQUE uniqueResourceAccessionLink
+(resourceId, accessionId);]]>
+    </command>
+    <command>
+        <![CDATA[ALTER TABLE Resources
+  ADD UNIQUE ResourceId (repositoryId,resourceIdentifier1,resourceIdentifier2,resourceIdentifier3,resourceIdentifier4);]]>
+    </command>
+    <command>
+        <![CDATA[ALTER TABLE LocationsTable
+  ADD UNIQUE UniqueLocations (building,floor,room,area,coordinate1Label,coordinate1NumericIndicator,coordinate1AlphaNumIndicator,
+  coordinate2Label,coordinate2NumericIndicator,coordinate2AlphaNumIndicator,
+  coordinate3Label,coordinate3NumericIndicator,coordinate3AlphaNumIndicator,classificationNumber,barcode);]]>
+    </command>
+    <command>
+        <![CDATA[ALTER TABLE Subjects
+  ADD UNIQUE UniqueSubjects (subjectTerm,subjectTermType,subjectSource);]]>
+    </command>
+    <!--<command>
+        <![CDATA[ALTER TABLE Names
+  ADD UNIQUE UniqueNames (corporatePrimaryName, corporateSubordinate1, corporateSubordinate2, personalPrimaryName, personalRestOfName,
+        personalDates, personalFullerForm, personalTitle, familyName, familyNamePrefix);]]>
+    </command>-->
+	<command>
+		<![CDATA[ALTER TABLE DefaultValues ADD UNIQUE uniqueDefaultValue
+(repositoryId, fieldId);]]>
+	</command>
+	<command>
+		<![CDATA[ALTER TABLE Resources ADD INDEX (languageCode);]]>
+	</command>
+	<command>
+		<![CDATA[ALTER TABLE ResourcesComponents ADD INDEX (languageCode);]]>
+	</command>
+	<command>
+		<![CDATA[ALTER TABLE DigitalObjects ADD INDEX (languageCode);]]>
+	</command>
+	<command>
+		<![CDATA[ALTER TABLE Repositories ADD INDEX (descriptiveLanguage);]]>
+	</command>
+</commands>

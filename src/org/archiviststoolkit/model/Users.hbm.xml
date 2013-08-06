@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.archiviststoolkit.model.Users" table="Users" lazy="false">
+
+		<id name="userId" column="userId" type="java.lang.Long">
+			<generator class="native">
+            </generator>
+		</id>
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+			<column name="lastUpdated"/>
+			<column name="created"/>
+			<column name="lastUpdatedBy"/>
+			<column name="createdBy"/>
+		</property>
+
+
+		<property name="userName"
+				  column="userName"
+				  unique="true"
+				  not-null="true"
+				  type="string"
+				  index="userName"/>
+
+		<property name="password"
+				  column="password"
+				  not-null="true"
+				  type="binary"/>
+
+		<property name="fullName"
+				  column="fullName"
+				  type="string"/>
+
+		<property name="department"
+				  column="department"
+				  type="string"/>
+
+		<property name="email"
+				  column="email"
+				  type="string"/>
+
+		<property name="accessClass"
+				  column="accessClass"
+				  type="int"/>
+
+		<property name="title"
+				  column="title"
+				  type="string"/>
+
+		<many-to-one name="repository"
+					 class="org.archiviststoolkit.model.Repositories"
+					 column="repositoryId"
+					 access="field"
+					 fetch="join"
+					 lazy="false"
+					 outer-join="true"/>
+
+		<filter name="repository" condition=":repositoryId = repositoryId"/>
+	</class>
+	<filter-def name="repository">
+		<filter-param name="repositoryId" type="java.lang.Long"/>
+	</filter-def>
+</hibernate-mapping>

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+	<class name="org.archiviststoolkit.model.Accessions"
+		   table="Accessions"
+		   lazy="false">
+
+		<id name="accessionId" column="accessionId" type="java.lang.Long">
+			<generator class="native"></generator>
+		</id>
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+			<column name="lastUpdated" not-null="true"/>
+			<column name="created" not-null="true"/>
+			<column name="lastUpdatedBy" not-null="true"/>
+			<column name="createdBy" not-null="true"/>
+		</property>
+
+
+		<!-- start common archDescription fields -->
+		<property name="title"
+				  column="title"
+				  type="text"/>
+
+		<property name="dateExpression"
+				  column="dateExpression"
+				  type="string"/>
+
+		<property name="dateBegin"
+				  column="dateBegin"
+				  type="integer"/>
+
+		<property name="dateEnd"
+				  column="dateEnd"
+				  type="integer"/>
+
+		<property name="bulkDateBegin"
+				  column="bulkDateBegin"
+				  type="integer"/>
+
+		<property name="bulkDateEnd"
+				  column="bulkDateEnd"
+				  type="integer"/>
+
+		<property name="extentNumber"
+				  column="extentNumber"
+				  type="double"/>
+
+		<property name="containerSummary"
+				  column="containerSummary"
+				  type="text"/>
+
+		<property name="extentType"
+				  column="extentType"
+				  type="string"/>
+
+		<property name="displayCreator"
+				  column="displayCreator"
+				  type="string"/>
+
+		<property name="displayRepository"
+				  column="displayRepository"
+				  type="string"/>
+
+		<property name="displaySource"
+				  column="displaySource"
+				  type="string"/>
+
+		<property name="restrictionsApply"
+				  column="restrictionsApply"
+				  type="boolean"/>
+
+		<set name="names"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="accessionId" not-null="true"/>
+			</key>
+			<one-to-many class="ArchDescriptionNames"/>
+		</set>
+
+		<set name="subjects"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="accessionId" not-null="true"/>
+			</key>
+			<one-to-many class="ArchDescriptionSubjects"/>
+		</set>
+
+		<!-- end common archDescription fields -->
+
+		<property name="accessionNumber1"
+				  column="accessionNumber1"
+				  type="string"
+				  index="accessionNumberIndex"
+				  length="10"/>
+
+		<property name="accessionNumber2"
+				  column="accessionNumber2"
+				  type="string"
+				  index="accessionNumberIndex"
+				  length="10"/>
+
+		<property name="accessionNumber3"
+				  column="accessionNumber3"
+				  type="string"
+				  index="accessionNumberIndex"
+				  length="10"/>
+
+		<property name="accessionNumber4"
+				  column="accessionNumber4"
+				  type="string"
+				  index="accessionNumberIndex"
+				  length="10"/>
+
+		<property name="accessionDate"
+				  column="accessionDate"
+				  type="date"/>
+
+		<property name="resourceType"
+				  column="resourceType"
+				  type="string"/>
+
+		<property name="description"
+				  column="description"
+				  type="text"/>
+
+		<property name="inventory"
+				  column="inventory"
+				  type="text"/>
+
+		<property name="conditionNote"
+				  column="conditionNote"
+				  type="text"/>
+
+		<property name="acquisitionType"
+				  column="acquisitionType"
+				  type="string"/>
+
+		<property name="acknowledgementDate"
+				  column="acknowledgementDate"
+				  type="date"/>
+
+		<property name="agreementSentDate"
+				  column="agreementSentDate"
+				  type="date"/>
+
+		<property name="agreementReceivedDate"
+				  column="agreementReceivedDate"
+				  type="date"/>
+
+		<property name="processingPlan"
+				  column="processingPlan"
+				  type="text"/>
+
+		<property name="accessionProcessedDate"
+				  column="accessionProcessedDate"
+				  type="date"/>
+
+		<property name="accessionDispositionNote"
+				  column="accessionDispositionNote"
+				  type="text"/>
+
+		<property name="retentionRule"
+				  column="retentionRule"
+				  type="text"/>
+
+		<property name="cataloged"
+				  column="cataloged"
+				  type="boolean"/>
+
+		<property name="rightsTransferred"
+				  column="rightsTransferred"
+				  type="boolean"/>
+
+		<property name="catalogedNote"
+				  column="catalogedNote"
+				  type="text"/>
+
+		<property name="accessRestrictionsNote"
+				  column="accessRestrictionsNote"
+				  type="text"/>
+
+		<property name="useRestrictionsNote"
+				  column="useRestrictionsNote"
+				  type="text"/>
+
+		<property name="generalAccessionNote"
+				  column="generalAccessionNote"
+				  type="text"/>
+
+		<property name="processingPriority"
+				  column="processingPriority"
+				  type="string"/>
+
+		<property name="processors"
+				  column="processors"
+				  type="string"/>
+
+		<property name="processingStatus"
+				  column="processingStatus"
+				  type="string"/>
+
+		<property name="acknowledgementSent"
+				  column="acknowledgementSent"
+				  type="boolean"/>
+
+		<property name="agreementSent"
+				  column="agreementSent"
+				  type="boolean"/>
+
+		<property name="agreementReceived"
+				  column="agreementReceived"
+				  type="boolean"/>
+
+		<property name="accessionProcessed"
+				  column="accessionProcessed"
+				  type="boolean"/>
+
+		<property name="accessRestrictions"
+				  column="accessRestrictions"
+				  type="boolean"/>
+
+		<property name="useRestrictions"
+				  column="useRestrictions"
+				  type="boolean"/>
+
+		<property name="catalogedDate"
+				  column="catalogedDate"
+				  type="date"/>
+
+		<property name="rightsTransferredDate"
+				  column="rightsTransferredDate"
+				  type="date"/>
+
+		<property name="processingStartedDate"
+				  column="processingStartedDate"
+				  type="date"/>
+
+		<property name="rightsTransferredNote"
+				  column="rightsTransferredNote"
+				  type="text"/>
+
+		<property name="userDefinedDate1"
+				  column="userDefinedDate1"
+				  type="date"/>
+
+		<property name="userDefinedDate2"
+				  column="userDefinedDate2"
+				  type="date"/>
+
+		<property name="userDefinedBoolean1"
+				  column="userDefinedBoolean1"
+				  type="boolean"/>
+
+		<property name="userDefinedBoolean2"
+				  column="userDefinedBoolean2"
+				  type="boolean"/>
+
+		<property name="userDefinedInteger1"
+				  column="userDefinedInteger1"
+				  type="integer"/>
+
+		<property name="userDefinedInteger2"
+				  column="userDefinedInteger2"
+				  type="integer"/>
+
+		<property name="userDefinedReal1"
+				  column="userDefinedReal1"
+				  type="double"/>
+
+		<property name="userDefinedReal2"
+				  column="userDefinedReal2"
+				  type="double"/>
+
+		<property name="userDefinedString1"
+				  column="userDefinedString1"
+				  type="string"/>
+
+		<property name="userDefinedString2"
+				  column="userDefinedString2"
+				  type="string"/>
+
+		<property name="userDefinedString3"
+				  column="userDefinedString3"
+				  type="string"/>
+
+		<property name="userDefinedText1"
+				  column="userDefinedText1"
+				  type="text"/>
+
+		<property name="userDefinedText2"
+				  column="userDefinedText2"
+				  type="text"/>
+
+		<property name="userDefinedText3"
+				  column="userDefinedText3"
+				  type="text"/>
+
+		<property name="userDefinedText4"
+				  column="userDefinedText4"
+				  type="text"/>
+
+		<set name="resources"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="accessionId" not-null="true"/>
+			</key>
+			<one-to-many class="AccessionsResources"/>
+		</set>
+
+		<set name="locations"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="accessionId" not-null="true"/>
+			</key>
+			<one-to-many class="AccessionsLocations"/>
+		</set>
+
+		<set name="deaccessions"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="accessionId" not-null="true"/>
+			</key>
+			<one-to-many class="Deaccessions"/>
+		</set>
+
+		<set name="repeatingData"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 order-by="sequenceNumber asc"
+			 access="field">
+			<key>
+				<column name="accessionId"/>
+			</key>
+			<one-to-many class="ArchDescriptionRepeatingData"/>
+		</set>
+
+        <set name="archDescriptionDates"
+             cascade="all-delete-orphan"
+             inverse="true"
+             lazy="true"
+             access="field">
+            <key>
+                <column name="accessionId" not-null="true"/>
+            </key>
+            <one-to-many class="ArchDescriptionDates"/>
+        </set>
+
+         <set name="physicalDesctiptions"
+              cascade="all-delete-orphan"
+              inverse="true"
+              lazy="true"
+              access="field">
+             <key>
+                 <column name="accessionId" not-null="true"/>
+             </key>
+             <one-to-many class="org.archiviststoolkit.model.ArchDescriptionPhysicalDescriptions"/>
+        </set>
+
+		<many-to-one name="repository"
+					 class="org.archiviststoolkit.model.Repositories"
+					 column="repositoryId"
+					 not-null="true"
+					 index="accessionNumberIndex"
+					 access="field"
+					 lazy="proxy"
+					 fetch="join"
+					 outer-join="true"/>
+
+		<filter name="repository" condition=":repositoryId = repositoryId"/>
+	</class>
+	<filter-def name="repository">
+		<filter-param name="repositoryId" type="java.lang.Long"/>
+	</filter-def>
+</hibernate-mapping>

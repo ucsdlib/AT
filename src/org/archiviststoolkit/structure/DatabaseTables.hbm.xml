@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="org.archiviststoolkit.structure.DatabaseTables" table="DatabaseTables" lazy="false">
+
+		<!--<cache usage="read-write"/>-->
+
+        <id name="tableId" column="tableId" type="java.lang.Long">
+            <generator class="native"></generator>
+        </id>
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+			<column name="lastUpdated"/>
+			<column name="created"/>
+			<column name="lastUpdatedBy"/>
+			<column name="createdBy"/>
+		</property>
+
+        <property name="tableName"
+				  unique="true"
+				  index="tableName"
+				  column="tableName"/>
+
+		<property name="className"
+				  unique="true"
+				  index="className"
+				  column="className"/>
+
+        <set name="databaseFields"
+             cascade="all-delete-orphan"
+             inverse="true"
+             lazy="false"
+             order-by="fieldName asc"
+			 fetch="subselect">
+            <key>
+                <column name="tableId" not-null="true"/>
+            </key>
+            <one-to-many class="org.archiviststoolkit.structure.DatabaseFields"/>
+        </set>
+
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+	<class name="org.archiviststoolkit.model.Sessions" table="Sessions" lazy="false">
+		<id name="sessionId" column="sessionId">
+			<generator class="native">
+			</generator>
+		</id>
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="userName" column="userName"/>
+		<property name="logonTimeStamp" column="logonTimeStamp" type="timestamp"/>
+
+	</class>
+
+ </hibernate-mapping>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+	<class name="org.archiviststoolkit.model.LookupList"
+		   table="LookupList">
+
+		<id name="lookupListId" column="lookupListId" type="java.lang.Long">
+			<generator class="native"></generator>
+		</id>
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+			<column name="lastUpdated"/>
+			<column name="created"/>
+			<column name="lastUpdatedBy"/>
+			<column name="createdBy"/>
+		</property>
+
+        <property name="listName"
+                  column="listName"
+                  unique="true"
+				  not-null="true"
+                  type="string"/>
+
+		<property name="listType"
+				  column="listType"
+				  type="int"/>
+
+		<property name="pairedValues"
+				  column="pairedValues"
+				  type="boolean"/>
+
+		<property name="restrictToNmtoken"
+				  column="restrictToNmtoken"
+				  type="boolean"/>
+
+		<set name="listItems"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="false"
+			 fetch="subselect">
+			<key>
+				<column name="lookupListId" not-null="true"/>
+			</key>
+			<one-to-many class="org.archiviststoolkit.model.LookupListItems"/>
+		</set>
+
+	</class>
+
+
+</hibernate-mapping>
+

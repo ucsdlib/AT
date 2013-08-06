@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+	<class name="org.archiviststoolkit.model.FileVersions"
+					 table="FileVersions">
+
+		  <id name="fileVersionId" column="fileVersionId" type="java.lang.Long">
+			 <generator class="native"></generator>
+		  </id>
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+        <property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+            <column name="lastUpdated"/>
+            <column name="created"/>
+            <column name="lastUpdatedBy"/>
+            <column name="createdBy"/>
+        </property>
+
+        <property name="uri"
+                  column="uri"
+				  type="text"/>
+
+		<property name="useStatement"
+				  column="useStatement"
+				  type="text"/>
+
+		<property name="sequenceNumber"
+				  column="sequenceNumber"
+				  not-null="true"
+				  type="int"/>
+
+		<property name="eadDaoActuate"
+				  column="eadDaoActuate"
+				  type="string"/>
+
+		<property name="eadDaoShow"
+				  column="eadDaoShow"
+				  type="string"/>
+
+        <many-to-one name="digitalObject"
+                     class="DigitalObjects"
+                     column="digitalObjectId"
+                     access="field"
+                     fetch="join"
+                     outer-join="true"/>
+
+    </class>
+</hibernate-mapping>

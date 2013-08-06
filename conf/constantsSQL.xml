@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commands>
+    <databaseType flavor="oracle">
+        <command>
+            <![CDATA[CREATE TABLE Constants (
+            constantsId number(11) NOT NULL,
+            majorVersion number(11) NOT NULL,
+            minorVersion number(11) NOT NULL,
+            updateVersion number(11) NOT NULL,
+            version number(20) default NULL,
+            defaultDateFormat varchar(255) default NULL,
+            PRIMARY KEY  (constantsId)
+            )]]>
+        </command>
+    </databaseType>
+    <!--<command>-->
+        <!--<![CDATA[insert into Constants values(0,0,0,0,0,'yyyy-M-d');]]>-->
+    <!--</command>-->
+</commands>

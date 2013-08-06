@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+
+	<class name="org.archiviststoolkit.model.ArchDescriptionDates"
+		   table="ArchDescriptionDates">
+
+		<id name="archDescriptionDatesId" column="archDescriptionDatesId" type="java.lang.Long">
+			<generator class="native"></generator>
+		</id>
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+			<column name="lastUpdated" not-null="true"/>
+			<column name="created" not-null="true"/>
+			<column name="lastUpdatedBy" not-null="true"/>
+			<column name="createdBy" not-null="true"/>
+		</property>
+
+        <property name="dateExpression"
+                  column="dateExpression"
+                  type="string"/>
+
+        <!-- inclusive dates -->
+        <property name="dateBegin"
+                  column="dateBegin"
+                  type="integer"/>
+
+        <property name="dateEnd"
+                  column="dateEnd"
+                  type="integer"/>
+
+        <property name="isoDateBegin"
+                  column="isoDateBegin"
+                  type="string"/>
+
+        <property name="isoDateEnd"
+                  column="isoDateEnd"
+                  type="string"/>
+
+        <property name="isoDateBeginSeconds"
+                  column="isoDateBeginSeconds"
+                  type="long"/>
+
+        <property name="isoDateEndSeconds"
+                  column="isoDateEndSeconds"
+                  type="long"/>
+
+
+        <!-- bulk dates-->
+        <property name="bulkDateBegin"
+                  column="bulkDateBegin"
+                  type="integer"/>
+
+        <property name="bulkDateEnd"
+                   column="bulkDateEnd"
+                   type="integer"/>
+
+         <property name="isoBulkDateBegin"
+                   column="isoBulkDateBegin"
+                   type="string"/>
+
+        <property name="isoBulkDateEnd"
+                   column="isoBulkDateEnd"
+                   type="string"/>
+
+        <property name="isoBulkDateBeginSeconds"
+                   column="isoBulkDateBeginSeconds"
+                   type="long"/>
+
+        <property name="isoBulkDateEndSeconds"
+                   column="isoBulkDateEndSeconds"
+                   type="long"/>
+
+
+
+
+ 		<property name="certainty"
+				  column="certainty"
+				  type="boolean"/>
+
+        <property name="dateType"
+                  column="dateType"
+                  type="string"/>
+
+        <property name="era"
+                  column="era"
+                  type="string"/>
+
+        <property name="calendar"
+                  column="calendar"
+                  type="string"/>
+
+
+        <!-- relationships -->
+		<many-to-one name="resource"
+					 class="Resources"
+					 column="resourceId"/>
+
+		<many-to-one name="accession"
+					 class="Accessions"
+					 column="accessionId"/>
+
+        <many-to-one name="resourceComponent"
+                      class="ResourcesComponents"
+                      column="resourceComponentId"/>
+
+        <many-to-one name="digitalObject"
+                     class="DigitalObjects"
+                     column="digitalObjectId"/>
+    </class>
+
+</hibernate-mapping>

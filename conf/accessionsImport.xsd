@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="accessionRecords">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="record" type="recordType" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="recordType">
+        <xs:sequence>
+            <xs:element name="accessionNumber" type="identifierType"/>
+            <xs:element name="accessionDate" type="xs:date" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="accessionDispositionNote" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="accessRestrictions" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="accessRestrictionsNote" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="useRestrictions" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="useRestrictionsNote" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="generalAccessionNote" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="acknowledgementDate" type="xs:date" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="acknowledgementSent" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="agreementReceivedDate" type="xs:date" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="agreementSentDate" type="xs:date" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="agreementSent" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="agreementReceived" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="accessionProcessed" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="accessionProcessedDate" type="xs:date" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="acquisitionType" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="dateExpression" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="bulkDateBegin" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="bulkDateEnd" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="dateBegin" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="dateEnd" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="cataloged" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="catalogedDate" type="xs:date" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="catalogedNote" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="conditionNote" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="extentNumber" type="xs:decimal" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="extentType" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="containerSummary" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="inventory" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="processingPlan" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="processingPriority" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="processors" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="processingStatus" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="processingStartedDate" type="xs:date" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="resourceType" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="retentionRule" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="title" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="restrictionsApply" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="rightsTransferred" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="rightsTransferredDate" type="xs:date" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="rightsTransferredNote" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="userDefinedDate1" type="xs:date" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="userDefinedDate2" type="xs:date" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="userDefinedBoolean1" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="userDefinedBoolean2" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="userDefinedInteger1" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="userDefinedInteger2" type="xs:integer" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="userDefinedReal1" type="xs:decimal" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="userDefinedReal2" type="xs:decimal" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="userDefinedString1" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="userDefinedString2" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="userDefinedString3" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="userDefinedText1" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="userDefinedText2" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="userDefinedText3" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="userDefinedText4" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="resourceIdentifier" type="identifierType" minOccurs="0" maxOccurs="1"/>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="subjectLink" type="subjectLinkType"/>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="nameLink" type="nameLinkType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="identifierType">
+        <xs:choice>
+            <xs:element name="composite" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:sequence>
+                <xs:element name="part1" minOccurs="1" maxOccurs="1">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="1"/>
+                            <xs:maxLength value="10"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="part2" minOccurs="0" maxOccurs="1">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="1"/>
+                            <xs:maxLength value="10"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="part3" minOccurs="0" maxOccurs="1">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="1"/>
+                            <xs:maxLength value="10"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="part4" minOccurs="0" maxOccurs="1">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="1"/>
+                            <xs:maxLength value="10"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:choice>
+    </xs:complexType>
+
+
+    <xs:complexType name="subjectLinkType">
+        <xs:sequence>
+            <xs:element name="subjectTerm" type="xs:string"/>
+            <xs:element name="subjectTermType" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="subjectSource" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="nameLinkType">
+        <xs:sequence>
+            <xs:element name="nameLinkFunction" maxOccurs="1">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Creator"/>
+                        <xs:enumeration value="Source"/>
+                        <xs:enumeration value="Subject"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="nameLinkRole" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="nameLinkForm" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="name" type="nameComplexType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="nameComplexType">
+        <xs:sequence>
+            <xs:element name="nameType" minOccurs="1">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Person"/>
+                        <xs:enumeration value="Family"/>
+                        <xs:enumeration value="Corporate Body"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="sortName" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="number" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="qualifier" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="nameSource" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="nameRule" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="descriptionType" minOccurs="0" maxOccurs="1">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Administrative History"/>
+                        <xs:enumeration value="Biography"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="descriptionNote" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="citation" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="salutation" type="xs:string" minOccurs="0"/>
+            <xs:element name="contactAddress1" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="contactAddress2" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="contactCity" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="contactRegion" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="contactCountry" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="contactMailCode" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="contactPhone" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="contactFax" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="contactEmail" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="contactName" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:choice>
+                <xs:sequence>
+                    <xs:element name="familyName" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="familyNamePrefix" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                </xs:sequence>
+                <xs:sequence>
+                    <xs:element name="corporatePrimaryName" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="corporateSubordinate1" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                    <xs:element name="corporateSubordinate2" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                </xs:sequence>
+                <xs:sequence>
+                    <xs:element name="personalPrimaryName" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="personalRestOfName" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                    <xs:element name="personalPrefix" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                    <xs:element name="personalSuffix" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                    <xs:element name="personalDates" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                    <xs:element name="personalFullerForm" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                    <xs:element name="personalTitle" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                    <xs:element name="personalDirectOrder" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+                </xs:sequence>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+
+
+</xs:schema>

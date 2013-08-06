@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+
+	<class name="ArchDescriptionNames"
+		   table="ArchDescriptionNames">
+
+		<id name="archDescriptionNamesId" column="archDescriptionNamesId" type="java.lang.Long">
+			<generator class="native"></generator>
+		</id>
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<!-- Simple property. -->
+		<property name="role"
+				  column="role"
+				  type="string"/>
+
+		<property name="nameLinkFunction"
+				  column="nameLinkFunction"
+				  type="string"
+				  not-null="true"/>
+
+		<property name="form"
+				  column="form"
+				  type="string"/>
+
+		<many-to-one name="name"
+					 class="Names"
+					 column="primaryNameId"
+					 not-null="true"
+					 access="field"
+					 fetch="join"
+					 outer-join="true"/>
+
+		<many-to-one name="resource"
+					 class="Resources"
+					 lazy="proxy"
+					 column="resourceId"/>
+
+		<many-to-one name="resourceComponent"
+					 class="ResourcesComponents"
+					 lazy="proxy"
+					 column="resourceComponentId"/>
+
+		<many-to-one name="accession"
+					 class="Accessions"
+					 lazy="proxy"
+					 column="accessionId"/>
+
+		<many-to-one name="digitalObject"
+					 class="DigitalObjects"
+					 lazy="proxy"
+					 column="digitalObjectId"/>
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.archiviststoolkit.structure.InLineTags" table="InLineTags" lazy="false">
+
+		<!--<cache usage="read-write"/>-->
+
+		<id name="inLineTagId" column="inLineTagId" type="java.lang.Long">
+			<generator class="native"></generator>
+		</id>
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="tagName"
+				  column="tagName"
+				  type="string"
+				  unique="true"
+				  not-null="true"/>
+
+		<set name="attributes"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="false"
+			 order-by="attributeName"
+			 fetch="subselect"
+			 access="field">
+			<key>
+				<column name="inLineTagId" not-null="true"/>
+			</key>
+			<one-to-many class="org.archiviststoolkit.structure.InLineTagAttributes"/>
+		</set>
+
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+
+	<class name="org.archiviststoolkit.model.Resources"
+		   table="Resources" lazy="false">
+
+		<id name="resourceId" column="resourceId" type="java.lang.Long">
+			<generator class="native"></generator>
+		</id>
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+			<column name="lastUpdated" not-null="true"/>
+			<column name="created" not-null="true"/>
+			<column name="lastUpdatedBy" not-null="true"/>
+			<column name="createdBy" not-null="true"/>
+		</property>
+
+
+		<!-- start common archDescription fields -->
+		<property name="title"
+				  column="title"
+				  type="text"/>
+
+		<property name="dateExpression"
+				  column="dateExpression"
+				  type="string"
+				  length="255"/>
+
+		<property name="dateBegin"
+				  column="dateBegin"
+				  type="integer"/>
+
+		<property name="dateEnd"
+				  column="dateEnd"
+				  type="integer"/>
+
+		<property name="bulkDateBegin"
+				  column="bulkDateBegin"
+				  type="integer"/>
+
+		<property name="bulkDateEnd"
+				  column="bulkDateEnd"
+				  type="integer"/>
+
+		<property name="extentNumber"
+				  column="extentNumber"
+				  type="double"/>
+
+		<property name="containerSummary"
+				  column="containerSummary"
+				  type="text"/>
+
+		<property name="extentType"
+				  column="extentType"
+				  type="string"/>
+
+		<property name="languageCode"
+				  column="languageCode"
+				  type="string"/>
+
+		<property name="repositoryProcessingNote"
+				  column="repositoryProcessingNote"
+				  type="text"/>
+
+		<property name="restrictionsApply"
+				  column="restrictionsApply"
+				  type="boolean"/>
+
+		<property name="displayCreator"
+				  column="displayCreator"
+				  type="string"/>
+
+		<property name="displayRepository"
+				  column="displayRepository"
+				  type="string"/>
+
+		<property name="displaySource"
+				  column="displaySource"
+				  type="string"/>
+
+		<property name="internalOnly"
+				  column="internalOnly"
+				  not-null="true"
+				  type="boolean"/>
+
+		<property name="eadIngestProblem"
+				  column="eadIngestProblem"
+				  type="text"/>
+        
+        <set name="names"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 access="field"
+			 lazy="true">
+			<key>
+				<column name="resourceId"/>
+			</key>
+			<one-to-many class="ArchDescriptionNames"/>
+		</set>
+
+		<set name="subjects"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="resourceId"/>
+			</key>
+			<one-to-many class="ArchDescriptionSubjects"/>
+		</set>
+
+		<set name="repeatingData"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 order-by="sequenceNumber asc"
+			 access="field">
+			<key>
+				<column name="resourceId"/>
+			</key>
+			<one-to-many class="ArchDescriptionRepeatingData"/>
+		</set>
+
+		<set name="instances"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="resourceId"/>
+			</key>
+			<one-to-many class="ArchDescriptionInstances"/>
+		</set>
+
+		<!-- end common archDescription fields -->
+
+		<property name="resourceIdentifier1"
+				  column="resourceIdentifier1"
+				  type="string"
+				  length="20"/>
+
+		<property name="resourceIdentifier2"
+				  column="resourceIdentifier2"
+				  type="string"
+				  length="20"/>
+
+		<property name="resourceIdentifier3"
+				  column="resourceIdentifier3"
+				  type="string"
+				  length="20"/>
+
+		<property name="resourceIdentifier4"
+				  column="resourceIdentifier4"
+				  type="string"
+				  length="20"/>
+
+		<property name="level"
+				  column="resourceLevel"
+				  type="string"
+				  length="30"/>
+
+		<property name="otherLevel"
+				  column="otherLevel"
+				  type="string"
+				  length="30"/>
+
+		<property name="sponsorNote"
+				  column="sponsorNote"
+				  type="text"/>
+
+		<property name="eadFaUniqueIdentifier"
+				  column="eadFaUniqueIdentifier"
+				  type="string"/>
+
+		<property name="eadFaLocation"
+				  column="eadFaLocation"
+				  type="string"/>
+
+		<property name="findingAidTitle"
+				  column="findingAidTitle"
+				  type="text"/>
+
+		<property name="findingAidSubtitle"
+				  column="findingAidSubtitle"
+				  type="text"/>
+
+        <property name="findingAidFilingTitle"
+				  column="findingAidFilingTitle"
+				  type="text"/>
+
+        <property name="findingAidDate"
+				  column="findingAidDate"
+				  type="string"/>
+
+		<property name="author"
+				  column="author"
+				  type="text"/>
+
+		<property name="descriptionRules"
+				  column="descriptionRules"
+				  type="text"/>
+
+		<property name="languageOfFindingAid"
+				  column="languageOfFindingAid"
+				  type="text"/>
+
+		<property name="editionStatement"
+				  column="editionStatement"
+				  type="text"/>
+
+		<property name="series"
+				  column="series"
+				  type="text"/>
+
+		<property name="revisionDate"
+				  column="revisionDate"
+				  type="string"/>
+
+		<property name="revisionDescription"
+				  column="revisionDescription"
+				  type="text"/>
+
+		<property name="findingAidNote"
+				  column="findingAidNote"
+				  type="text"/>
+
+		<property name="findingAidStatus"
+				  column="findingAidStatus"
+				  type="string"/>
+
+		<property name="nextPersistentId"
+				  column="nextPersistentId"
+				  type="integer"/>
+
+        <property name="userDefinedString1"
+                  column="userDefinedString1"
+                  type="string"/>
+
+        <property name="userDefinedString2"
+                  column="userDefinedString2"
+                  type="string"/>
+
+		<set name="accessions"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="resourceId"/>
+			</key>
+			<one-to-many class="AccessionsResources"/>
+		</set>
+
+
+		<set name="deaccessions"
+			 cascade="all-delete-orphan"
+			 inverse="true"
+			 lazy="true"
+			 access="field">
+			<key>
+				<column name="resourceId" not-null="true"/>
+			</key>
+			<one-to-many class="Deaccessions"/>
+		</set>
+
+		<many-to-one name="repository"
+					 class="org.archiviststoolkit.model.Repositories"
+					 column="repositoryId"
+					 access="field"
+					 fetch="join"
+					 not-null="true"
+					 outer-join="true"/>
+
+		<set name="resourcesComponents"
+			 cascade="all"
+			 inverse="true"
+			 lazy="true"
+			 sort="natural"
+			 fetch="subselect"
+			 access="field">
+			<key>
+				<column name="resourceId" not-null="true"/>
+			</key>
+			<one-to-many class="ResourcesComponents"/>
+		</set>
+
+        <set name="archDescriptionDates"
+              cascade="all-delete-orphan"
+              inverse="true"
+              lazy="true"
+              access="field">
+             <key>
+                 <column name="resourceId" not-null="true"/>
+             </key>
+             <one-to-many class="org.archiviststoolkit.model.ArchDescriptionDates"/>
+         </set>
+
+        <set name="physicalDesctiptions"
+              cascade="all-delete-orphan"
+              inverse="true"
+              lazy="true"
+              access="field">
+             <key>
+                 <column name="resourceId" not-null="true"/>
+             </key>
+             <one-to-many class="org.archiviststoolkit.model.ArchDescriptionPhysicalDescriptions"/>
+        </set>
+
+		<filter name="repository" condition=":repositoryId = repositoryId"/>
+
+	</class>
+	<filter-def name="repository">
+		<filter-param name="repositoryId" type="java.lang.Long"/>
+	</filter-def>
+
+</hibernate-mapping>
