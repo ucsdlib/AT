@@ -1,0 +1,8 @@
+#!/bin/sh
+cp -v plugin.xml out/production/EADFix
+
+cd out/production/EADFix
+
+zip -rv eadfix.zip . -i \*.class *.xml
+
+mv -v eadfix.zip ../../../../

@@ -1,0 +1,8 @@
+#!/bin/sh
+cp -v plugin.xml out/production/BatchDO
+
+cd out/production/BatchDO
+
+zip -rv batchDO2_nyu.zip . -i \*.class *.xml
+
+mv -v batchDO2_nyu.zip ../../../../

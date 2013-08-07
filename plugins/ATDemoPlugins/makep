@@ -1,0 +1,8 @@
+#!/bin/sh
+cp -v plugin.xml out/production/ATDemoPlugins
+
+cd out/production/ATDemoPlugins
+
+zip -rv atdemoplugin.zip . -i \*.class *.xml
+
+mv -v atdemoplugin.zip ../../../../
